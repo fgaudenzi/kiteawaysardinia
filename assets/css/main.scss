@@ -1,0 +1,399 @@
+// Main SCSS - Import all modules
+
+@import 'variables';
+@import 'base';
+@import 'layout';
+@import 'navbar';
+@import 'hero';
+@import 'cards';
+@import 'gallery';
+@import 'footer';
+@import 'responsive';
+
+// Additional Components
+
+// Buttons
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-sm $space-md;
+  border-radius: $border-radius-md;
+  font-size: $size-base;
+  font-weight: $weight-bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all $transition-base;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  
+  &:focus {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
+  
+  &--primary {
+    background-color: $primary;
+    color: $white;
+    
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+  
+  &--secondary {
+    background-color: $accent-orange;
+    color: $white;
+    
+    &:hover {
+      background-color: darken($accent-orange, 10%);
+    }
+  }
+  
+  &--outline {
+    background-color: transparent;
+    color: $primary;
+    border: 2px solid $primary;
+    
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+  
+  &--ghost {
+    background-color: transparent;
+    color: $text-dark;
+    
+    &:hover {
+      color: $primary;
+    }
+  }
+  
+  &--lg {
+    padding: $space-md $space-xl;
+    font-size: $size-lg;
+  }
+  
+  &--sm {
+    padding: $space-xs $space-sm;
+    font-size: $size-sm;
+  }
+  
+  &--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    
+    &:hover {
+      background-color: inherit;
+    }
+  }
+}
+
+// Accordion
+.accordion {
+  .accordion__item {
+    border-bottom: 1px solid $border;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  .accordion__header {
+    padding: $space-lg 0;
+    background: none;
+    border: none;
+    font-size: $size-lg;
+    font-weight: $weight-bold;
+    color: $text-dark;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all $transition-base;
+    
+    &:hover {
+      color: $primary;
+    }
+    
+    &::after {
+      content: '+';
+      font-size: $size-2xl;
+      transition: transform $transition-base;
+    }
+    
+    &.active::after {
+      transform: rotate(45deg);
+    }
+  }
+  
+  .accordion__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $transition-base;
+    color: $text-light;
+    padding: 0;
+    
+    p {
+      margin-bottom: 0;
+    }
+  }
+  
+  .accordion__item.active .accordion__content {
+    max-height: 1000px;
+    padding-bottom: $space-lg;
+  }
+}
+
+// Tabs
+.tabs {
+  .tabs__nav {
+    display: flex;
+    gap: $space-md;
+    border-bottom: 2px solid $border;
+    margin-bottom: $space-xl;
+    flex-wrap: wrap;
+  }
+  
+  .tabs__btn {
+    padding: $space-md $space-lg;
+    background: none;
+    border: none;
+    font-size: $size-base;
+    font-weight: $weight-medium;
+    color: $text-light;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: all $transition-base;
+    
+    &:hover {
+      color: $primary;
+    }
+    
+    &.active {
+      color: $primary;
+      border-bottom-color: $primary;
+    }
+  }
+  
+  .tabs__content {
+    display: none;
+    
+    &.active {
+      display: block;
+      animation: fadeIn $transition-base;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Forms
+.form {
+  max-width: 500px;
+  
+  &__group {
+    margin-bottom: $space-xl;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  &__label {
+    display: block;
+    margin-bottom: $space-sm;
+    font-weight: $weight-bold;
+    color: $text-dark;
+    font-size: $size-sm;
+  }
+  
+  &__input,
+  &__textarea {
+    width: 100%;
+    padding: $space-md;
+    border: 1px solid $border;
+    border-radius: $border-radius-md;
+    font-family: $font-body;
+    font-size: $size-base;
+    transition: all $transition-base;
+    
+    &:focus {
+      outline: none;
+      border-color: $primary;
+      box-shadow: 0 0 0 3px rgba($primary, 0.1);
+    }
+    
+    &::placeholder {
+      color: #999;
+    }
+  }
+  
+  &__textarea {
+    resize: vertical;
+    min-height: $space-2xl;
+  }
+  
+  &__help {
+    font-size: $size-sm;
+    color: $text-light;
+    margin-top: $space-xs;
+  }
+  
+  &__error {
+    color: #dc2626;
+    font-size: $size-sm;
+    margin-top: $space-xs;
+  }
+}
+
+// Alert/Notification
+.alert {
+  padding: $space-md $space-lg;
+  border-radius: $border-radius-md;
+  border-left: 4px solid;
+  margin-bottom: $space-lg;
+  display: flex;
+  gap: $space-md;
+  
+  &--success {
+    background-color: #dcfce7;
+    border-left-color: #16a34a;
+    color: #166534;
+  }
+  
+  &--error {
+    background-color: #fee2e2;
+    border-left-color: #dc2626;
+    color: #991b1b;
+  }
+  
+  &--warning {
+    background-color: #fef3c7;
+    border-left-color: #eab308;
+    color: #78350f;
+  }
+  
+  &--info {
+    background-color: #dbeafe;
+    border-left-color: $primary;
+    color: #082f49;
+  }
+  
+  &__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: $size-lg;
+    color: inherit;
+    margin-left: auto;
+  }
+}
+
+// Badge
+.badge {
+  display: inline-block;
+  padding: $space-xs $space-sm;
+  border-radius: $border-radius-full;
+  font-size: $size-xs;
+  font-weight: $weight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  
+  &--primary {
+    background-color: $primary;
+    color: $white;
+  }
+  
+  &--secondary {
+    background-color: $accent-orange;
+    color: $white;
+  }
+  
+  &--neutral {
+    background-color: $background;
+    color: $text-dark;
+  }
+}
+
+// Loading
+.loader {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid $border;
+  border-radius: $border-radius-full;
+  border-top-color: $primary;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Breadcrumbs
+.breadcrumbs {
+  display: flex;
+  gap: $space-sm;
+  margin-bottom: $space-lg;
+  
+  a {
+    color: $primary;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .separator {
+    color: $border;
+  }
+  
+  .current {
+    color: $text-light;
+  }
+}
+
+// Divider
+.divider {
+  height: 1px;
+  background-color: $border;
+  margin: $space-xl 0;
+  
+  &--accent {
+    background-color: $accent-orange;
+    height: 3px;
+    max-width: 100px;
+  }
+}
+
+// Skip Link  
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: $primary;
+  color: $white;
+  padding: $space-sm $space-md;
+  text-decoration: none;
+  z-index: 100;
+  
+  &:focus {
+    top: 0;
+  }
+}

@@ -1,0 +1,244 @@
+@import 'variables';
+
+// Responsive Utilities
+
+// Display
+.hide-mobile {
+  @media (max-width: $bp-md) {
+    display: none !important;
+  }
+}
+
+.show-mobile {
+  display: none;
+  
+  @media (max-width: $bp-md) {
+    display: block !important;
+  }
+}
+
+.hide-tablet {
+  @media (max-width: $bp-lg) and (min-width: $bp-md + 1px) {
+    display: none !important;
+  }
+}
+
+.hide-desktop {
+  @media (min-width: $bp-lg + 1px) {
+    display: none !important;
+  }
+}
+
+// Text sizing
+@media (max-width: $bp-lg) {
+  h1 {
+    font-size: $size-5xl;
+  }
+  
+  h2 {
+    font-size: $size-3xl;
+  }
+  
+  h3 {
+    font-size: $size-2xl;
+  }
+}
+
+@media (max-width: $bp-md) {
+  h1 {
+    font-size: $size-3xl;
+  }
+  
+  h2 {
+    font-size: $size-2xl;
+  }
+  
+  h3 {
+    font-size: $size-xl;
+  }
+  
+  p {
+    font-size: $size-sm;
+  }
+}
+
+// Spacing utilities
+@media (max-width: $bp-md) {
+  .space--lg-mobile {
+    margin-bottom: $space-lg !important;
+  }
+  
+  .space--none-mobile {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+// Flex wrapping
+@media (max-width: $bp-md) {
+  .flex--nowrap-mobile {
+    flex-wrap: wrap !important;
+  }
+}
+
+// Grid
+@media (max-width: $bp-lg) {
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: $bp-md) {
+  .grid--2,
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+// Split layout
+@media (max-width: $bp-lg) {
+  .split {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+// Padding/Margin reset
+@media (max-width: $bp-md) {
+  .section {
+    padding: $space-xl $space-md !important;
+  }
+}
+
+// Typography
+@media (max-width: $bp-md) {
+  .text--center-mobile {
+    text-align: center;
+  }
+  
+  .text--left-mobile {
+    text-align: left;
+  }
+  
+  .text--right-mobile {
+    text-align: right;
+  }
+}
+
+// Landscape mode
+@media (max-height: 500px) {
+  .hero {
+    min-height: 100vh;
+  }
+  
+  .hero__title {
+    font-size: $size-3xl;
+  }
+  
+  .hero__subtitle {
+    font-size: $size-base;
+  }
+}
+
+// High res displays
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body {
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+// Touch devices
+@media (hover: none) {
+  a, button {
+    &:hover {
+      transform: none !important;
+    }
+  }
+  
+  .card:hover {
+    transform: none;
+  }
+}
+
+// High contrast mode
+@media (prefers-contrast: more) {
+  body {
+    color: $dark;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+}
+
+// Reduced motion
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Dark mode (for future implementation)
+@media (prefers-color-scheme: dark) {
+  // Can implement dark theme here
+}
+
+// Print styles
+@media print {
+  header, footer, nav, .hide-print {
+    display: none !important;
+  }
+  
+  body {
+    background-color: $white;
+    color: $text-dark;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+}
+
+// Ultra-wide screens
+@media (min-width: $bp-2xl + 1px) {
+  .container {
+    max-width: 100%;
+    padding: 0 $space-2xl;
+  }
+}
+
+// Very small screens
+@media (max-width: 440px) {
+  .hero__title {
+    font-size: $size-2xl;
+  }
+  
+  .hero__subtitle {
+    font-size: $size-sm;
+  }
+  
+  .hero__actions {
+    flex-direction: column;
+  }
+  
+  .cards {
+    gap: $space-md;
+  }
+  
+  .split {
+    gap: $space-lg;
+  }
+}

@@ -1,0 +1,17 @@
+- id: 1
+  name: Marco
+  role: team_role_1
+  image: /assets/images/team/team-1.jpg
+  bio: IKO certified instructor with 15+ years of kitesurfing experience. Passionate about sharing the sport with riders of all levels.
+  
+- id: 2
+  name: Giulia
+  role: team_role_2
+  image: /assets/images/team/team-2.jpg
+  bio: Safety-first professional with expertise in risk management and emergency protocols. Ensures every lesson is safe and enjoyable.
+  
+- id: 3
+  name: Antonio
+  role: team_role_3
+  image: /assets/images/team/team-3.jpg
+  bio: Advanced kitesurf coach specializing in progression and technique refinement for intermediate to advanced riders.

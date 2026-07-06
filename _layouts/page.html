@@ -1,4 +1,22 @@
 ---
 layout: default
 ---
-{{content}}
+
+<article class="page">
+  <section class="section section--dark" style="padding-top: 120px;">
+    <div class="container">
+      <div class="content content--narrow" style="margin-top: 60px;">
+        <h1 style="color: white; margin-bottom: 20px;">{{ page.title }}</h1>
+        {% if page.subtitle %}<p style="color: rgba(255, 255, 255, 0.9); font-size: 1.25rem;">{{ page.subtitle }}</p>{% endif %}
+      </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <div class="content">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+</article>

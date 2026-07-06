@@ -1,0 +1,229 @@
+@import 'variables';
+
+navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: map-get($z-sticky, 'z-sticky');
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba($white, 0.7);
+  border-bottom: 1px solid rgba($border, 0.5);
+  transition: all $transition-base;
+  
+  &.scrolled {
+    background-color: $primary;
+    border-bottom-color: $primary;
+    box-shadow: $shadow-lg;
+    
+    .navbar__logo {
+      color: $white;
+    }
+    
+    .navbar__nav a {
+      color: $white;
+      
+      &:hover {
+        color: $accent-orange;
+      }
+    }
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $space-md $space-lg;
+  max-width: $bp-2xl;
+  margin: 0 auto;
+  
+  @media (max-width: $bp-md) {
+    padding: $space-md;
+  }
+}
+
+.navbar__logo {
+  font-family: $font-heading;
+  font-size: $size-2xl;
+  font-weight: $weight-bold;
+  color: $text-dark;
+  text-decoration: none;
+  transition: color $transition-base;
+  
+  &:hover {
+    color: $primary;
+  }
+}
+
+.navbar__nav {
+  display: flex;
+  gap: $space-xl;
+  
+  @media (max-width: $bp-md) {
+    display: none;
+  }
+  
+  a {
+    font-size: $size-sm;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $text-dark;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $accent-orange;
+      transition: width $transition-base;
+    }
+    
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: $space-md;
+  
+  @media (max-width: $bp-md) {
+    gap: $space-sm;
+  }
+}
+
+.navbar__lang {
+  display: flex;
+  align-items: center;
+  gap: $space-xs;
+  font-size: $size-sm;
+  
+  @media (max-width: $bp-md) {
+    display: none;
+  }
+}
+
+.navbar__lang-item {
+  padding: $space-xs $space-sm;
+  color: $text-dark;
+  text-decoration: none;
+  font-weight: $weight-medium;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color $transition-base;
+  
+  &:hover,
+  &.active {
+    color: $accent-orange;
+  }
+  
+  &.active {
+    font-weight: $weight-bold;
+  }
+}
+
+.navbar__lang-sep {
+  color: $border;
+}
+
+.navbar__cta {
+  background-color: $accent-orange;
+  color: $white;
+  padding: $space-sm $space-md;
+  border-radius: $border-radius-md;
+  font-size: $size-sm;
+  font-weight: $weight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: all $transition-base;
+  display: inline-block;
+  
+  &:hover {
+    background-color: darken($accent-orange, 10%);
+    transform: translateY(-2px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+.navbar__menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: $space-sm;
+  
+  @media (max-width: $bp-md) {
+    display: flex;
+  }
+  
+  span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: $text-dark;
+    border-radius: $border-radius-sm;
+    transition: all $transition-base;
+  }
+  
+  &.active {
+    span:nth-child(1) {
+      transform: rotate(45deg) translate(8px, 8px);
+    }
+    
+    span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    span:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -8px);
+    }
+  }
+}
+
+// Mobile Menu
+.navbar__mobile {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $white;
+  overflow-y: auto;
+  z-index: map-get($z-dropdown, 'z-dropdown');
+  
+  @media (max-width: $bp-md) {
+    display: flex;
+    flex-direction: column;
+    
+    &.active {
+      display: flex;
+    }
+  }
+}
+
+.navbar__mobile-item {
+  padding: $space-lg;
+  border-bottom: 1px solid $border;
+  color: $text-dark;
+  text-decoration: none;
+  font-size: $size-lg;
+  font-weight: $weight-medium;
+  transition: all $transition-base;
+  
+  &:hover {
+    background-color: $background;
+    color: $primary;
+    padding-left: $space-xl;
+  }
+}

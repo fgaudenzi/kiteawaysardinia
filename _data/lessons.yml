@@ -1,1 +1,20 @@
-- title: Baptism
+- id: baptism
+  title_key: lesson_1_title
+  desc_key: lesson_1_desc
+  image: /assets/images/lessons/lesson-1.jpg
+  price_min: 60
+  duration: 2 hours
+  
+- id: 6hours
+  title_key: lesson_2_title
+  desc_key: lesson_2_desc
+  image: /assets/images/lessons/lesson-2.jpg
+  price_min: 150
+  duration: 6 hours
+  
+- id: tailored
+  title_key: lesson_3_title
+  desc_key: lesson_3_desc
+  image: /assets/images/lessons/lesson-3.jpg
+  price_min: 100
+  duration: Flexible

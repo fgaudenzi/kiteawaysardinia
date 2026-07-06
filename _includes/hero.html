@@ -1,0 +1,30 @@
+<section class="hero" aria-label="{% t hero_title_1 %}">
+  <picture class="hero__image">
+    <img src="/image.png" alt="Kite Away Sardinia seascape" loading="eager">
+  </picture>
+
+  <div class="hero__overlay"></div>
+
+  <div class="hero__content">
+    <p class="hero__subtitle">{% t hero_subtitle %}</p>
+
+    <h1 class="hero__title">
+      {% t hero_title_1 %}<span class="hero__title-accent">{% t hero_title_2 %}</span>
+    </h1>
+
+    <div class="hero__actions">
+      <a href="{% if page.lang and page.lang != site.default_lang %}/{{ page.lang }}/lessons{% else %}/lessons{% endif %}" class="btn btn--primary">
+        {% t hero_cta_primary %}
+      </a>
+      <a href="https://wa.me/390000000000" class="btn btn--secondary">
+        {% t hero_cta_secondary %}
+      </a>
+    </div>
+  </div>
+
+  <div class="hero__scroll-indicator" data-scroll-indicator>
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </div>
+</section>

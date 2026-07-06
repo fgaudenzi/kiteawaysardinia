@@ -1,0 +1,55 @@
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container" style="display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0;">
+    <a href="{% if page.lang and page.lang != site.default_lang %}/{{ page.lang }}/{% else %}/{% endif %}" class="navbar__logo">
+      ◆ Kite Away
+    </a>
+    
+    <ul class="navbar__nav" role="menubar">
+      {% for item in site.data.navigation %}
+        <li role="none">
+          <a href="{% if page.lang and page.lang != site.default_lang %}/{{ page.lang }}{{ item.url }}{% else %}{{ item.url }}{% endif %}" role="menuitem">
+            {% t item.label %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    
+    <div class="navbar__right">
+      <div class="navbar__lang">
+        {% for language in site.languages %}
+          {% if language == page.lang or (page.lang == nil and language == site.default_lang) %}
+            <span class="navbar__lang-item active">{{ language | upcase }}</span>
+          {% else %}
+            {% if language != site.default_lang %}
+              <a href="/{{ language }}{{ page.url }}" class="navbar__lang-item">{{ language | upcase }}</a>
+            {% else %}
+              <a href="{{ page.url }}" class="navbar__lang-item">{{ language | upcase }}</a>
+            {% endif %}
+          {% endif %}
+          {% unless forloop.last %}<span class="navbar__lang-sep">|</span>{% endunless %}
+        {% endfor %}
+      </div>
+      
+      <a href="https://wa.me/390000000000" class="navbar__cta">
+        {% t book_now %}
+      </a>
+      
+      <button class="navbar__menu-btn" id="navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+  
+  <div class="navbar__mobile" id="navbar-mobile">
+    {% for item in site.data.navigation %}
+      <a href="{% if page.lang and page.lang != site.default_lang %}/{{ page.lang }}{{ item.url }}{% else %}{{ item.url }}{% endif %}" class="navbar__mobile-item">
+        {% t item.label %}
+      </a>
+    {% endfor %}
+    <a href="https://wa.me/390000000000" class="navbar__mobile-item" style="background: #F97316; color: white; font-weight: bold;">
+      {% t book_now %}
+    </a>
+  </div>
+</nav>

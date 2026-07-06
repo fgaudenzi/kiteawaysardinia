@@ -1,0 +1,36 @@
+---
+layout: page
+title: "{% t nav_contact %}"
+permalink: /contact/
+ref: contact
+---
+
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div class="split__content">
+        <h2>{% t contact_title %}</h2>
+        <p>{% t contact_text %}</p>
+        <p><strong>Email:</strong> info@kiteawaysardinia.com</p>
+        <p><strong>WhatsApp:</strong> +39 000 000 0000</p>
+      </div>
+      <div class="card">
+        <form class="form" action="https://formspree.io/f/your-id" method="POST">
+          <div class="form__group">
+            <label class="form__label" for="name">{% t contact_name %}</label>
+            <input class="form__input" id="name" name="name" type="text" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" id="email" name="email" type="email" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="message">{% t contact_message %}</label>
+            <textarea class="form__textarea" id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit">{% t contact_submit %}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

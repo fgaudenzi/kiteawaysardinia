@@ -1,0 +1,27 @@
+<header class="site-header" data-header>
+  <nav class="nav" aria-label="{% t nav_label %}">
+    <a class="brand" href="#home" aria-label="Kite Away Sardinia">
+      <span class="brand__mark">◆</span>
+      <span>Kite Away</span>
+    </a>
+
+    <button class="nav__toggle" type="button" aria-label="{% t nav_toggle %}" aria-expanded="false" data-nav-toggle>
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav__menu" data-nav-menu>
+      <a href="#lessons">{% t nav_lessons %}</a>
+      <a href="#spot">{% t nav_spot %}</a>
+      <a href="#about">{% t nav_about %}</a>
+      <a href="#faq">{% t nav_faq %}</a>
+      <a href="#contact">{% t nav_contact %}</a>
+      <div class="language-switcher" aria-label="{% t language_switcher %}">
+        <a href="/"{% if site.lang == site.default_lang or site.lang == nil %} aria-current="page"{% endif %}>EN</a>
+        <a href="/it/"{% if site.lang == 'it' %} aria-current="page"{% endif %}>IT</a>
+        <a href="/fr/"{% if site.lang == 'fr' %} aria-current="page"{% endif %}>FR</a>
+        <a href="/de/"{% if site.lang == 'de' %} aria-current="page"{% endif %}>DE</a>
+      </div>
+      <a class="nav__cta" href="https://wa.me/390000000000">{% t book_now %}</a>
+    </div>
+  </nav>
+</header>

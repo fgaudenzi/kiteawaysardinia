@@ -1,3 +1,23 @@
-- home
-- lessons
-- contact
+- id: home
+  label: nav_home
+  url: /
+  
+- id: lessons
+  label: nav_lessons
+  url: /lessons
+  
+- id: spot
+  label: nav_spot
+  url: /spot
+  
+- id: about
+  label: nav_about
+  url: /about
+  
+- id: faq
+  label: nav_faq
+  url: /faq
+  
+- id: contact
+  label: nav_contact
+  url: /contact

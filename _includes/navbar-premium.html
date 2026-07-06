@@ -1,1 +1,35 @@
-<nav id="navbar"><div class="container-custom"><a href="/">Kite Away Sardinia</a><button onclick="toggleMobile()">☰</button><div id="mobile-menu">Home Lessons Spot About FAQ Contact</div></div></nav>
+<nav id="navbar">
+    <div class="container-custom">
+        <a href="{% if page.lang and page.lang != site.default_lang %}{{ site.baseurl }}/{{ page.lang }}{% else %}{{ site.baseurl }}/{% endif %}" class="logo">
+            🪁 Kite Away
+        </a>
+        
+        <ul class="menu">
+            <li><a href="{% if page.lang and page.lang != site.default_lang %}{{ site.baseurl }}/{{ page.lang }}{% else %}{{ site.baseurl }}/{% endif %}">{% t nav_home %}</a></li>
+            <li><a href="{% if page.lang and page.lang != site.default_lang %}{{ site.baseurl }}/{{ page.lang }}/lessons{% else %}{{ site.baseurl }}/lessons{% endif %}">{% t nav_lessons %}</a></li>
+            <li><a href="{% if page.lang and page.lang != site.default_lang %}{{ site.baseurl }}/{{ page.lang }}/about{% else %}{{ site.baseurl }}/about{% endif %}">{% t nav_about %}</a></li>
+            <li><a href="{% if page.lang and page.lang != site.default_lang %}{{ site.baseurl }}/{{ page.lang }}/spot{% else %}{{ site.baseurl }}/spot{% endif %}">{% t nav_spot %}</a></li>
+            <li><a href="{% if page.lang and page.lang != site.default_lang %}{{ site.baseurl }}/{{ page.lang }}/faq{% else %}{{ site.baseurl }}/faq{% endif %}">{% t nav_faq %}</a></li>
+            <li><a href="{% if page.lang and page.lang != site.default_lang %}{{ site.baseurl }}/{{ page.lang }}/contact{% else %}{{ site.baseurl }}/contact{% endif %}">{% t nav_contact %}</a></li>
+        </ul>
+        
+        <div class="lang-switcher">
+            {% for language in site.languages %}
+                {% if language == page.lang or (page.lang == nil and language == site.default_lang) %}
+                    <span class="lang-btn active">{{ language | upcase }}</span>
+                {% else %}
+                    {% if language != site.default_lang %}
+                        <a href="{% if page.url == '/' %}/{{ language }}/{% else %}/{{ language }}{{ page.url }}{% endif %}" class="lang-btn">{{ language | upcase }}</a>
+                    {% else %}
+                        <a href="{{ page.url }}" class="lang-btn">{{ language | upcase }}</a>
+                    {% endif %}
+                {% endif %}
+                {% unless forloop.last %}<span class="lang-separator">|</span>{% endunless %}
+            {% endfor %}
+        </div>
+        
+        <a class="book-btn" href="https://wa.me/390000000000">
+            {% t book_now %}
+        </a>
+    </div>
+</nav>

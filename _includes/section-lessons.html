@@ -1,0 +1,21 @@
+<section class="section" id="lessons" aria-labelledby="lessons-title">
+  <div class="container section__heading">
+    <p class="eyebrow">{% t lessons_title %}</p>
+    <h2 id="lessons-title">{% t lessons_heading %}</h2>
+    <p>{% t lessons_intro %}</p>
+  </div>
+  <div class="container cards">
+    <article class="card">
+      <img src="{{ '/assets/images/lezione2.jpg' | relative_url }}" alt="{% t lesson_1_image_alt %}" width="900" height="650" loading="lazy">
+      <div class="card__body"><p class="tag">{% t lesson_1_tag %}</p><h3>{% t lesson_1_title %}</h3><p>{% t lesson_1_desc %}</p><div class="card__meta"><span>{% t lesson_1_duration %}</span><strong>{% t lesson_1_price %}</strong></div></div>
+    </article>
+    <article class="card">
+      <img src="{{ '/assets/images/6hours.jpg' | relative_url }}" alt="{% t lesson_2_image_alt %}" width="900" height="650" loading="lazy">
+      <div class="card__body"><p class="tag">{% t lesson_2_tag %}</p><h3>{% t lesson_2_title %}</h3><p>{% t lesson_2_desc %}</p><div class="card__meta"><span>{% t lesson_2_duration %}</span><strong>{% t lesson_2_price %}</strong></div></div>
+    </article>
+    <article class="card">
+      <img src="{{ '/assets/images/lezione.jpg' | relative_url }}" alt="{% t lesson_3_image_alt %}" width="900" height="650" loading="lazy">
+      <div class="card__body"><p class="tag">{% t lesson_3_tag %}</p><h3>{% t lesson_3_title %}</h3><p>{% t lesson_3_desc %}</p><div class="card__meta"><span>{% t lesson_3_duration %}</span><strong>{% t lesson_3_price %}</strong></div></div>
+    </article>
+  </div>
+</section>

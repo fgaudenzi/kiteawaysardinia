@@ -1,0 +1,19 @@
+- id: 1
+  question: faq_1_q
+  answer: faq_1_a
+  
+- id: 2
+  question: faq_2_q
+  answer: faq_2_a
+  
+- id: 3
+  question: faq_3_q
+  answer: faq_3_a
+  
+- id: 4
+  question: faq_4_q
+  answer: faq_4_a
+  
+- id: 5
+  question: faq_5_q
+  answer: faq_5_a

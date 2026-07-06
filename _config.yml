@@ -1,2 +1,64 @@
 title: Kite Away Sardinia
-languages:[en,it,de,fr]
+description: Premium kitesurf lessons in Sardinia
+
+url: ""
+baseurl: ""
+
+source: .
+destination: ./_site
+safe: false
+incremental: false
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+languages: ["en", "it", "fr", "de"]
+default_lang: "en"
+exclude_from_localization:
+  - assets
+  - image.png
+
+plugins:
+  - jekyll-multiple-languages-plugin
+
+sass:
+  style: compressed
+  sourcemap: never
+
+exclude:
+  - .agents
+  - .bundle
+  - .git
+  - .jekyll-cache
+  - _site
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - README.md
+  - about.html
+  - contact.html
+  - faq.html
+  - lessons.html
+  - spot.html
+  - assets/css/base.scss
+  - assets/css/cards.scss
+  - assets/css/footer.scss
+  - assets/css/gallery.scss
+  - assets/css/hero.scss
+  - assets/css/layout.scss
+  - assets/css/main.scss
+  - assets/css/navbar.scss
+  - assets/css/responsive.scss
+  - assets/css/variables.scss
+  - assets/css/output.css
+  - assets/css/final-polish.css
+  - assets/js/faq.js
+  - assets/js/final-polish.js
+  - assets/js/navbar.js
+  - "*.gemspec"
+  - "*.md"

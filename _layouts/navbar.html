@@ -1,0 +1,35 @@
+<nav id="navbar">
+
+    <div class="container">
+
+        <a href="{% if page.lang %}{{ site.baseurl }}/{{ page.lang }}{% else %}{{ site.baseurl }}/{% endif %}" class="logo">
+            Kite Away Sardinia
+        </a>
+
+        <ul class="menu">
+            <li><a href="{% if page.lang %}{{ site.baseurl }}/{{ page.lang }}{% else %}{{ site.baseurl }}/{% endif %}">{% t nav_home %}</a></li>
+            <li><a href="{% if page.lang %}{{ site.baseurl }}/{{ page.lang }}/lessons{% else %}{{ site.baseurl }}/lessons{% endif %}">{% t nav_lessons %}</a></li>
+            <li><a href="{% if page.lang %}{{ site.baseurl }}/{{ page.lang }}/spot{% else %}{{ site.baseurl }}/spot{% endif %}">{% t nav_spot %}</a></li>
+            <li><a href="{% if page.lang %}{{ site.baseurl }}/{{ page.lang }}/about{% else %}{{ site.baseurl }}/about{% endif %}">{% t nav_about %}</a></li>
+            <li><a href="{% if page.lang %}{{ site.baseurl }}/{{ page.lang }}/faq{% else %}{{ site.baseurl }}/faq{% endif %}">{% t nav_faq %}</a></li>
+            <li><a href="{% if page.lang %}{{ site.baseurl }}/{{ page.lang }}/contact{% else %}{{ site.baseurl }}/contact{% endif %}">{% t nav_contact %}</a></li>
+        </ul>
+
+        <div class="lang-switcher">
+            {% for language in site.languages %}
+                {% if language == page.lang %}
+                    <span class="lang-btn active">{{ language | upcase }}</span>
+                {% else %}
+                    <a href="{% if language != site.default_lang %}{{ site.baseurl }}/{{ language }}{% else %}{{ site.baseurl }}{% endif %}{{ page.url | replace: '/' | prepend: '/' | replace: page.lang | replace: '' }}" class="lang-btn">{{ language | upcase }}</a>
+                {% endif %}
+                {% unless forloop.last %}<span class="lang-separator">|</span>{% endunless %}
+            {% endfor %}
+        </div>
+
+        <a class="book-btn" href="https://wa.me/390000000000">
+            {% t book_now %}
+        </a>
+
+    </div>
+
+</nav>

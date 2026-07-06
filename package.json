@@ -1,1 +1,17 @@
-{"name":"kiteaway-sardinia"}
+{
+  "name": "kiteaway-sardinia",
+  "version": "1.0.0",
+  "description": "Kite Away Sardinia website",
+  "private": true,
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/output.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.2",
+    "tailwindcss": "^4.3.2"
+  },
+  "dependencies": {
+    "alpinejs": "^3.15.12"
+  }
+}

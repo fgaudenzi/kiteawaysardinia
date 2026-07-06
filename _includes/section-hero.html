@@ -1,0 +1,15 @@
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <picture class="hero__media">
+    <img src="{{ '/assets/images/hero-home.jpg' | relative_url }}" alt="{% t hero_image_alt %}" width="1536" height="1024" loading="eager">
+  </picture>
+  <div class="hero__shade"></div>
+  <div class="hero__inner">
+    <p class="eyebrow">{% t hero_eyebrow %}</p>
+    <h1 id="hero-title">{% t hero_headline %}</h1>
+    <p class="hero__copy">{% t hero_copy %}</p>
+    <div class="hero__actions">
+      <a class="button button--primary" href="#contact">{% t hero_cta_primary %}</a>
+      <a class="button button--glass" href="#spot">{% t hero_cta_secondary %}</a>
+    </div>
+  </div>
+</section>

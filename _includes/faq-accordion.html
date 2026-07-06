@@ -1,0 +1,19 @@
+<section class="section">
+  <div class="container container--narrow">
+    <h2>{% t faq_title %}</h2>
+    
+    <div class="accordion" data-accordion>
+      {% for item in site.data.faq %}
+        <details class="accordion__item" id="faq-{{ item.id }}">
+          <summary class="accordion__header">
+            {% t item.question %}
+          </summary>
+          
+          <div class="accordion__body">
+            <p>{% t item.answer %}</p>
+          </div>
+        </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>

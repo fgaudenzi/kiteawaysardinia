@@ -1,0 +1,29 @@
+<section class="section">
+  <div class="container">
+    <h2>{% t team_title %}</h2>
+    <p class="section__subtitle">{% t team_subtitle %}</p>
+    
+    <div class="cards">
+      {% for member in site.data.team %}
+        <article class="card">
+          <div class="card__image">
+            <picture>
+              <img src="{{ member.image }}" alt="{{ member.name }}" loading="lazy">
+            </picture>
+          </div>
+          
+          <div class="card__content">
+            <h3 class="card__title">{{ member.name }}</h3>
+            
+            <p class="card__meta font-mono">
+              {% assign role_key = "team_role_" | append: member.id %}
+              {% t role_key %}
+            </p>
+            
+            <p class="card__description">{{ member.bio }}</p>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

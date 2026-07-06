@@ -1,0 +1,245 @@
+@import 'variables';
+
+// Card Container
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $space-2xl;
+  
+  @media (max-width: $bp-lg) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $space-xl;
+  }
+  
+  @media (max-width: $bp-md) {
+    grid-template-columns: 1fr;
+    gap: $space-xl;
+  }
+}
+
+// Card
+.card {
+  background-color: $white;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  box-shadow: $shadow-md;
+  transition: all $transition-base;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-xl;
+    
+    .card__image {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.card__image {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background-color: $background;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform $transition-base;
+  }
+}
+
+.card__content {
+  padding: $space-xl;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  font-size: $size-2xl;
+  font-weight: $weight-bold;
+  color: $text-dark;
+  margin-bottom: $space-md;
+  line-height: $line-tight;
+}
+
+.card__description {
+  color: $text-light;
+  margin-bottom: $space-lg;
+  line-height: $line-relaxed;
+  flex-grow: 1;
+}
+
+.card__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $space-md;
+  padding-top: $space-md;
+  border-top: 1px solid $border;
+  font-size: $size-sm;
+  color: $text-light;
+  
+  .meta__price {
+    font-weight: $weight-bold;
+    color: $accent-orange;
+    font-size: $size-lg;
+  }
+}
+
+.card__footer {
+  display: flex;
+  gap: $space-md;
+  
+  .cta {
+    flex: 1;
+    padding: $space-sm $space-md;
+    background-color: $primary;
+    color: $white;
+    border-radius: $border-radius-md;
+    text-decoration: none;
+    font-weight: $weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: $size-sm;
+    text-align: center;
+    transition: all $transition-base;
+    
+    &:hover {
+      background-color: $secondary;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// Featured Card
+.card--featured {
+  grid-column: 1 / -1;
+  
+  @media (max-width: $bp-lg) {
+    grid-column: auto;
+  }
+  
+  .card__image {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+// Text Card
+.text-card {
+  padding: $space-2xl;
+  background-color: $background;
+  border-radius: $border-radius-lg;
+  border-left: 4px solid $accent-orange;
+  
+  h3 {
+    color: $primary;
+    margin-bottom: $space-md;
+  }
+  
+  p {
+    margin-bottom: 0;
+  }
+}
+
+// Case Card
+.case-card {
+  text-align: center;
+  padding: $space-xl;
+  
+  h4 {
+    color: $primary;
+    margin-bottom: $space-sm;
+  }
+  
+  p {
+    line-height: $line-normal;
+    font-size: $size-sm;
+  }
+  
+  &__number {
+    font-size: $size-6xl;
+    font-weight: $weight-bold;
+    color: $accent-orange;
+    margin-bottom: $space-md;
+  }
+}
+
+// Testimonial Card
+.testimonial-card {
+  padding: $space-xl;
+  background-color: $white;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-md;
+  
+  &__quote {
+    margin-bottom: $space-md;
+    font-size: $size-lg;
+    line-height: $line-relaxed;
+    color: $text-dark;
+    font-style: italic;
+    
+    &::before {
+      content: '"';
+      font-size: $size-5xl;
+      color: $accent-orange;
+      opacity: 0.3;
+    }
+  }
+  
+  &__author {
+    font-weight: $weight-bold;
+    color: $primary;
+  }
+  
+  &__role {
+    font-size: $size-sm;
+    color: $text-light;
+  }
+}
+
+// Event/Product Card
+.event-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: $border-radius-lg;
+  
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform $transition-slow;
+  }
+  
+  &__content {
+    position: relative;
+    z-index: 2;
+    padding: $space-2xl;
+    background: linear-gradient(135deg, rgba($primary, 0.7) 0%, rgba($primary, 0.5) 100%);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: $white;
+    
+    h3 {
+      color: $white;
+      margin-bottom: $space-md;
+    }
+    
+    p {
+      color: rgba($white, 0.9);
+    }
+  }
+  
+  &:hover .event-card__image {
+    transform: scale(1.05);
+  }
+}

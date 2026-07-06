@@ -1,0 +1,181 @@
+@import 'variables';
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 60px;
+  
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba($primary, 0.5) 0%, rgba($primary, 0.3) 100%);
+    z-index: 2;
+  }
+  
+  &__content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    max-width: 800px;
+    padding: $space-lg;
+    animation: fadeInUp 1s ease-out 0.3s both;
+  }
+  
+  &__title {
+    color: $white;
+    line-height: $line-tight;
+    margin-bottom: $space-lg;
+    font-size: $size-7xl;
+    
+    @media (max-width: $bp-lg) {
+      font-size: $size-6xl;
+    }
+    
+    @media (max-width: $bp-md) {
+      font-size: $size-4xl;
+    }
+    
+    @media (max-width: $bp-sm) {
+      font-size: $size-3xl;
+    }
+  }
+  
+  &__title-accent {
+    color: $accent-orange;
+    display: block;
+  }
+  
+  &__subtitle {
+    color: rgba($white, 0.95);
+    font-size: $size-2xl;
+    line-height: $line-relaxed;
+    margin-bottom: $space-2xl;
+    
+    @media (max-width: $bp-md) {
+      font-size: $size-lg;
+    }
+  }
+  
+  &__actions {
+    display: flex;
+    gap: $space-md;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeInUp 1s ease-out 0.5s both;
+    
+    @media (max-width: $bp-sm) {
+      flex-direction: column;
+    }
+  }
+  
+  &__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: $space-md $space-xl;
+    border-radius: $border-radius-md;
+    font-size: $size-lg;
+    font-weight: $weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: all $transition-base;
+    position: relative;
+    overflow: hidden;
+    
+    &--primary {
+      background-color: $accent-orange;
+      color: $white;
+      
+      &:hover {
+        background-color: darken($accent-orange, 10%);
+        transform: translateY(-4px);
+        box-shadow: $shadow-xl;
+      }
+    }
+    
+    &--secondary {
+      background-color: transparent;
+      color: $white;
+      border: 2px solid $white;
+      
+      &:hover {
+        background-color: rgba($white, 0.1);
+        transform: translateY(-4px);
+      }
+    }
+    
+    @media (max-width: $bp-sm) {
+      width: 100%;
+      padding: $space-md;
+    }
+  }
+}
+
+// Animations
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Scroll Indicator
+.hero__scroll {
+  position: absolute;
+  bottom: $space-xl;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  animation: bounce 2s infinite;
+  
+  svg {
+    width: 24px;
+    height: 24px;
+    stroke: $white;
+    stroke-width: 2;
+    fill: none;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(8px);
+  }
+}

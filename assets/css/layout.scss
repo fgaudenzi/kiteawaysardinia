@@ -1,0 +1,233 @@
+@import 'variables';
+
+// Container
+.container {
+  max-width: $bp-2xl;
+  margin: 0 auto;
+  padding: 0 $space-lg;
+  
+  @media (max-width: $bp-md) {
+    padding: 0 $space-md;
+  }
+}
+
+// Grid
+.grid {
+  display: grid;
+  gap: $space-lg;
+  
+  &--2 {
+    grid-template-columns: repeat(2, 1fr);
+    
+    @media (max-width: $bp-lg) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  &--3 {
+    grid-template-columns: repeat(3, 1fr);
+    
+    @media (max-width: $bp-lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (max-width: $bp-md) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  &--4 {
+    grid-template-columns: repeat(4, 1fr);
+    
+    @media (max-width: $bp-lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (max-width: $bp-md) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// Flex
+.flex {
+  display: flex;
+  
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &--between {
+    justify-content: space-between;
+  }
+  
+  &--column {
+    flex-direction: column;
+  }
+  
+  &--gap-sm {
+    gap: $space-sm;
+  }
+  
+  &--gap-md {
+    gap: $space-md;
+  }
+  
+  &--gap-lg {
+    gap: $space-lg;
+  }
+}
+
+// Sections
+.section {
+  padding: $space-3xl $space-lg;
+  
+  &--hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &--dark {
+    background-color: $primary;
+    color: $white;
+    
+    a {
+      color: $accent-orange;
+      
+      &:hover {
+        color: $accent-yellow;
+      }
+    }
+  }
+  
+  &--light {
+    background-color: $background;
+  }
+  
+  &--sm {
+    padding: $space-xl $space-lg;
+  }
+  
+  @media (max-width: $bp-md) {
+    padding: $space-2xl $space-md;
+  }
+}
+
+// Content
+.content {
+  max-width: 65ch;
+  margin: 0 auto;
+  
+  &--narrow {
+    max-width: 45ch;
+  }
+  
+  &--wide {
+    max-width: 85ch;
+  }
+}
+
+// Split Layout
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-3xl;
+  align-items: center;
+  
+  &--reverse {
+    > *:first-child {
+      order: 2;
+    }
+  }
+  
+  @media (max-width: $bp-lg) {
+    grid-template-columns: 1fr;
+    gap: $space-2xl;
+    
+    &--reverse {
+      > *:first-child {
+        order: unset;
+      }
+    }
+  }
+}
+
+// Aspect Ratio
+.aspect {
+  position: relative;
+  overflow: hidden;
+  background-color: $background;
+  
+  &--square {
+    aspect-ratio: 1 / 1;
+  }
+  
+  &--video {
+    aspect-ratio: 16 / 9;
+  }
+  
+  &--portrait {
+    aspect-ratio: 3 / 4;
+  }
+  
+  img, iframe, video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// Stack
+.stack {
+  display: flex;
+  flex-direction: column;
+  
+  > * + * {
+    margin-top: var(--stack-space, $space-md);
+  }
+}
+
+// Sidebar
+.sidebar {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: $space-2xl;
+  
+  @media (max-width: $bp-lg) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Full Width
+.full-width {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+// Utility Classes
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only {
+  @extend .visually-hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

@@ -1,0 +1,36 @@
+<section class="section">
+  <div class="container">
+    <h2>{% t lessons_title %}</h2>
+    
+    <div class="cards">
+      {% for lesson in site.data.lessons %}
+        <article class="card card--featured">
+          <div class="card__image">
+            <picture>
+              <img src="{{ lesson.image }}" alt="{{ lesson.title }}" loading="lazy">
+            </picture>
+          </div>
+          
+          <div class="card__content">
+            <h3 class="card__title">
+              {% t lesson.title_key %}
+            </h3>
+            
+            <p class="card__description">
+              {% t lesson.desc_key %}
+            </p>
+            
+            <div class="card__meta">
+              <span class="badge">{{ lesson.duration }}</span>
+              <span class="badge badge--secondary">€{{ lesson.price_min }}+</span>
+            </div>
+            
+            <a href="{% if page.lang and page.lang != site.default_lang %}/{{ page.lang }}/lessons#{{ lesson.id }}{% else %}/lessons#{{ lesson.id }}{% endif %}" class="btn btn--sm btn--outline">
+              {% t card_details %}
+            </a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

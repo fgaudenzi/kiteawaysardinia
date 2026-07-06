@@ -1,0 +1,194 @@
+@import 'variables';
+
+// Reset & Normalize
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-body;
+  font-size: $size-base;
+  line-height: $line-normal;
+  color: $text-dark;
+  background-color: $white;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  line-height: $line-tight;
+  font-weight: $weight-bold;
+  margin-bottom: $space-md;
+}
+
+h1 {
+  font-size: $size-7xl;
+  letter-spacing: -0.02em;
+  
+  @media (max-width: $bp-lg) {
+    font-size: $size-6xl;
+  }
+  
+  @media (max-width: $bp-md) {
+    font-size: $size-4xl;
+  }
+}
+
+h2 {
+  font-size: $size-5xl;
+  letter-spacing: -0.01em;
+  margin-bottom: $space-xl;
+  
+  @media (max-width: $bp-lg) {
+    font-size: $size-4xl;
+  }
+  
+  @media (max-width: $bp-md) {
+    font-size: $size-3xl;
+  }
+}
+
+h3 {
+  font-size: $size-3xl;
+  margin-bottom: $space-md;
+  
+  @media (max-width: $bp-md) {
+    font-size: $size-2xl;
+  }
+}
+
+h4 {
+  font-size: $size-2xl;
+  margin-bottom: $space-sm;
+}
+
+h5 {
+  font-size: $size-xl;
+}
+
+h6 {
+  font-size: $size-lg;
+}
+
+p {
+  margin-bottom: $space-md;
+  color: $text-light;
+  line-height: $line-relaxed;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: color $transition-base;
+  
+  &:hover {
+    color: $secondary;
+  }
+}
+
+strong {
+  font-weight: $weight-bold;
+  color: $text-dark;
+}
+
+em {
+  font-style: italic;
+}
+
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Lists
+ul, ol {
+  margin-bottom: $space-md;
+  padding-left: $space-lg;
+  
+  li {
+    margin-bottom: $space-sm;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Forms
+button, input, textarea, select {
+  font-family: $font-body;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+input, textarea, select {
+  border: 1px solid $border;
+  border-radius: $border-radius-md;
+  padding: $space-sm $space-md;
+  transition: border-color $transition-base;
+  
+  &:focus {
+    outline: none;
+    border-color: $primary;
+    box-shadow: 0 0 0 3px rgba(0, 93, 115, 0.1);
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: $space-2xl;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $background;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary;
+  border-radius: $border-radius-full;
+  
+  &:hover {
+    background: $secondary;
+  }
+}
+
+// Selection
+::selection {
+  background-color: $primary;
+  color: $white;
+}
+
+::-moz-selection {
+  background-color: $primary;
+  color: $white;
+}
