@@ -106,10 +106,14 @@ spot_facilities_title: Services au service de la journee complete
 spot_facilities_text: "De l'arrivee a l'apres-session, tout est pense pour la fluidite: vous vous changez confortablement, preparez le kite, suivez le cours, faites secher le materiel, puis profitez de la Sardaigne."
 spot_feature_1: Vestiaire confortable
 spot_feature_2: Zone dediee de sechage combinaisons et materiel
-spot_feature_3: Espace pour preparer le materiel kite
-spot_feature_4: Espace pour stocker le materiel kite
-spot_feature_5: Zone kite dediee au decollage et a l'atterrissage
-spot_feature_6: Organisation calme pour une progression efficace
+spot_feature_3: Espace pour preparer et gerer le materiel kite
+spot_highlight_1_image_alt: Placeholder image zone kite dediee
+spot_highlight_2_image_alt: Placeholder image eau peu profonde et espace
+spot_highlight_3_image_alt: Placeholder image acces Punta Trettu
+spot_highlight_4_image_alt: Placeholder image plages proches et temps de trajet
+spot_facilities_image_alt: Placeholder image services pour la journee complete
+spot_learning_image_alt: Placeholder image zone apprentissage a Cussorgia
+spot_wind_placeholder: "[Texte conditions de vent a ajouter]"
 spot_experience_lead: Le meilleur de Cussorgia, c'est que la journee ne doit pas finir quand la session se termine.
 spot_experience_text: Apres la session, vous pouvez rejoindre facilement plages, criques, villages, restaurants et points de vue autour de Sant'Antioco et Calasetta.
 spot_closing: Kite le matin. Explorez l'ile l'apres-midi. Revenez pour le coucher du soleil.

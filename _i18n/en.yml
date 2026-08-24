@@ -106,10 +106,14 @@ spot_facilities_title: Facilities that support the full day
 spot_facilities_text: "From arrival to post-session, everything is set to keep your day smooth: get changed comfortably, prepare your kite, ride, dry your equipment, and then enjoy Sardinia."
 spot_feature_1: Comfortable changing room
 spot_feature_2: Dedicated wetsuit and gear drying area
-spot_feature_3: Space to prepare kite equipment
-spot_feature_4: Space to store kite equipment
-spot_feature_5: Dedicated kite launch and landing area
-spot_feature_6: Calm setup focused on learning flow
+spot_feature_3: Space to prepare and manage kite equipment
+spot_highlight_1_image_alt: Placeholder image for dedicated kite area
+spot_highlight_2_image_alt: Placeholder image for shallow water and space
+spot_highlight_3_image_alt: Placeholder image for Punta Trettu access
+spot_highlight_4_image_alt: Placeholder image for nearby beaches and travel times
+spot_facilities_image_alt: Placeholder image for full-day facilities at the spot
+spot_learning_image_alt: Placeholder image for learning-focused area in Cussorgia
+spot_wind_placeholder: "[Wind conditions text to be added]"
 spot_experience_lead: The best part of Cussorgia is that the day does not have to end when the session does.
 spot_experience_text: After your kite session, you can easily reach beaches, coves, small villages, restaurants, and viewpoints around Sant'Antioco and Calasetta.
 spot_closing: Kite in the morning. Explore the island in the afternoon. Come back for sunset.
