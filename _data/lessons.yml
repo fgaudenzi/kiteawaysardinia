@@ -1,20 +1,78 @@
-- id: baptism
+- id: private-1-student
   title_key: lesson_1_title
   desc_key: lesson_1_desc
-  image: /assets/images/lessons/lesson-1.jpg
+  image: /assets/images/lezione2.jpg
+  duration: 1 hour
+  duration_hours: 1
   price_min: 60
-  duration: 2 hours
-  
-- id: 6hours
+  hourly_price_eur: 60
+  total_price_eur: 60
+
+- id: semi-private-2-students
   title_key: lesson_2_title
   desc_key: lesson_2_desc
-  image: /assets/images/lessons/lesson-2.jpg
-  price_min: 150
-  duration: 6 hours
-  
-- id: tailored
+  image: /assets/images/6hours.jpg
+  duration: 1 hour
+  duration_hours: 1
+  price_min: 35
+  hourly_price_eur: 35
+  total_price_eur: 35
+  per_person: true
+
+- id: advanced-coaching
   title_key: lesson_3_title
   desc_key: lesson_3_desc
-  image: /assets/images/lessons/lesson-3.jpg
-  price_min: 100
-  duration: Flexible
+  image: /assets/images/lezione.jpg
+  duration: 1 hour
+  duration_hours: 1
+  price_min: 40
+  hourly_price_eur: 40
+  total_price_eur: 40
+
+- id: intro-discovery-pack
+  title_key: lesson_4_title
+  desc_key: lesson_4_desc
+  image: /assets/images/lezione2.jpg
+  duration: 3 hours
+  duration_hours: 3
+  price_min: 55
+  hourly_price_eur: 55
+  total_price_eur: 165
+
+- id: base-rider-course
+  title_key: lesson_5_title
+  desc_key: lesson_5_desc
+  image: /assets/images/6hours.jpg
+  duration: 6 hours
+  duration_hours: 6
+  price_min: 50
+  hourly_price_eur: 50
+  total_price_eur: 300
+
+- id: full-independent-course
+  title_key: lesson_6_title
+  desc_key: lesson_6_desc
+  image: /assets/images/lezione.jpg
+  duration: 12 hours
+  duration_hours: 12
+  price_min: 45
+  hourly_price_eur: 45
+  total_price_eur: 540
+
+- id: membership-insurance
+  title_key: lesson_7_title
+  desc_key: lesson_7_desc
+  image: /assets/images/lezione2.jpg
+  duration: Annual
+  price_min: 15
+  total_price_eur: 15
+
+- id: equipment-rental-experts
+  title_key: lesson_8_title
+  desc_key: lesson_8_desc
+  image: /assets/images/6hours.jpg
+  duration: 1 hour
+  duration_hours: 1
+  price_min: 40
+  hourly_price_eur: 40
+  total_price_eur: 40
