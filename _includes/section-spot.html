@@ -28,6 +28,36 @@
       </article>
     </div>
 
+    <div class="spot-layout">
+      <article class="spot-panel">
+        <h3>{% t spot_private_title %}</h3>
+        <p>{% t spot_private_text %}</p>
+        <h3>{% t spot_wind_title %}</h3>
+        <p>{% t spot_wind_text %}</p>
+        <h3>{% t spot_punta_title %}</h3>
+        <p>{% t spot_punta_text %}</p>
+        <h3>{% t spot_location_title %}</h3>
+        <p>{% t spot_location_text_1 %}</p>
+        <p>{% t spot_location_text_2 %}</p>
+      </article>
+
+      <article class="spot-panel">
+        <h3>{% t spot_facilities_title %}</h3>
+        <p>{% t spot_facilities_text %}</p>
+        <ul class="check-list spot-feature-list">
+          <li>{% t spot_feature_1 %}</li>
+          <li>{% t spot_feature_2 %}</li>
+          <li>{% t spot_feature_3 %}</li>
+          <li>{% t spot_feature_4 %}</li>
+          <li>{% t spot_feature_5 %}</li>
+          <li>{% t spot_feature_6 %}</li>
+        </ul>
+        <p class="spot-experience-lead">{% t spot_experience_lead %}</p>
+        <p>{% t spot_experience_text %}</p>
+        <p class="spot-closing">{% t spot_closing %}</p>
+      </article>
+    </div>
+
     <div class="spot-story spot-story--media-left">
       <figure class="feature-image spot-story__media">
         <img src="{{ '/assets/images/spot-facilities-placeholder.svg' | relative_url }}" alt="{% t spot_facilities_image_alt %}" width="1200" height="820" loading="lazy">
@@ -58,9 +88,5 @@
         <img src="{{ '/assets/images/spot-learning-placeholder.svg' | relative_url }}" alt="{% t spot_learning_image_alt %}" width="1200" height="820" loading="lazy">
       </figure>
     </div>
-
-    <p class="spot-experience-lead">{% t spot_experience_lead %}</p>
-    <p>{% t spot_experience_text %}</p>
-    <p class="spot-closing">{% t spot_closing %}</p>
   </div>
 </section>

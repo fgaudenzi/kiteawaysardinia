@@ -167,6 +167,8 @@ a { color: inherit; }
 .spot-highlight h3 { margin: 0 0 .4rem; color: #fff; font-family: Sora, sans-serif; font-size: 1rem; }
 .spot-highlight p { margin: 0; color: rgba(255,255,255,.88); font-size: .92rem; line-height: 1.45; }
 
+.spot-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; margin-top: .4rem; }
+
 .spot-story { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; margin-top: 1rem; align-items: stretch; }
 .spot-story__media { margin: 0; }
 .spot-story__media img { width: 100%; height: 100%; min-height: 340px; object-fit: cover; border-radius: .6rem; box-shadow: var(--shadow); }
@@ -226,6 +228,7 @@ details p { margin-bottom: 0; }
   .hero__shade { background: linear-gradient(180deg, rgba(0,93,115,.84), rgba(0,93,115,.55)); }
   .stats-grid,
   .cards,
+  .spot-layout,
   .spot-story,
   .split,
   .about-grid,
