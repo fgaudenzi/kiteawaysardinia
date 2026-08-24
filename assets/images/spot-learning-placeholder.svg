@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Learning block placeholder</title>
+  <desc id="desc">Large placeholder image for dedicated learning two-column block.</desc>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0a4a5d"/><stop offset="100%" stop-color="#167a95"/></linearGradient></defs>
+  <rect width="1200" height="820" fill="url(#g)"/>
+  <path d="M0 540 C220 500, 360 590, 580 540 C760 498, 970 575, 1200 520 L1200 820 L0 820 Z" fill="#083f4f" opacity="0.55"/>
+  <text x="100" y="150" fill="#ffffff" font-size="44" font-family="Montserrat, Arial, sans-serif" font-weight="700">PLACEHOLDER</text>
+  <text x="100" y="210" fill="#d9f1f7" font-size="34" font-family="Montserrat, Arial, sans-serif" font-weight="600">LEARNING AREA IMAGE</text>
+</svg>

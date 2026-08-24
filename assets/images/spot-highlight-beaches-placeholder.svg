@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Nearby beaches placeholder</title>
+  <desc id="desc">Small placeholder image for nearby beaches card.</desc>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#175f73"/><stop offset="100%" stop-color="#3f92a9"/></linearGradient></defs>
+  <rect width="640" height="360" fill="url(#g)"/>
+  <circle cx="150" cy="220" r="62" fill="#ffb347" opacity="0.8"/>
+  <circle cx="310" cy="210" r="42" fill="#ffe09c" opacity="0.85"/>
+  <circle cx="450" cy="230" r="56" fill="#ff8f00" opacity="0.75"/>
+  <text x="36" y="66" fill="#ffffff" font-size="26" font-family="Montserrat, Arial, sans-serif" font-weight="700">PLACEHOLDER</text>
+  <text x="36" y="102" fill="#d9f1f7" font-size="22" font-family="Montserrat, Arial, sans-serif" font-weight="600">10-20 MIN BEACHES</text>
+</svg>

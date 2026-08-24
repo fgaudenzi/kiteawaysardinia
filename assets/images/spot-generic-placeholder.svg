@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+  <title id="title">Generic spot placeholder</title>
+  <desc id="desc">Placeholder image for a generic spot photo.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f9ac0" />
+      <stop offset="58%" stop-color="#69b6cf" />
+      <stop offset="58%" stop-color="#0f5f74" />
+      <stop offset="100%" stop-color="#084353" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="650" fill="url(#sky)"/>
+  <path d="M0 440 C140 380, 240 470, 360 420 C500 360, 650 470, 900 390 L900 650 L0 650 Z" fill="#0a4c5e" opacity="0.7"/>
+  <path d="M530 320 C560 260, 670 260, 700 320 C670 345, 560 345, 530 320 Z" fill="#ff9f1c"/>
+  <line x1="610" y1="330" x2="590" y2="430" stroke="#fff" stroke-width="3" opacity="0.9"/>
+  <line x1="620" y1="330" x2="650" y2="430" stroke="#fff" stroke-width="3" opacity="0.9"/>
+  <text x="70" y="96" fill="#ffffff" font-size="34" font-family="Montserrat, Arial, sans-serif" font-weight="700">PLACEHOLDER</text>
+  <text x="70" y="138" fill="#d9f1f7" font-size="27" font-family="Montserrat, Arial, sans-serif" font-weight="600">FOTO GENERICA SPOT</text>
+</svg>

@@ -1,0 +1,20 @@
+Categoria	Tipologia Lezione	Ore	
+Prezzo Orario (EUR)
+Totale Pacchetto (EUR)
+Note / Inclusioni
+2
+Lezioni Singole	Privata (1 allievo)	1	60	60	Attrezzatura premium + Casco Radio BbTalkin
+3
+Lezioni Singole	Semi-Privata (2 allievi, 1 kite)	1	35	35	Prezzo a persona. Perfetto per coppie/amici
+4
+Lezioni Singole	Coaching Avanzato (Salti/Bolina)	1	40	40	Riprese video e debriefing inclusi
+5
+Pacchetti Corso	Pacchetto Intro (Discovery)	3	55	165	Teoria, pilotaggio a terra e primi body drag
+6
+Pacchetti Corso	Corso Base (Rider)	6	50	300	Body drag avanzato, partenze e primi metri
+7
+Pacchetti Corso	Corso Completo (Independent)	12	45	540	Massima autonomia, bolina e self-rescue
+8
+Servizi Extra	Quota Associativa / Assicurazione			15	Tesseramento annuale obbligatorio RC
+9
+Servizi Extra	Noleggio Attrezzatura (Solo esperti)	1	40	40	Supervisione inclusa nel raggio dello spot

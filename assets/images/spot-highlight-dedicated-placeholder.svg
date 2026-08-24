@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Dedicated kite area placeholder</title>
+  <desc id="desc">Small placeholder image for dedicated kite area card.</desc>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f5f74"/><stop offset="100%" stop-color="#2e8da7"/></linearGradient></defs>
+  <rect width="640" height="360" fill="url(#g)"/>
+  <rect x="26" y="26" width="588" height="308" rx="14" fill="none" stroke="#d9f1f7" stroke-width="3" stroke-dasharray="10 8" opacity="0.75"/>
+  <text x="36" y="66" fill="#ffffff" font-size="26" font-family="Montserrat, Arial, sans-serif" font-weight="700">PLACEHOLDER</text>
+  <text x="36" y="102" fill="#d9f1f7" font-size="22" font-family="Montserrat, Arial, sans-serif" font-weight="600">DEDICATED KITE AREA</text>
+</svg>
