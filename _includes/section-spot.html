@@ -3,11 +3,43 @@
     <p class="eyebrow">{% t spot_title %}</p>
     <h2 id="spot-title">{% t spot_heading %}</h2>
     <p class="spot-lead">{% t spot_text %}</p>
+    <p class="spot-lead spot-lead--secondary">{% t spot_intro_detail %}</p>
+
+    <div class="spot-highlights" aria-label="{% t spot_highlights_label %}">
+      <article class="spot-highlight">
+        <h3>{% t spot_highlight_1_title %}</h3>
+        <p>{% t spot_highlight_1_text %}</p>
+      </article>
+      <article class="spot-highlight">
+        <h3>{% t spot_highlight_2_title %}</h3>
+        <p>{% t spot_highlight_2_text %}</p>
+      </article>
+      <article class="spot-highlight">
+        <h3>{% t spot_highlight_3_title %}</h3>
+        <p>{% t spot_highlight_3_text %}</p>
+      </article>
+      <article class="spot-highlight">
+        <h3>{% t spot_highlight_4_title %}</h3>
+        <p>{% t spot_highlight_4_text %}</p>
+      </article>
+    </div>
 
     <div class="spot-layout">
       <article class="spot-panel">
         <h3>{% t spot_private_title %}</h3>
         <p>{% t spot_private_text %}</p>
+        <h3>{% t spot_wind_title %}</h3>
+        <p>{% t spot_wind_text %}</p>
+        <h3>{% t spot_punta_title %}</h3>
+        <p>{% t spot_punta_text %}</p>
+        <h3>{% t spot_location_title %}</h3>
+        <p>{% t spot_location_text_1 %}</p>
+        <p>{% t spot_location_text_2 %}</p>
+      </article>
+
+      <article class="spot-panel">
+        <h3>{% t spot_facilities_title %}</h3>
+        <p>{% t spot_facilities_text %}</p>
         <ul class="check-list spot-feature-list">
           <li>{% t spot_feature_1 %}</li>
           <li>{% t spot_feature_2 %}</li>
@@ -15,21 +47,10 @@
           <li>{% t spot_feature_4 %}</li>
           <li>{% t spot_feature_5 %}</li>
           <li>{% t spot_feature_6 %}</li>
-          <li>{% t spot_feature_7 %}</li>
-          <li>{% t spot_feature_8 %}</li>
         </ul>
-      </article>
-
-      <article class="spot-panel">
-        <h3>{% t spot_location_title %}</h3>
-        <p>{% t spot_location_text_1 %}</p>
-        <p>{% t spot_location_text_2 %}</p>
-        <h3>{% t spot_quality_title %}</h3>
-        <p>{% t spot_quality_text %}</p>
-        <ul class="check-list">
-          <li>{% t spot_quality_point_1 %}</li>
-          <li>{% t spot_quality_point_2 %}</li>
-        </ul>
+        <p class="spot-experience-lead">{% t spot_experience_lead %}</p>
+        <p>{% t spot_experience_text %}</p>
+        <p class="spot-closing">{% t spot_closing %}</p>
       </article>
     </div>
 

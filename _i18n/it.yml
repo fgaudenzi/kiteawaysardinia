@@ -80,32 +80,45 @@ lesson_8_image_alt: Noleggio attrezzatura kitesurf sullo spot
 price_per_hour_short: /ora
 price_total_short: totale
 price_per_person_note: Prezzo a persona.
-spot_title: Spot privato
-spot_heading: Tutto quello che ti serve, direttamente nel nostro spot.
-spot_text: Kite Away ha creato una base ampia e confortevole per rendere la tua giornata in acqua semplice, sicura e piacevole.
-spot_private_title: Spot pensato per kiters
-spot_private_text: "La nostra area e una delle piu grandi della zona, con area kite dedicata alla scuola e ai rider. Nessuna altra scuola opera intorno a noi: piu spazio, meno stress, piu qualita in acqua."
-spot_feature_1: Parcheggio privato
-spot_feature_2: Spogliatoio comodo prima e dopo la sessione
-spot_feature_3: Doccia esterna
-spot_feature_4: Area asciugatura mute e attrezzatura
-spot_feature_5: Zona relax ombreggiata
-spot_feature_6: Area dedicata per decollo e atterraggio in sicurezza
-spot_feature_7: Ampia zona prato per armare e disarmare i kite
-spot_feature_8: Elettricita disponibile per ricarica dispositivi o asciugatura rapida
-spot_location_title: Posizione strategica tra Calasetta e Sant Antioco
-spot_location_text_1: Siamo posizionati tra Calasetta e Sant Antioco, con alcune delle spiagge piu belle dell area a soli 5 minuti in auto.
-spot_location_text_2: Prima o dopo la lezione puoi facilmente rilassarti in spiaggia, fare un bagno o continuare a navigare. Punta Trettu e a una sola bordata.
-spot_quality_title: Attrezzatura e istruttori professionali
-spot_quality_text: Utilizziamo attrezzatura Ventum Kiteboarding e istruttori IKO certificati, con standard internazionali di didattica e sicurezza.
-spot_quality_point_1: Formazione strutturata per principianti e rider in progressione
-spot_quality_point_2: Spot organizzato per massimizzare tempo utile in acqua
-spot_image_alt_1: Placeholder mappa area scuola
-spot_image_alt_2: Placeholder mappa grande spot fino a Punta Trettu
-spot_image_alt_3: Placeholder foto generica dello spot
-spot_image_caption_1: Placeholder - mappa area scuola
+spot_title: Cussorgia - Il nostro home spot
+spot_heading: Per noi Cussorgia e molto piu di uno spot kite.
+spot_text: E il luogo che abbiamo scelto per vivere, lavorare e costruire Kite Away Sardinia.
+spot_intro_detail: Situata nel sud-ovest della Sardegna, tra Sant'Antioco e Calasetta, Cussorgia offre un lato piu tranquillo e meno affollato dell'isola.
+spot_highlights_label: Vantaggi principali dello spot
+spot_highlight_1_title: Area kite dedicata
+spot_highlight_1_text: Zona interamente dedicata al kitesurf, senza altre scuole operative intorno a noi.
+spot_highlight_2_title: Acqua bassa e spazio
+spot_highlight_2_text: Acqua bassa e ampi spazi aperti rendono l'apprendimento piu progressivo e controllato.
+spot_highlight_3_title: Punta Trettu a una bordata
+spot_highlight_3_text: Un vantaggio interessante per rider esperti che vogliono esplorare altri spot.
+spot_highlight_4_title: 10-20 min dalle spiagge migliori
+spot_highlight_4_text: Calasetta a circa 10 minuti, spiagge e calette di Sant'Antioco a circa 20 minuti.
+spot_private_title: Un luogo dedicato all'apprendimento
+spot_private_text: La nostra area kite e totalmente dedicata al kitesurf. Senza altre scuole intorno, gli allievi hanno piu spazio, meno traffico e un ambiente piu calmo per progredire.
+spot_wind_title: Condizioni del vento
+spot_wind_text: Cussorgia beneficia dei venti termici sardi e puo offrire ottime condizioni per apprendimento e progressione, sempre con un approccio realistico e orientato alla sicurezza.
+spot_punta_title: Punta Trettu
+spot_punta_text: Punta Trettu e a una sola bordata, opzione ideale per rider esperti che vogliono esplorare la zona.
+spot_location_title: Tra Sant'Antioco e Calasetta
+spot_location_text_1: La nostra posizione permette di raggiungere Calasetta e alcune delle sue spiagge piu belle in circa 10 minuti in auto.
+spot_location_text_2: Le spiagge e le calette di Sant'Antioco sono a circa 20 minuti, perfette per unire kitesurf ed esplorazione della costa del Sulcis.
+spot_facilities_title: Servizi pensati per la giornata completa
+spot_facilities_text: Dall'arrivo al post-session, tutto e organizzato per rendere la giornata fluida: ti cambi con comodita, prepari il kite, fai lezione, asciughi l'attrezzatura e poi ti godi la Sardegna.
+spot_feature_1: Spogliatoio comodo
+spot_feature_2: Area dedicata per asciugatura mute e attrezzatura
+spot_feature_3: Spazio per preparare l'attrezzatura kite
+spot_feature_4: Spazio per custodire l'attrezzatura kite
+spot_feature_5: Area kite dedicata a decollo e atterraggio
+spot_feature_6: Setup calmo e ordinato per imparare meglio
+spot_experience_lead: La parte migliore di Cussorgia e che la giornata non deve finire quando finisce la sessione.
+spot_experience_text: Dopo la sessione kite puoi raggiungere facilmente spiagge, calette, borghi, ristoranti e punti panoramici intorno a Sant'Antioco e Calasetta.
+spot_closing: Kite al mattino. Esplora l'isola nel pomeriggio. Torna per il tramonto.
+spot_image_alt_1: Placeholder mappa area scuola a Cussorgia
+spot_image_alt_2: Placeholder mappa ampia da Cussorgia a Punta Trettu
+spot_image_alt_3: Placeholder vista generica spot Cussorgia
+spot_image_caption_1: Placeholder - mappa scuola
 spot_image_caption_2: Placeholder - mappa spot esteso fino a Punta Trettu
-spot_image_caption_3: Placeholder - foto generale dello spot
+spot_image_caption_3: Placeholder - panoramica Cussorgia
 about_title: Chi siamo
 about_heading: Coaching serio, energia rilassata da isola.
 about_text: Kite Away Sardinia unisce istruzione certificata, conoscenza locale e un approccio pratico e accogliente. Ricevi feedback chiari, attrezzatura di qualità e lo spazio per imparare senza pressione.
