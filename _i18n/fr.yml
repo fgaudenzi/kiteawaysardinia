@@ -124,8 +124,33 @@ spot_image_caption_1: Placeholder - carte ecole
 spot_image_caption_2: Placeholder - carte spot etendu jusqu'a Punta Trettu
 spot_image_caption_3: Placeholder - vue d'ensemble Cussorgia
 about_title: À propos
-about_heading: Coaching sérieux, énergie insulaire détendue.
-about_text: Kite Away Sardinia associe instruction certifiée, connaissance locale et approche pratique et chaleureuse. Vous recevez des retours clairs, du matériel de qualité et l'espace pour apprendre sans pression.
+about_hero_eyebrow: A PROPOS
+about_hero_heading: Nous sommes Max & Hannah
+about_hero_text_1: Kite Away Sardinia est ne de notre passion pour le kitesurf et de l'envie d'en faire une experience complete, pas seulement un cours.
+about_hero_text_2: Nous sommes partenaires dans la vie et au travail, et nous avons choisi le sud-ouest de la Sardaigne pour construire notre propre projet.
+about_hero_image_alt: Image placeholder de Max et Hannah ensemble
+about_people_group_label: Profils de Max et Hannah
+about_max_name: MAX
+about_max_role: INSTRUCTEUR DE KITESURF
+about_max_text: Max s'occupe de la partie technique et sportive de l'ecole.
+about_max_image_alt: Portrait placeholder de Max
+about_hannah_name: HANNAH
+about_hannah_role: EXPERIENCE CLIENT & ORGANISATION
+about_hannah_text: Hannah prend en charge l'organisation et l'experience de nos clients.
+about_hannah_image_alt: Portrait placeholder de Hannah
+about_story_eyebrow: POURQUOI NOUS AVONS CREE KITE AWAY
+about_story_heading: "Une passion partagee,\nun lieu a appeler maison."
+about_story_text_1: Nous sommes partenaires dans la vie et au travail, et nous avons choisi de construire Kite Away Sardinia ensemble.
+about_story_text_2: C'est plus qu'une ecole - c'est un projet ne de notre amour du kitesurf, de la nature et de cette ile incroyable.
+about_story_text_3: Cussorgia n'est pas seulement notre lieu de travail. C'est le lieu que nous avons choisi pour vivre et construire notre projet.
+about_story_image_alt: Image placeholder pour l'histoire du projet Kite Away
+about_goal_eyebrow: NOTRE OBJECTIF EST SIMPLE
+about_goal_heading: "Vous faire tomber amoureux\ndu kitesurf -\net vous donner envie de revenir."
+about_goal_text_1: Nous ne promettons pas de rendre un sport exigeant facile.
+about_goal_text_2: Nous promettons de l'enseigner avec attention, competence et passion, dans l'un des lieux que nous avons choisis comme maison.
+about_goal_signature_1: Kite Away Sardinia
+about_goal_signature_2: Cussorgia, Sardaigne
+about_goal_image_alt: Image placeholder kitesurf atmospherique pour la fin de la section About
 included_title: Ce qui est inclus
 included_text: Planche, aile, harnais, casque, gilet d'impact, systèmes de sécurité, briefing du spot et planification selon le vent.
 gallery_title: Galerie

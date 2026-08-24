@@ -124,8 +124,33 @@ spot_image_caption_1: Placeholder - school map
 spot_image_caption_2: Placeholder - wider spot map to Punta Trettu
 spot_image_caption_3: Placeholder - Cussorgia overview
 about_title: About
-about_heading: Serious coaching, relaxed island energy.
-about_text: Kite Away Sardinia combines certified instruction with local knowledge and a warm, practical approach. You get clear feedback, quality equipment, and the space to learn without pressure.
+about_hero_eyebrow: ABOUT US
+about_hero_heading: We are Max & Hannah
+about_hero_text_1: Kite Away Sardinia was born from our passion for kitesurfing and the desire to turn it into a full experience, not just a lesson.
+about_hero_text_2: We are partners in life and in work, and we chose south-western Sardinia to build something of our own.
+about_hero_image_alt: Placeholder image for Max and Hannah together
+about_people_group_label: Max and Hannah profiles
+about_max_name: MAX
+about_max_role: KITESURF INSTRUCTOR
+about_max_text: Max takes care of the technical and sporting side of the school.
+about_max_image_alt: Placeholder portrait image of Max
+about_hannah_name: HANNAH
+about_hannah_role: GUEST EXPERIENCE & ORGANISATION
+about_hannah_text: Hannah looks after the organisation and the experience of our guests.
+about_hannah_image_alt: Placeholder portrait image of Hannah
+about_story_eyebrow: WHY WE CREATED KITE AWAY
+about_story_heading: "A shared passion,\na place to call home."
+about_story_text_1: We are partners in life and in work, and we chose to build Kite Away Sardinia together.
+about_story_text_2: It's more than a school - it's a project born from our love for kitesurfing, nature and this incredible island.
+about_story_text_3: Cussorgia is not just where we work. It is the place we chose to live and build our project.
+about_story_image_alt: Placeholder image for the Kite Away personal project story
+about_goal_eyebrow: OUR GOAL IS SIMPLE
+about_goal_heading: "Make you fall in love\nwith kitesurfing -\nand want to come back."
+about_goal_text_1: We don't promise to make an easy sport easy.
+about_goal_text_2: We promise to teach it with attention, knowledge and passion, in one of the places we chose to call home.
+about_goal_signature_1: Kite Away Sardinia
+about_goal_signature_2: Cussorgia, Sardinia
+about_goal_image_alt: Placeholder atmospheric kitesurf image for About closing section
 included_title: What is included
 included_text: Board, kite, harness, helmet, impact vest, safety systems, spot briefing, and lesson planning around the wind forecast.
 gallery_title: Gallery

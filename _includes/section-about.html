@@ -1,10 +1,66 @@
 <section class="section" id="about" aria-labelledby="about-title">
-  <div class="container about-grid">
-    <div class="section__heading section__heading--left">
-      <p class="eyebrow">{% t about_title %}</p>
-      <h2 id="about-title">{% t about_heading %}</h2>
-      <p>{% t about_text %}</p>
+  <div class="container about">
+    <div class="about-block about-block--hero">
+      <div class="about-copy">
+        <p class="eyebrow">{% t about_hero_eyebrow %}</p>
+        <h2 id="about-title">{% t about_hero_heading %}</h2>
+        <span class="about-divider" aria-hidden="true"></span>
+        <p>{% t about_hero_text_1 %}</p>
+        <p>{% t about_hero_text_2 %}</p>
+      </div>
+      <figure class="about-media about-media--hero">
+        <!-- Replace with real photo of Max and Hannah together -->
+        <img src="{{ '/assets/images/about-hero-max-hannah-placeholder.svg' | relative_url }}" alt="{% t about_hero_image_alt %}" width="1400" height="980" loading="lazy">
+      </figure>
     </div>
-    <div class="about-panel"><h3>{% t included_title %}</h3><p>{% t included_text %}</p></div>
+
+    <div class="about-people" aria-label="{% t about_people_group_label %}">
+      <article class="about-person">
+        <!-- Replace with real portrait of Max -->
+        <img src="{{ '/assets/images/about-max-portrait-placeholder.svg' | relative_url }}" alt="{% t about_max_image_alt %}" width="900" height="1125" loading="lazy">
+        <h3>{% t about_max_name %}</h3>
+        <p class="about-role">{% t about_max_role %}</p>
+        <p>{% t about_max_text %}</p>
+      </article>
+
+      <article class="about-person">
+        <!-- Replace with real portrait of Hannah -->
+        <img src="{{ '/assets/images/about-hannah-portrait-placeholder.svg' | relative_url }}" alt="{% t about_hannah_image_alt %}" width="900" height="1125" loading="lazy">
+        <h3>{% t about_hannah_name %}</h3>
+        <p class="about-role">{% t about_hannah_role %}</p>
+        <p>{% t about_hannah_text %}</p>
+      </article>
+    </div>
+
+    <div class="about-block about-block--story">
+      <div class="about-copy">
+        <p class="eyebrow">{% t about_story_eyebrow %}</p>
+        <h2>{% t about_story_heading %}</h2>
+        <span class="about-divider" aria-hidden="true"></span>
+        <p>{% t about_story_text_1 %}</p>
+        <p>{% t about_story_text_2 %}</p>
+        <p>{% t about_story_text_3 %}</p>
+      </div>
+      <figure class="about-media about-media--story">
+        <!-- Replace with real project/lifestyle image of Max and Hannah -->
+        <img src="{{ '/assets/images/about-story-kite-away-placeholder.svg' | relative_url }}" alt="{% t about_story_image_alt %}" width="1400" height="980" loading="lazy">
+      </figure>
+    </div>
+
+    <div class="about-block about-block--goal">
+      <figure class="about-media about-media--goal">
+        <!-- Replace with atmospheric kitesurfing photo for About closing -->
+        <img src="{{ '/assets/images/about-goal-kitesurf-placeholder.svg' | relative_url }}" alt="{% t about_goal_image_alt %}" width="1400" height="980" loading="lazy">
+      </figure>
+      <div class="about-copy about-copy--goal">
+        <p class="eyebrow">{% t about_goal_eyebrow %}</p>
+        <h2>{% t about_goal_heading %}</h2>
+        <span class="about-divider" aria-hidden="true"></span>
+        <p>{% t about_goal_text_1 %}</p>
+        <p>{% t about_goal_text_2 %}</p>
+        <p class="about-signature">{% t about_goal_signature_1 %}</p>
+        <p class="about-location">{% t about_goal_signature_2 %}</p>
+      </div>
+    </div>
   </div>
 </section>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1125" viewBox="0 0 900 1125" role="img" aria-labelledby="title desc">
+  <title id="title">Hannah portrait placeholder</title>
+  <desc id="desc">Replace with Hannah portrait.</desc>
+  <rect width="900" height="1125" fill="#f2f7fb"/>
+  <rect x="44" y="44" width="812" height="1037" rx="18" fill="#e8f0f6" stroke="#bfd1df" stroke-width="3" stroke-dasharray="14 10"/>
+  <text x="88" y="170" fill="#005D73" font-size="52" font-family="Sora, Inter, Arial, sans-serif" font-weight="700">HANNAH PORTRAIT</text>
+  <text x="88" y="236" fill="#102A43" font-size="30" font-family="Inter, Arial, sans-serif" font-weight="600">Replace with real photo</text>
+</svg>
