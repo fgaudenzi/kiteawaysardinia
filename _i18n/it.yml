@@ -77,6 +77,9 @@ lesson_8_desc: Noleggio con supervisione inclusa nel raggio operativo dello spot
 lesson_8_duration: 1 ora
 lesson_8_price: €40
 lesson_8_image_alt: Noleggio attrezzatura kitesurf sullo spot
+price_per_hour_short: /ora
+price_total_short: totale
+price_per_person_note: Prezzo a persona.
 spot_title: Lo spot
 spot_heading: Acqua piatta, vento termico, luce sarda.
 spot_text: La nostra area didattica è scelta per acqua permissiva, direzione del vento chiara e progressione semplice. Ogni sessione è pianificata sulle condizioni del giorno, sul tuo livello e sulla finestra più sicura.

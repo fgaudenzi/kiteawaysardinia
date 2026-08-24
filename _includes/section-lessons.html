@@ -5,37 +5,32 @@
     <p>{% t lessons_intro %}</p>
   </div>
   <div class="container cards">
+    {% for lesson in site.data.lessons %}
     <article class="card">
-      <img src="{{ '/assets/images/lezione2.jpg' | relative_url }}" alt="{% t lesson_1_image_alt %}" width="900" height="650" loading="lazy">
-      <div class="card__body"><p class="tag">{% t lesson_1_tag %}</p><h3>{% t lesson_1_title %}</h3><p>{% t lesson_1_desc %}</p><div class="card__meta"><span>{% t lesson_1_duration %}</span><strong>{% t lesson_1_price %}</strong></div></div>
+      <img src="{{ lesson.image | relative_url }}" alt="{% t lesson.image_alt_key %}" width="900" height="650" loading="lazy">
+      <div class="card__body">
+        <p class="tag">{% t lesson.tag_key %}</p>
+        <h3>{% t lesson.title_key %}</h3>
+        <p>{% t lesson.desc_key %}</p>
+        <div class="card__meta">
+          <span>{% t lesson.duration_key %}</span>
+          <strong>
+            {% if lesson.price_display == 'hourly_total' %}
+              €{{ lesson.hourly_price_eur }} {% t price_per_hour_short %} | €{{ lesson.total_price_eur }} {% t price_total_short %}
+            {% elsif lesson.price_display == 'total' %}
+              €{{ lesson.total_price_eur }} {% t price_total_short %}
+            {% elsif lesson.price_display == 'hourly' %}
+              €{{ lesson.hourly_price_eur }} {% t price_per_hour_short %}
+            {% else %}
+              €{{ lesson.price_min }}
+            {% endif %}
+          </strong>
+        </div>
+        {% if lesson.per_person %}
+        <p class="card__note">{% t price_per_person_note %}</p>
+        {% endif %}
+      </div>
     </article>
-    <article class="card">
-      <img src="{{ '/assets/images/6hours.jpg' | relative_url }}" alt="{% t lesson_2_image_alt %}" width="900" height="650" loading="lazy">
-      <div class="card__body"><p class="tag">{% t lesson_2_tag %}</p><h3>{% t lesson_2_title %}</h3><p>{% t lesson_2_desc %}</p><div class="card__meta"><span>{% t lesson_2_duration %}</span><strong>{% t lesson_2_price %}</strong></div></div>
-    </article>
-    <article class="card">
-      <img src="{{ '/assets/images/lezione.jpg' | relative_url }}" alt="{% t lesson_3_image_alt %}" width="900" height="650" loading="lazy">
-      <div class="card__body"><p class="tag">{% t lesson_3_tag %}</p><h3>{% t lesson_3_title %}</h3><p>{% t lesson_3_desc %}</p><div class="card__meta"><span>{% t lesson_3_duration %}</span><strong>{% t lesson_3_price %}</strong></div></div>
-    </article>
-    <article class="card">
-      <img src="{{ '/assets/images/lezione2.jpg' | relative_url }}" alt="{% t lesson_4_image_alt %}" width="900" height="650" loading="lazy">
-      <div class="card__body"><p class="tag">{% t lesson_4_tag %}</p><h3>{% t lesson_4_title %}</h3><p>{% t lesson_4_desc %}</p><div class="card__meta"><span>{% t lesson_4_duration %}</span><strong>{% t lesson_4_price %}</strong></div></div>
-    </article>
-    <article class="card">
-      <img src="{{ '/assets/images/6hours.jpg' | relative_url }}" alt="{% t lesson_5_image_alt %}" width="900" height="650" loading="lazy">
-      <div class="card__body"><p class="tag">{% t lesson_5_tag %}</p><h3>{% t lesson_5_title %}</h3><p>{% t lesson_5_desc %}</p><div class="card__meta"><span>{% t lesson_5_duration %}</span><strong>{% t lesson_5_price %}</strong></div></div>
-    </article>
-    <article class="card">
-      <img src="{{ '/assets/images/lezione.jpg' | relative_url }}" alt="{% t lesson_6_image_alt %}" width="900" height="650" loading="lazy">
-      <div class="card__body"><p class="tag">{% t lesson_6_tag %}</p><h3>{% t lesson_6_title %}</h3><p>{% t lesson_6_desc %}</p><div class="card__meta"><span>{% t lesson_6_duration %}</span><strong>{% t lesson_6_price %}</strong></div></div>
-    </article>
-    <article class="card">
-      <img src="{{ '/assets/images/lezione2.jpg' | relative_url }}" alt="{% t lesson_7_image_alt %}" width="900" height="650" loading="lazy">
-      <div class="card__body"><p class="tag">{% t lesson_7_tag %}</p><h3>{% t lesson_7_title %}</h3><p>{% t lesson_7_desc %}</p><div class="card__meta"><span>{% t lesson_7_duration %}</span><strong>{% t lesson_7_price %}</strong></div></div>
-    </article>
-    <article class="card">
-      <img src="{{ '/assets/images/6hours.jpg' | relative_url }}" alt="{% t lesson_8_image_alt %}" width="900" height="650" loading="lazy">
-      <div class="card__body"><p class="tag">{% t lesson_8_tag %}</p><h3>{% t lesson_8_title %}</h3><p>{% t lesson_8_desc %}</p><div class="card__meta"><span>{% t lesson_8_duration %}</span><strong>{% t lesson_8_price %}</strong></div></div>
-    </article>
+    {% endfor %}
   </div>
 </section>

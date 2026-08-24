@@ -77,6 +77,9 @@ lesson_8_desc: Verleih mit Aufsicht innerhalb des aktiven Spot Bereichs.
 lesson_8_duration: 1 Stunde
 lesson_8_price: €40
 lesson_8_image_alt: Kitesurf Ausrustungsverleih am Spot
+price_per_hour_short: /Std.
+price_total_short: gesamt
+price_per_person_note: Preis pro Person.
 spot_title: Der Spot
 spot_heading: Flaches Wasser, thermischer Wind, sardisches Licht.
 spot_text: Unser Schulungsbereich wird wegen einfachem Wasser, klarer Windrichtung und guter Progression gewählt. Jede Session wird nach Tagesbedingungen, deinem Level und dem sichersten Zeitfenster geplant.

@@ -77,6 +77,9 @@ lesson_8_desc: Location avec supervision incluse dans la zone active du spot.
 lesson_8_duration: 1 heure
 lesson_8_price: €40
 lesson_8_image_alt: Location materiel kitesurf sur le spot
+price_per_hour_short: /heure
+price_total_short: total
+price_per_person_note: Tarif par personne.
 spot_title: Le spot
 spot_heading: Eau plate, vent thermique, lumière sarde.
 spot_text: Notre zone d'enseignement est choisie pour son eau accessible, sa direction de vent claire et sa progression facile. Chaque session est planifiée selon les conditions du jour, votre niveau et la fenêtre la plus sûre.

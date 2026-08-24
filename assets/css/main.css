@@ -153,6 +153,7 @@ a { color: inherit; }
 .card__meta { display: flex; justify-content: space-between; gap: 1rem; padding-top: 1rem; margin-top: 1rem; border-top: 1px solid var(--border); }
 .card__meta span { color: var(--muted); font-weight: 700; }
 .card__meta strong { color: var(--accent-orange); }
+.card__note { margin: .55rem 0 0; color: var(--muted); font-size: .86rem; font-weight: 700; }
 
 .section--spot { background: linear-gradient(135deg, var(--primary), #00485a); color: #fff; }
 .section--spot h2,
