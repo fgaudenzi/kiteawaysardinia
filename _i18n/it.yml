@@ -13,40 +13,70 @@ nav_contact: Contatti
 book_now: Prenota ora
 hero_image_alt: Scenario costiero Kite Away Sardinia
 hero_eyebrow: Scuola di kitesurf premium in Sardegna
-hero_headline: Vivi il vento della Sardegna con sicurezza.
+hero_headline: Inizia ogni uscita nel vento della Sardegna con il sorriso.
 hero_copy: Lezioni private e in piccoli gruppi con istruttori certificati, acqua cristallina e vento termico costante.
 hero_cta_primary: Prenota la lezione
 hero_cta_secondary: Scopri lo spot
 stats_label: Punti forti
 stat_1_value: IKO
 stat_1_label: Coaching certificato
-stat_2_value: "3"
-stat_2_label: Percorsi lezione
+stat_2_value: "8"
+stat_2_label: Opzioni lezione
 stat_3_value: 100%
 stat_3_label: Attrezzatura inclusa
 stat_4_value: Piatta
 stat_4_label: Acqua ideale per imparare
 lessons_title: Lezioni
-lessons_heading: Scegli il percorso adatto al tuo livello.
-lessons_intro: Parti da zero, progredisci con un pacchetto mirato o migliora la tecnica avanzata con una sessione costruita sui tuoi obiettivi.
-lesson_1_tag: Principiante
-lesson_1_title: Battesimo del Mare
-lesson_1_desc: Impara controllo del kite, basi di sicurezza, finestra del vento e primi movimenti in acqua con un approccio calmo e progressivo.
-lesson_1_duration: 2 ore
-lesson_1_price: da €60
-lesson_1_image_alt: Kitesurfer sull'acqua blu
-lesson_2_tag: Progressione
-lesson_2_title: Pacchetto 6 Ore
-lesson_2_desc: Un percorso completo per costruire autonomia, partenze dall'acqua, controllo della tavola e sicurezza in condizioni reali.
-lesson_2_duration: 6 ore
-lesson_2_price: da €150
-lesson_2_image_alt: Attrezzatura da kitesurf sulla spiaggia
-lesson_3_tag: Privata
-lesson_3_title: Su Misura Per Te
-lesson_3_desc: Coaching mirato per transizioni, bolina, salti, fiducia o un rientro fluido dopo una pausa.
-lesson_3_duration: Flessibile
-lesson_3_price: da €100
-lesson_3_image_alt: Spiaggia turchese e acqua limpida
+lessons_heading: Lezioni e prezzi per ogni livello.
+lessons_intro: Tutte le opzioni disponibili con durata, prezzo e inclusioni. Dove indicato, il prezzo e a persona.
+lesson_1_tag: Lezioni singole
+lesson_1_title: Privata 1 allievo
+lesson_1_desc: Sessione individuale con attrezzatura premium e casco radio BbTalkin inclusi.
+lesson_1_duration: 1 ora
+lesson_1_price: €60
+lesson_1_image_alt: Lezione privata di kitesurf in acqua
+lesson_2_tag: Lezioni singole
+lesson_2_title: Semi-privata 2 allievi 1 kite
+lesson_2_desc: Prezzo a persona, ideale per coppie o amici che vogliono imparare insieme.
+lesson_2_duration: 1 ora
+lesson_2_price: €35 a persona
+lesson_2_image_alt: Lezione semi privata di kitesurf
+lesson_3_tag: Lezioni singole
+lesson_3_title: Coaching avanzato salti e bolina
+lesson_3_desc: Allenamento tecnico con riprese video e debriefing finale inclusi.
+lesson_3_duration: 1 ora
+lesson_3_price: €40
+lesson_3_image_alt: Sessione avanzata di kitesurf
+lesson_4_tag: Pacchetti corso
+lesson_4_title: Pacchetto intro discovery
+lesson_4_desc: Teoria, pilotaggio a terra e primi body drag per partire con basi solide.
+lesson_4_duration: 3 ore
+lesson_4_price: €55 ora, totale €165
+lesson_4_image_alt: Introduzione al kitesurf con istruttore
+lesson_5_tag: Pacchetti corso
+lesson_5_title: Corso base rider
+lesson_5_desc: Body drag avanzato, partenze dall'acqua e primi metri in navigazione.
+lesson_5_duration: 6 ore
+lesson_5_price: €50 ora, totale €300
+lesson_5_image_alt: Corso base kitesurf in progressione
+lesson_6_tag: Pacchetti corso
+lesson_6_title: Corso completo independent
+lesson_6_desc: Percorso completo verso autonomia, bolina e self rescue in sicurezza.
+lesson_6_duration: 12 ore
+lesson_6_price: €45 ora, totale €540
+lesson_6_image_alt: Corso completo di kitesurf in Sardegna
+lesson_7_tag: Servizi extra
+lesson_7_title: Quota associativa e assicurazione
+lesson_7_desc: Tesseramento annuale RC obbligatorio per partecipare alle lezioni.
+lesson_7_duration: Annuale
+lesson_7_price: €15
+lesson_7_image_alt: Dettaglio quota associativa kitesurf
+lesson_8_tag: Servizi extra
+lesson_8_title: Noleggio attrezzatura solo esperti
+lesson_8_desc: Noleggio con supervisione inclusa nel raggio operativo dello spot.
+lesson_8_duration: 1 ora
+lesson_8_price: €40
+lesson_8_image_alt: Noleggio attrezzatura kitesurf sullo spot
 spot_title: Lo spot
 spot_heading: Acqua piatta, vento termico, luce sarda.
 spot_text: La nostra area didattica è scelta per acqua permissiva, direzione del vento chiara e progressione semplice. Ogni sessione è pianificata sulle condizioni del giorno, sul tuo livello e sulla finestra più sicura.

@@ -13,40 +13,70 @@ nav_contact: Contact
 book_now: Book now
 hero_image_alt: Kite Away Sardinia coastal kitesurf scene
 hero_eyebrow: Premium kitesurf school in Sardinia
-hero_headline: Ride Sardinia's wind with confidence.
+hero_headline: Start every Sardinian wind ride with a smile.
 hero_copy: Private and small-group kitesurf lessons with certified instructors, crystal water, and steady thermal wind.
 hero_cta_primary: Book your lesson
 hero_cta_secondary: Discover the spot
 stats_label: Highlights
 stat_1_value: IKO
 stat_1_label: Certified coaching
-stat_2_value: "3"
-stat_2_label: Lesson paths
+stat_2_value: "8"
+stat_2_label: Lesson options
 stat_3_value: 100%
 stat_3_label: Gear included
 stat_4_value: Flat
 stat_4_label: Water friendly spot
 lessons_title: Lessons
-lessons_heading: Choose the ride that fits your level.
-lessons_intro: Start from zero, progress through a focused package, or tune advanced technique with a session built around your goals.
-lesson_1_tag: Beginner
-lesson_1_title: Baptism of the Sea
-lesson_1_desc: Learn kite control, safety basics, wind window, and first water movements with a calm step-by-step approach.
-lesson_1_duration: 2 hours
-lesson_1_price: from €60
-lesson_1_image_alt: Kitesurfer riding on blue water
-lesson_2_tag: Progression
-lesson_2_title: 6 Hours Pack
-lesson_2_desc: A complete path for building independence, water starts, board control, and confident riding in real conditions.
-lesson_2_duration: 6 hours
-lesson_2_price: from €150
-lesson_2_image_alt: Kitesurf equipment on a sandy beach
-lesson_3_tag: Private
-lesson_3_title: Tailored For You
-lesson_3_desc: Targeted coaching for transitions, upwind riding, jumps, confidence, or a smooth return after a long break.
-lesson_3_duration: Flexible
-lesson_3_price: from €100
-lesson_3_image_alt: Turquoise beach and clear water
+lessons_heading: Lesson options and prices for every level.
+lessons_intro: Browse all available lesson formats with duration, pricing, and what is included. Where noted, prices are per person.
+lesson_1_tag: Single lesson
+lesson_1_title: Private 1 student
+lesson_1_desc: One to one session with premium gear and BbTalkin radio helmet included.
+lesson_1_duration: 1 hour
+lesson_1_price: €60
+lesson_1_image_alt: Private kitesurf lesson in the water
+lesson_2_tag: Single lesson
+lesson_2_title: Semi private 2 students 1 kite
+lesson_2_desc: Price per person. Perfect for couples or friends learning together.
+lesson_2_duration: 1 hour
+lesson_2_price: €35 per person
+lesson_2_image_alt: Semi private kitesurf lesson
+lesson_3_tag: Single lesson
+lesson_3_title: Advanced coaching jumps and upwind
+lesson_3_desc: Technical coaching with video recording and post session debrief included.
+lesson_3_duration: 1 hour
+lesson_3_price: €40
+lesson_3_image_alt: Advanced kitesurf coaching session
+lesson_4_tag: Course package
+lesson_4_title: Intro package discovery
+lesson_4_desc: Theory, kite handling on land, and first body drag steps in the water.
+lesson_4_duration: 3 hours
+lesson_4_price: €55 per hour, total €165
+lesson_4_image_alt: Intro kitesurf lesson with instructor
+lesson_5_tag: Course package
+lesson_5_title: Base course rider
+lesson_5_desc: Advanced body drag, water starts, and first controlled riding meters.
+lesson_5_duration: 6 hours
+lesson_5_price: €50 per hour, total €300
+lesson_5_image_alt: Kitesurf base course progression
+lesson_6_tag: Course package
+lesson_6_title: Full course independent
+lesson_6_desc: Complete progression toward autonomy, upwind riding, and self rescue.
+lesson_6_duration: 12 hours
+lesson_6_price: €45 per hour, total €540
+lesson_6_image_alt: Full kitesurf course in Sardinia
+lesson_7_tag: Extra service
+lesson_7_title: Membership and insurance fee
+lesson_7_desc: Mandatory annual RC membership fee required to join lessons.
+lesson_7_duration: Annual
+lesson_7_price: €15
+lesson_7_image_alt: Kitesurf membership and insurance details
+lesson_8_tag: Extra service
+lesson_8_title: Equipment rental experts only
+lesson_8_desc: Rental with supervision included within the active spot area.
+lesson_8_duration: 1 hour
+lesson_8_price: €40
+lesson_8_image_alt: Kitesurf equipment rental at the spot
 spot_title: The spot
 spot_heading: Flat water, thermal wind, Sardinian light.
 spot_text: Our teaching area is selected for forgiving water, clear wind direction, and easy progression. Every session is planned around the day's conditions, your level, and the safest learning window.
