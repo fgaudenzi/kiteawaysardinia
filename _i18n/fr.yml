@@ -80,13 +80,32 @@ lesson_8_image_alt: Location materiel kitesurf sur le spot
 price_per_hour_short: /heure
 price_total_short: total
 price_per_person_note: Tarif par personne.
-spot_title: Le spot
-spot_heading: Eau plate, vent thermique, lumière sarde.
-spot_text: Notre zone d'enseignement est choisie pour son eau accessible, sa direction de vent claire et sa progression facile. Chaque session est planifiée selon les conditions du jour, votre niveau et la fenêtre la plus sûre.
-spot_point_1: Vents thermiques d'été fiables
-spot_point_2: Conditions adaptées aux débutants
-spot_point_3: Briefing sécurité et support radio
-spot_image_alt: Spot de kitesurf en Sardaigne
+spot_title: Spot prive
+spot_heading: Tout ce dont vous avez besoin, directement sur notre spot.
+spot_text: Chez Kite Away, nous avons cree une base grande et confortable pour rendre votre journee sur l eau simple, sure et agreable.
+spot_private_title: Un spot pense pour les kitesurfeurs
+spot_private_text: Notre spot est l un des plus grands de la zone, avec une aire kite dediee a notre ecole et a nos riders. Aucune autre ecole ne travaille autour de nous: plus d espace, moins de stress, plus de qualite en navigation.
+spot_feature_1: Parking prive
+spot_feature_2: Vestiaire confortable avant et apres la session
+spot_feature_3: Douche exterieure
+spot_feature_4: Zone de sechage combinaisons et materiel
+spot_feature_5: Espace detente ombrage
+spot_feature_6: Zone dediee pour decollage et atterrissage en securite
+spot_feature_7: Grande zone en herbe pour preparer et ranger les ailes
+spot_feature_8: Electricite disponible pour recharger vos appareils
+spot_location_title: Position strategique entre Calasetta et Sant Antioco
+spot_location_text_1: Nous sommes situes entre Calasetta et Sant Antioco, avec de tres belles plages a seulement 5 minutes en voiture.
+spot_location_text_2: Avant ou apres le cours, vous pouvez profiter de la plage, vous baigner ou continuer a rider. Punta Trettu est a un seul bord.
+spot_quality_title: Materiel performant et instructeurs certifies
+spot_quality_text: Nous utilisons du materiel Ventum Kiteboarding et des instructeurs certifies IKO, selon des standards internationaux de securite et d enseignement.
+spot_quality_point_1: Progression claire pour debutants et riders en evolution
+spot_quality_point_2: Spot organise pour maximiser le temps reel sur l eau
+spot_image_alt_1: Placeholder carte zone ecole
+spot_image_alt_2: Placeholder carte generale du spot jusqu a Punta Trettu
+spot_image_alt_3: Placeholder photo generale du spot
+spot_image_caption_1: Placeholder - carte zone ecole
+spot_image_caption_2: Placeholder - carte etendue du spot jusqu a Punta Trettu
+spot_image_caption_3: Placeholder - vue generale du spot
 about_title: À propos
 about_heading: Coaching sérieux, énergie insulaire détendue.
 about_text: Kite Away Sardinia associe instruction certifiée, connaissance locale et approche pratique et chaleureuse. Vous recevez des retours clairs, du matériel de qualité et l'espace pour apprendre sans pression.

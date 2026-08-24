@@ -1,15 +1,51 @@
 <section class="section section--spot" id="spot" aria-labelledby="spot-title">
-  <div class="container split">
-    <div>
-      <p class="eyebrow">{% t spot_title %}</p>
-      <h2 id="spot-title">{% t spot_heading %}</h2>
-      <p>{% t spot_text %}</p>
-      <ul class="check-list">
-        <li>{% t spot_point_1 %}</li>
-        <li>{% t spot_point_2 %}</li>
-        <li>{% t spot_point_3 %}</li>
-      </ul>
+  <div class="container">
+    <p class="eyebrow">{% t spot_title %}</p>
+    <h2 id="spot-title">{% t spot_heading %}</h2>
+    <p class="spot-lead">{% t spot_text %}</p>
+
+    <div class="spot-layout">
+      <article class="spot-panel">
+        <h3>{% t spot_private_title %}</h3>
+        <p>{% t spot_private_text %}</p>
+        <ul class="check-list spot-feature-list">
+          <li>{% t spot_feature_1 %}</li>
+          <li>{% t spot_feature_2 %}</li>
+          <li>{% t spot_feature_3 %}</li>
+          <li>{% t spot_feature_4 %}</li>
+          <li>{% t spot_feature_5 %}</li>
+          <li>{% t spot_feature_6 %}</li>
+          <li>{% t spot_feature_7 %}</li>
+          <li>{% t spot_feature_8 %}</li>
+        </ul>
+      </article>
+
+      <article class="spot-panel">
+        <h3>{% t spot_location_title %}</h3>
+        <p>{% t spot_location_text_1 %}</p>
+        <p>{% t spot_location_text_2 %}</p>
+        <h3>{% t spot_quality_title %}</h3>
+        <p>{% t spot_quality_text %}</p>
+        <ul class="check-list">
+          <li>{% t spot_quality_point_1 %}</li>
+          <li>{% t spot_quality_point_2 %}</li>
+        </ul>
+      </article>
     </div>
-    <figure class="feature-image"><img src="{{ '/assets/images/punta-trettu.jpg' | relative_url }}" alt="{% t spot_image_alt %}" width="960" height="720" loading="lazy"></figure>
+
+    <div class="spot-gallery">
+      <figure class="feature-image spot-gallery__item spot-gallery__item--wide">
+        <img src="{{ '/assets/images/spot-map-school-placeholder.svg' | relative_url }}" alt="{% t spot_image_alt_1 %}" width="1200" height="680" loading="lazy">
+        <figcaption>{% t spot_image_caption_1 %}</figcaption>
+      </figure>
+      <figure class="feature-image spot-gallery__item">
+        <img src="{{ '/assets/images/spot-map-punta-trettu-placeholder.svg' | relative_url }}" alt="{% t spot_image_alt_2 %}" width="900" height="650" loading="lazy">
+        <figcaption>{% t spot_image_caption_2 %}</figcaption>
+      </figure>
+      <figure class="feature-image spot-gallery__item">
+        <img src="{{ '/assets/images/spot-generic-placeholder.svg' | relative_url }}" alt="{% t spot_image_alt_3 %}" width="900" height="650" loading="lazy">
+        <figcaption>{% t spot_image_caption_3 %}</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
