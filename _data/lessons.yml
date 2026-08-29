@@ -16,7 +16,7 @@
   image_alt_key: lesson_1_image_alt
   duration_key: lesson_1_duration
   price_key: lesson_1_price
-  image: /assets/images/lezione2.jpg
+  image: /assets/images/6hours.jpg
 
 
 - id: semi-private-2-students
@@ -27,7 +27,7 @@
   image_alt_key: lesson_2_image_alt
   duration_key: lesson_2_duration
   price_key: lesson_2_price
-  image: /assets/images/6hours.jpg
+  image: /assets/images/double.png
 
 - id: advanced-coaching
   category: single
