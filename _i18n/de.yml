@@ -28,54 +28,56 @@ stat_4_value: Flach
 stat_4_label: Lernfreundliches Wasser
 lessons_title: Kurse
 lessons_heading: Kursoptionen und Preise fur jedes Level.
-lessons_intro: Alle verfugbaren Formate mit Dauer, Preis und Leistungen. Wo angegeben, gelten Preise pro Person.
-lesson_1_tag: Einzelstunde
+lessons_intro: Angebote nach Kategorien mit Name, Dauer (wenn vorhanden), Preis und Inhalten.
+lessons_category_single: Einzelstunden
+lessons_category_pair: Paarstunden
+lessons_category_package: Kurspakete
+lessons_category_extra: Zusatzservices
+lesson_1_tag: Einzelstunden
 lesson_1_title: Privat 1 Schuler
-lesson_1_desc: Eins zu eins Session mit Premium Ausrustung und BbTalkin Funkhelm inklusive.
+lesson_1_desc: Ausrustung + Funk.
 lesson_1_duration: 1 Stunde
-lesson_1_price: €60
+lesson_1_price: 60 €
 lesson_1_image_alt: Private Kitesurfstunde im Wasser
-lesson_2_tag: Einzelstunde
+lesson_2_tag: Paarstunden
 lesson_2_title: Semi privat 2 Schuler 1 Kite
-lesson_2_desc: Preis pro Person, ideal fur Paare oder Freunde die zusammen lernen.
+lesson_2_desc: Preis pro Person. Perfekt fur Paare/Freunde.
 lesson_2_duration: 1 Stunde
-lesson_2_price: €35 pro Person
+lesson_2_price: 35 € pro Person
 lesson_2_image_alt: Semi private Kitesurfstunde
-lesson_3_tag: Einzelstunde
-lesson_3_title: Advanced Coaching Sprunge und Hohe laufen
-lesson_3_desc: Technisches Coaching mit Videoaufnahme und Debriefing nach der Session.
+lesson_3_tag: Einzelstunden
+lesson_3_title: Advanced Coaching - eigenes Material
+lesson_3_desc: Up Wind, Sprunge, Transitionen, Tricks.
 lesson_3_duration: 1 Stunde
-lesson_3_price: €40
+lesson_3_price: 40 €
 lesson_3_image_alt: Fortgeschrittene Kitesurf Coaching Session
-lesson_4_tag: Kurspaket
-lesson_4_title: Intro Paket Discovery
-lesson_4_desc: Theorie, Kitehandling am Land und erste Body Drag Schritte im Wasser.
-lesson_4_duration: 3 Stunden
-lesson_4_price: €55 pro Stunde, gesamt €165
+lesson_4_tag: Kurspakete
+lesson_4_title: Intro Paket - Meertaufe
+lesson_4_desc: Mindestens 2 Personen. Theorie, Kitehandling an Land und Bodydrag.
+lesson_4_duration: 2 Stunden
+lesson_4_price: 120 €
 lesson_4_image_alt: Kitesurf Einfuhrung mit Instruktor
-lesson_5_tag: Kurspaket
+lesson_5_tag: Kurspakete
 lesson_5_title: Basiskurs Rider
-lesson_5_desc: Advanced Body Drag, Wasserstarts und erste kontrollierte Fahrmeter.
+lesson_5_desc: Discovery, erste Starts und Hohe laufen.
 lesson_5_duration: 6 Stunden
-lesson_5_price: €50 pro Stunde, gesamt €300
+lesson_5_price: 330 €
 lesson_5_image_alt: Fortschritt im Kitesurf Basiskurs
-lesson_6_tag: Kurspaket
+lesson_6_tag: Kurspakete
 lesson_6_title: Vollkurs Independent
-lesson_6_desc: Vollstandiger Lernweg zu Autonomie, Hohe laufen und Self Rescue.
+lesson_6_desc: Maximale Autonomie, Hohe laufen und Self-Rescue.
 lesson_6_duration: 12 Stunden
-lesson_6_price: €45 pro Stunde, gesamt €540
+lesson_6_price: 600 €
 lesson_6_image_alt: Vollstandiger Kitesurfkurs auf Sardinien
-lesson_7_tag: Zusatzservice
-lesson_7_title: Mitgliedschaft und Versicherung
+lesson_7_tag: Zusatzservices
+lesson_7_title: Mitgliedsbeitrag / Versicherung
 lesson_7_desc: Verbindlicher jahrlicher RC Mitgliedsbeitrag fur die Kursteilnahme.
-lesson_7_duration: Jahrlich
-lesson_7_price: €15
+lesson_7_price: 20 €
 lesson_7_image_alt: Details zu Mitgliedschaft und Versicherung
-lesson_8_tag: Zusatzservice
-lesson_8_title: Ausrustungsverleih nur fur Experten
-lesson_8_desc: Verleih mit Aufsicht innerhalb des aktiven Spot Bereichs.
-lesson_8_duration: 1 Stunde
-lesson_8_price: €40
+lesson_8_tag: Zusatzservices
+lesson_8_title: Tagesmiete Ausrustung - nur Experten
+lesson_8_desc: Aufsicht im Spotbereich inklusive.
+lesson_8_price: 80 € pro Tag
 lesson_8_image_alt: Kitesurf Ausrustungsverleih am Spot
 price_per_hour_short: /Std.
 price_total_short: gesamt

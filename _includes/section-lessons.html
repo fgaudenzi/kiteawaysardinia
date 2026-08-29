@@ -4,8 +4,23 @@
     <h2 id="lessons-title">{% t lessons_heading %}</h2>
     <p>{% t lessons_intro %}</p>
   </div>
+
+  {% assign lessons_categories = "single,pair,package,extra" | split: "," %}
+  {% for category in lessons_categories %}
+  <div class="container section__heading section__heading--left">
+    <p class="eyebrow">
+      {% case category %}
+        {% when 'single' %}{% t lessons_category_single %}
+        {% when 'pair' %}{% t lessons_category_pair %}
+        {% when 'package' %}{% t lessons_category_package %}
+        {% when 'extra' %}{% t lessons_category_extra %}
+      {% endcase %}
+    </p>
+  </div>
+
   <div class="container cards">
     {% for lesson in site.data.lessons %}
+    {% if lesson.category == category %}
     <article class="card">
       <img src="{{ lesson.image | relative_url }}" alt="{% t lesson.image_alt_key %}" width="900" height="650" loading="lazy">
       <div class="card__body">
@@ -13,9 +28,13 @@
         <h3>{% t lesson.title_key %}</h3>
         <p>{% t lesson.desc_key %}</p>
         <div class="card__meta">
+          {% if lesson.duration_key %}
           <span>{% t lesson.duration_key %}</span>
+          {% endif %}
           <strong>
-            {% if lesson.price_display == 'hourly_total' %}
+            {% if lesson.price_key %}
+              {% t lesson.price_key %}
+            {% elsif lesson.price_display == 'hourly_total' %}
               €{{ lesson.hourly_price_eur }} {% t price_per_hour_short %} | €{{ lesson.total_price_eur }} {% t price_total_short %}
             {% elsif lesson.price_display == 'total' %}
               €{{ lesson.total_price_eur }} {% t price_total_short %}
@@ -31,6 +50,8 @@
         {% endif %}
       </div>
     </article>
+    {% endif %}
     {% endfor %}
   </div>
+  {% endfor %}
 </section>

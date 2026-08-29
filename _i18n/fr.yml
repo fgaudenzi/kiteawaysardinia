@@ -28,54 +28,56 @@ stat_4_value: Plate
 stat_4_label: Eau idéale pour apprendre
 lessons_title: Cours
 lessons_heading: Formules de cours et tarifs pour tous les niveaux.
-lessons_intro: Retrouvez toutes les options avec duree, prix et inclusions. Quand indique, le tarif est par personne.
-lesson_1_tag: Cours individuel
+lessons_intro: Offres organisees par categorie avec nom, duree (si applicable), prix et inclusions.
+lessons_category_single: Lecons individuelles
+lessons_category_pair: Lecons en duo
+lessons_category_package: Packs de cours
+lessons_category_extra: Services extra
+lesson_1_tag: Lecons individuelles
 lesson_1_title: Prive 1 eleve
-lesson_1_desc: Session individuelle avec materiel premium et casque radio BbTalkin inclus.
+lesson_1_desc: Materiel + radio.
 lesson_1_duration: 1 heure
-lesson_1_price: €60
+lesson_1_price: 60 €
 lesson_1_image_alt: Cours prive de kitesurf dans l eau
-lesson_2_tag: Cours individuel
+lesson_2_tag: Lecons en duo
 lesson_2_title: Semi prive 2 eleves 1 kite
-lesson_2_desc: Tarif par personne, ideal pour couples ou amis qui apprennent ensemble.
+lesson_2_desc: Tarif par personne. Parfait pour couples/amis.
 lesson_2_duration: 1 heure
-lesson_2_price: €35 par personne
+lesson_2_price: 35 € par personne
 lesson_2_image_alt: Cours semi prive de kitesurf
-lesson_3_tag: Cours individuel
-lesson_3_title: Coaching avance sauts et remontee au vent
-lesson_3_desc: Coaching technique avec video et debriefing de fin de session inclus.
+lesson_3_tag: Lecons individuelles
+lesson_3_title: Coaching avance - materiel personnel
+lesson_3_desc: Up wind, sauts, transitions, tricks.
 lesson_3_duration: 1 heure
-lesson_3_price: €40
+lesson_3_price: 40 €
 lesson_3_image_alt: Session de coaching kitesurf avance
-lesson_4_tag: Pack cours
-lesson_4_title: Pack intro decouverte
-lesson_4_desc: Theorie, pilotage a terre et premiers body drags dans l eau.
-lesson_4_duration: 3 heures
-lesson_4_price: €55 heure, total €165
+lesson_4_tag: Packs de cours
+lesson_4_title: Pack intro - bapteme de mer
+lesson_4_desc: Minimum 2 personnes. Theorie, pilotage a terre et bodydrag.
+lesson_4_duration: 2 heures
+lesson_4_price: 120 €
 lesson_4_image_alt: Cours d introduction au kitesurf avec instructeur
-lesson_5_tag: Pack cours
+lesson_5_tag: Packs de cours
 lesson_5_title: Cours base rider
-lesson_5_desc: Body drag avance, waterstarts et premiers metres en navigation controlee.
+lesson_5_desc: Discovery, premiers departs et remontee au vent.
 lesson_5_duration: 6 heures
-lesson_5_price: €50 heure, total €300
+lesson_5_price: 330 €
 lesson_5_image_alt: Progression cours base kitesurf
-lesson_6_tag: Pack cours
+lesson_6_tag: Packs de cours
 lesson_6_title: Cours complet independent
-lesson_6_desc: Parcours complet vers l autonomie, la remontee au vent et le self rescue.
+lesson_6_desc: Autonomie maximale, remontee au vent et self-rescue.
 lesson_6_duration: 12 heures
-lesson_6_price: €45 heure, total €540
+lesson_6_price: 600 €
 lesson_6_image_alt: Cours complet de kitesurf en Sardaigne
-lesson_7_tag: Service extra
-lesson_7_title: Cotisation associative et assurance
+lesson_7_tag: Services extra
+lesson_7_title: Cotisation associative / assurance
 lesson_7_desc: Cotisation annuelle RC obligatoire pour participer aux cours.
-lesson_7_duration: Annuel
-lesson_7_price: €15
+lesson_7_price: 20 €
 lesson_7_image_alt: Details cotisation et assurance kitesurf
-lesson_8_tag: Service extra
-lesson_8_title: Location materiel experts uniquement
-lesson_8_desc: Location avec supervision incluse dans la zone active du spot.
-lesson_8_duration: 1 heure
-lesson_8_price: €40
+lesson_8_tag: Services extra
+lesson_8_title: Location materiel journaliere - experts uniquement
+lesson_8_desc: Supervision incluse dans le rayon du spot.
+lesson_8_price: 80 € par jour
 lesson_8_image_alt: Location materiel kitesurf sur le spot
 price_per_hour_short: /heure
 price_total_short: total
