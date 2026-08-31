@@ -135,6 +135,9 @@ a { color: inherit; }
 
 .section { padding: 5.5rem 0; background: #fff; }
 .section:nth-of-type(odd) { background: var(--alt-background); }
+.section#about,
+.section.section--gallery,
+.section.section--contact { background: #fff; }
 .section__heading { max-width: 760px; margin: 0 auto 2.25rem; text-align: center; }
 .section__heading--left { margin: 0; text-align: left; }
 .section h2 { color: var(--primary); font-size: clamp(2rem, 4vw, 3.4rem); }
