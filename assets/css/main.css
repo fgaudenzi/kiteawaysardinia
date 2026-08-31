@@ -181,12 +181,12 @@ a { color: inherit; }
 
 .section--faq,
 .section--reach { background: linear-gradient(135deg, var(--primary), #00485a); color: #fff; }
-.section--faq h2,
-.section--faq .section__heading p,
 .section--reach h2,
 .section--reach > .container > div > p { color: #fff; }
+.section--faq .section__heading p,
 .section--faq .eyebrow,
 .section--reach .eyebrow { color: var(--accent-yellow); }
+.section--faq h2 { color: var(--primary); }
 
 @media (min-width: 1025px) {
   .hero__media { display: none; }
