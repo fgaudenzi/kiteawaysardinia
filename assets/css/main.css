@@ -232,6 +232,12 @@ a { color: inherit; }
 
 .faq-layout,
 .contact-card { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+.faq-visual { display: none; }
+
+@media (min-width: 1025px) {
+  .faq-visual { display: block; margin: 1.2rem 0 0; }
+  .faq-visual img { width: 100%; max-width: 540px; height: auto; object-fit: cover; border-radius: .6rem; box-shadow: var(--shadow); }
+}
 
 .about {
   display: grid;
