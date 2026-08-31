@@ -17,3 +17,19 @@
 - id: 5
   question: faq_5_q
   answer: faq_5_a
+
+- id: 6
+  question: faq_6_q
+  answer: faq_6_a
+
+- id: 7
+  question: faq_7_q
+  answer: faq_7_a
+
+- id: 8
+  question: faq_8_q
+  answer: faq_8_a
+
+- id: 9
+  question: faq_9_q
+  answer: faq_9_a

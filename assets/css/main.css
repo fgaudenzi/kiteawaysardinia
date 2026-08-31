@@ -337,6 +337,43 @@ a { color: inherit; }
 details { background: #fff; border: 1px solid var(--border); border-radius: .5rem; padding: 1rem 1.1rem; }
 summary { cursor: pointer; color: var(--primary); font-weight: 800; }
 details p { margin-bottom: 0; }
+
+.section--reach { background: #fff; }
+.reach-layout {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 2rem;
+  align-items: start;
+}
+.reach-layout h2 { color: var(--primary); }
+.reach-cards { display: grid; gap: .9rem; margin-top: 1.1rem; }
+.reach-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: .5rem;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 10px 24px rgba(16,42,67,.06);
+}
+.reach-card h3 {
+  margin: 0 0 .5rem;
+  color: var(--primary);
+  font-family: Sora, sans-serif;
+  font-size: 1.02rem;
+}
+.reach-card p { margin: 0; color: var(--muted); }
+.reach-map {
+  overflow: hidden;
+  border-radius: .6rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  background: #fff;
+}
+.reach-map iframe {
+  display: block;
+  width: 100%;
+  min-height: 430px;
+}
+
 .section--contact { background: var(--alt-background); }
 .contact-card { grid-template-columns: 1.5fr .8fr; align-items: center; }
 .contact-card h2 { color: var(--primary); }
@@ -361,6 +398,7 @@ details p { margin-bottom: 0; }
   .split,
   .about-block,
   .about-people,
+  .reach-layout,
   .faq-layout,
   .contact-card { grid-template-columns: 1fr; }
   .about { gap: 3.25rem; }
@@ -372,6 +410,7 @@ details p { margin-bottom: 0; }
   .spot-story__media img { min-height: 260px; }
   .stats-grid { transform: translateY(-1.5rem); }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .reach-map iframe { min-height: 340px; }
   .footer__inner { flex-direction: column; }
 }
 

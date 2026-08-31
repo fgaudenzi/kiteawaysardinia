@@ -9,6 +9,7 @@ nav_lessons: Cours
 nav_spot: Spot
 nav_about: À propos
 nav_faq: FAQ
+nav_reach: Comment nous rejoindre
 nav_contact: Contact
 book_now: Réserver
 hero_image_alt: Scène côtière Kite Away Sardinia
@@ -166,12 +167,30 @@ gallery_alt_3: Rider sur l'eau
 gallery_alt_4: Côte sarde
 faq_title: FAQ
 faq_heading: Bon à savoir avant de rider.
-faq_1_q: Et si je n'ai aucune expérience ?
-faq_1_a: Aucun problème. Les cours débutants commencent par la sécurité, le contrôle de l'aile et des exercices simples dans l'eau avant la planche.
-faq_3_q: Le matériel est-il inclus ?
-faq_3_a: Oui. Aile, planche, harnais, casque, gilet d'impact et équipement de sécurité sont inclus dans chaque cours.
-faq_wind_q: Que se passe-t-il s'il n'y a pas de vent ?
-faq_wind_a: Nous reprogrammons selon des conditions sûres et utiles. L'objectif est un bon cours, pas de forcer une mauvaise journée.
+faq_1_q: Puis-je apprendre même si je n'ai jamais fait de kite ?
+faq_1_a: Bien sûr ! Le kitesurf est adapté à tous et aucune expérience préalable n'est requise. La seule condition est de savoir nager ; grâce à l'eau peu profonde de la lagune, il suffit d'être à l'aise dans l'eau et de savoir flotter pour commencer.
+faq_2_q: Pourquoi Cussorgia est-il idéal pour apprendre ?
+faq_2_a: Cussorgia offre des conditions particulièrement favorables à l'apprentissage : eau plate, fond peu profond et beaucoup d'espace pour s'exercer. De plus, notre côté de la lagune est généralement peu fréquenté, ce qui permet d'apprendre avec plus de tranquillité et de sécurité.
+faq_3_q: Comment est l'eau ? Peut-on avoir pied ?
+faq_3_a: Oui. Sur environ 80% de la lagune, l'eau est assez basse pour toucher le fond. C'est précisément cette caractéristique, avec l'eau plate, qui rend Cussorgia particulièrement adapté aux débutants.
+faq_4_q: Comment fonctionne le vent et quand ont lieu les cours ?
+faq_4_a: La configuration particulière de la lagune nous permet d'exploiter différentes directions de vent et de faire cours même avec un vent plus léger, selon le type d'activité et le niveau de l'élève. C'est pourquoi nous n'avons pas d'horaires rigides : nous fixons l'horaire en fonction des prévisions et des conditions réelles.
+faq_5_q: Que se passe-t-il s'il n'y a pas assez de vent ?
+faq_5_a: Aucun problème : si les conditions ne sont pas suffisantes pour faire le cours en sécurité et avec un bon résultat, nous le reportons au moment le plus adapté. En attendant, vous pouvez en profiter pour découvrir la zone : nous sommes à quelques minutes de Calasetta et de ses plages, idéales pour se détendre et profiter du panorama.
+faq_6_q: Combien de temps faut-il pour apprendre ?
+faq_6_a: Chaque personne a son propre rythme d'apprentissage. En général, environ 6 heures de cours peuvent permettre d'atteindre les premières glisses, mais le parcours peut être très différent d'une personne à l'autre : certains apprennent vite à partir et ont besoin de plus de temps pour remonter au vent, d'autres suivent le chemin inverse. C'est pourquoi nous préférons suivre la progression individuelle plutôt que promettre le même résultat à tout le monde. Pour atteindre une bonne autonomie, le pack de 12 heures est celui que nous recommandons le plus.
+faq_7_q: Qu'est-ce qui est inclus dans les cours et que dois-je apporter ?
+faq_7_a: Nous fournissons tout le nécessaire pour le cours : équipement complet, combinaison et chaussons sont inclus. Nous conseillons simplement d'apporter un poncho ou une serviette et, si vous le souhaitez, quelque chose à boire.
+faq_8_q: Quand puis-je être considéré autonome et louer du matériel ?
+faq_8_a: Quand vous aurez acquis une bonne autonomie dans la gestion de l'aile et de la planche, que vous saurez remonter au vent en sécurité et gérer de manière autonome les principales situations en eau. L'instructeur, en évaluant votre niveau, vous indiquera quand vous serez prêt pour la location.
+faq_9_q: Où puis-je loger et comment rejoindre l'école ?
+faq_9_a: Vous pouvez séjourner confortablement à Sant'Antioco ou à Calasetta, deux excellentes bases pour rejoindre l'école et profiter de la zone au-delà des heures de kite. Pour le moment, nous n'avons pas encore de structures partenaires, mais nous travaillons pour pouvoir proposer cette possibilité prochainement.
+reach_title: Comment nous rejoindre
+reach_intro: Nous sommes à Cussorgia, dans le sud-ouest de la Sardaigne, facilement accessible en voiture et en avion.
+reach_by_car_title: En voiture
+reach_by_car_text: Depuis Cagliari, prenez la SS130 vers Iglesias, puis continuez vers Carbonia, Sant'Antioco et Calasetta. Les indications finales vous mènent à la lagune de Cussorgia, où se trouve notre spot.
+reach_by_air_title: En avion
+reach_by_air_text: L'aéroport de référence est Cagliari Elmas (CAG), relié aux principaux aéroports italiens et européens. Depuis l'aéroport, vous pouvez louer une voiture : le trajet vers Cussorgia dure environ 1 h 15 selon le trafic.
 contact_title: Prêt à planifier votre session ?
 contact_text: Envoyez-nous vos dates, votre niveau et la taille du groupe. Nous proposerons le meilleur format et la meilleure fenêtre de vent.
 contact_email: Nous écrire

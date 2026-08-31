@@ -62,7 +62,7 @@
 - id: equipment-rental-experts
   category: extra
   tag_key: lesson_8_tag
-  title_key: lesson_8_title
+  title_key: lesson_8_titleW
   desc_key: lesson_8_desc
   image_alt_key: lesson_8_image_alt
   price_key: lesson_8_price
