@@ -46,17 +46,7 @@
       </article>
     </div>
 
-    <div class="spot-story spot-story--media-right">
-      <article class="spot-story__content spot-stack">
-        <section class="spot-panel spot-stack__item">
-          <h3>{% t spot_private_title %}</h3>
-          <p>{% t spot_private_text %}</p>
-        </section>
-        <section class="spot-panel spot-stack__item">
-          <h3>{% t spot_wind_title %}</h3>
-          <p>{% t spot_wind_placeholder %}</p>
-        </section>
-      </article>
+    <div class="spot-story spot-story--windguru-layout">
       <figure class="feature-image spot-story__media spot-story__media--windguru">
         <div class="windguru-embed" data-windguru-embed>
           <script id="wg_fwdg_436366_21_1787992405146">
@@ -72,9 +62,17 @@
 })(window, document);
 </script>
         </div>
-        
-       <!-- <img src="{{ '/assets/images/spot-learning-placeholder.svg' | relative_url }}" alt="{% t spot_learning_image_alt %}" width="1200" height="820" loading="lazy"> -->
       </figure>
+      <article class="spot-story__content spot-panels-row">
+        <section class="spot-panel spot-panels-row__item">
+          <h3>{% t spot_private_title %}</h3>
+          <p>{% t spot_private_text %}</p>
+        </section>
+        <section class="spot-panel spot-panels-row__item">
+          <h3>{% t spot_wind_title %}</h3>
+          <p>{% t spot_wind_placeholder %}</p>
+        </section>
+      </article>
     </div>
   </div>
 </section>
