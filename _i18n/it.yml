@@ -1,6 +1,5 @@
-```yaml
 site_title: Scuola di Kitesurf in Sardegna | Kite Away Sardinia
-meta_description: Scuola di kitesurf a Cussorgia, nel sud-ovest della Sardegna. Corsi per principianti, lezioni private e piccoli gruppi tra Sant'Antioco e Calasetta.
+meta_description: Scuola di kitesurf a Cussorgia, nel sud-ovest della Sardegna. Corsi per principianti, lezioni private e piccoli gruppi tra Sant'Antioco e Calasett e Punta Trettu.
 skip_to_content: Vai al contenuto
 nav_label: Navigazione principale
 nav_toggle: Apri menu
@@ -72,8 +71,7 @@ lesson_5_title: Corso base kitesurf - progressione e prime partenze
 lesson_5_desc: Un percorso di 6 ore dedicato a chi vuole imparare le basi del kitesurf, dalle prime fasi di controllo fino alle prime partenze e alla bolina.
 lesson_5_duration: 6 ore
 lesson_5_price: 330 €
-lesson_5_image_alt: Corso base di kitesurf per principianti a Cussorgia
-
+lesson_5_image_alt: Corso base di kitesurf per principianti
 lesson_6_tag: Pacchetti corso
 lesson_6_title: Corso completo - verso l'autonomia
 lesson_6_desc: Un percorso di 12 ore per sviluppare maggiore autonomia nella gestione del kite e della tavola, lavorando su partenze, bolina e self-rescue.
@@ -228,4 +226,3 @@ contact_title: Pronto a pianificare la tua sessione di kitesurf?
 contact_text: Scrivici indicando date, livello ed eventuale numero di persone. Ti aiuteremo a scegliere il formato di lezione più adatto e a individuare la finestra di vento migliore.
 contact_email: Scrivici via email
 footer_about: Scuola di kitesurf a Cussorgia, nel sud-ovest della Sardegna.
-```
