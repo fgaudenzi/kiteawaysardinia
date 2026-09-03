@@ -6,6 +6,54 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('[data-nav-toggle]');
   const menu = document.querySelector('[data-nav-menu]');
   const languageSwitcherLinks = Array.from(document.querySelectorAll('.language-switcher a'));
+  const webcamVideo = document.getElementById('punta-trettu-webcam');
+
+  const initSpotWebcam = () => {
+    if (!webcamVideo) {
+      return;
+    }
+
+    const streamUrl = webcamVideo.dataset.hlsSrc;
+    if (!streamUrl) {
+      return;
+    }
+
+    if (webcamVideo.canPlayType('application/vnd.apple.mpegurl')) {
+      webcamVideo.src = streamUrl;
+      return;
+    }
+
+    const attachHls = () => {
+      if (!window.Hls || !window.Hls.isSupported()) {
+        return;
+      }
+
+      const hls = new window.Hls();
+      hls.loadSource(streamUrl);
+      hls.attachMedia(webcamVideo);
+
+      hls.on(window.Hls.Events.MANIFEST_PARSED, () => {
+        webcamVideo.play().catch(() => {});
+      });
+
+      hls.on(window.Hls.Events.ERROR, (_, data) => {
+        if (data.fatal) {
+          console.error('Webcam stream error:', data.type);
+        }
+      });
+    };
+
+    if (window.Hls) {
+      attachHls();
+      return;
+    }
+
+    const hlsScript = document.createElement('script');
+    hlsScript.src = 'https://cdn.jsdelivr.net/npm/hls.js@1';
+    hlsScript.async = true;
+    hlsScript.onload = attachHls;
+    document.head.appendChild(hlsScript);
+  };
 
   const getLanguageFromPath = (pathName, basePath) => {
     const pathWithoutBase = pathName.startsWith(basePath) ? pathName.slice(basePath.length) : pathName;
@@ -93,4 +141,5 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateHeader, { passive: true });
   updateHeader();
   setupLanguagePreference();
+  initSpotWebcam();
 });

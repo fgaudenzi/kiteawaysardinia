@@ -227,6 +227,31 @@ a { color: inherit; }
   height: 100%;
 }
 
+.spot-story--webcam {
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr);
+  gap: .9rem;
+}
+
+.spot-webcam__media {
+  border-radius: .6rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: rgba(0, 0, 0, .2);
+}
+
+.spot-webcam-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.spot-webcam__panel {
+  display: grid;
+  align-content: center;
+}
+
 .windguru-embed {
   width: 100%;
   height: auto;
@@ -486,6 +511,7 @@ details p { margin-bottom: 0; }
   .spot-panels-row { grid-template-columns: 1fr; }
   .windguru-embed { min-height: 260px; }
   .windguru-embed iframe { min-height: 260px; }
+  .spot-webcam-video { max-height: 240px; }
   .stats-grid { transform: translateY(-1.5rem); }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .reach-map iframe { min-height: 340px; }

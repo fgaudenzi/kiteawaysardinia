@@ -74,39 +74,24 @@
         </section>
       </article>
     </div>
+
+    <div class="spot-story spot-story--webcam">
+      <figure class="feature-image spot-story__media spot-webcam__media">
+        <video
+          id="punta-trettu-webcam"
+          class="spot-webcam-video"
+          data-hls-src="https://cdn-007.whatsupcams.com/hls/it_sangiovannisuergiu01.m3u8"
+          autoplay
+          muted
+          playsinline
+          controls
+          preload="metadata"
+        ></video>
+      </figure>
+      <article class="spot-panel spot-webcam__panel">
+        <h3>Live webcam Punta Trettu</h3>
+        <p>Real-time conditions from the spot to quickly check water state, cloud cover, and wind trend before your session.</p>
+      </article>
+    </div>
   </div>
 </section>
-<video
-  id="punta-trettu-webcam"
-  autoplay
-  muted
-  playsinline
-  controls
-></video>
-
-<script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
-
-<script>
-const video = document.getElementById('punta-trettu-webcam');
-const url = 'https://cdn-007.whatsupcams.com/hls/it_sangiovannisuergiu01.m3u8';
-
-if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = url;
-} else if (Hls.isSupported()) {
-    const hls = new Hls();
-    hls.loadSource(url);
-    hls.attachMedia(video);
-
-    hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        video.play().catch(() => {});
-    });
-
-    hls.on(Hls.Events.ERROR, (_, data) => {
-        console.error('HLS:', data);
-
-        if (data.fatal) {
-            console.error('Stream non caricabile:', data.type);
-        }
-    });
-}
-</script>
