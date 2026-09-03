@@ -1,197 +1,231 @@
-site_title: Kite Away Sardinia
-meta_description: Lezioni di kitesurf premium in Sardegna con istruttori certificati, vento affidabile e un'esperienza mediterranea rilassata.
+```yaml
+site_title: Scuola di Kitesurf in Sardegna | Kite Away Sardinia
+meta_description: Scuola di kitesurf a Cussorgia, nel sud-ovest della Sardegna. Corsi per principianti, lezioni private e piccoli gruppi tra Sant'Antioco e Calasetta.
 skip_to_content: Vai al contenuto
 nav_label: Navigazione principale
 nav_toggle: Apri menu
 language_switcher: Selettore lingua
 nav_home: Home
-nav_lessons: Lezioni
-nav_spot: Spot
+nav_lessons: Lezioni e corsi
+nav_spot: Lo spot
 nav_about: Chi siamo
 nav_faq: FAQ
 nav_reach: Come raggiungerci
 nav_contact: Contatti
 book_now: Prenota ora
-hero_image_alt: Scenario costiero Kite Away Sardinia
-hero_eyebrow: Scuola di kitesurf premium in Sardegna
-hero_headline: Inizia ogni uscita nel vento della Sardegna con il sorriso.
-hero_copy: Lezioni private e in piccoli gruppi con istruttori certificati, acqua cristallina e vento termico costante.
+
+hero_image_alt: Kitesurf a Cussorgia nel sud-ovest della Sardegna
+hero_eyebrow: Scuola di kitesurf in Sardegna
+hero_headline: Impara il kitesurf a Cussorgia, nel sud-ovest della Sardegna.
+hero_copy: Lezioni private e in piccoli gruppi con istruttori certificati, acqua piatta e fondale basso in uno spot ideale per imparare e migliorare.
 hero_cta_primary: Prenota la lezione
 hero_cta_secondary: Scopri lo spot
+
 stats_label: Punti forti
 stat_1_value: IKO
 stat_1_label: Coaching certificato
-stat_2_value: Personale
-stat_2_label: Tante Opzioni di lezione
+stat_2_value: Privato
+stat_2_label: Lezioni personalizzate
 stat_3_value: 100%
 stat_3_label: Attrezzatura inclusa
 stat_4_value: Sicurezza
 stat_4_label: Acqua ideale per imparare
-lessons_title: Lezioni
-lessons_heading: Lezioni e prezzi per ogni livello.
-lessons_intro: Offerte suddivise per categoria con nome, durata (quando prevista) e prezzo. Contatteci per possibili sconti durante l'anno 
-lessons_category_single: Lezioni Singole
-lessons_category_pair: Lezioni Coppia
-lessons_category_package: Pacchetti Corso
-lessons_category_extra: Servizi Extra
-lesson_1_tag: Lezioni Singole
-lesson_1_title: Privata 1 allievo
-lesson_1_desc: Attrezzatura + radio.
+
+lessons_title: Lezioni e corsi
+lessons_heading: Corsi e lezioni di kitesurf in Sardegna.
+lessons_intro: Proponiamo lezioni private, lezioni semi-private e pacchetti corso per diversi livelli, dai primi passi fino all'autonomia. Contattaci per verificare disponibilità, condizioni del vento ed eventuali offerte durante l'anno.
+lessons_category_single: Lezioni private
+lessons_category_pair: Lezioni semi-private
+lessons_category_package: Pacchetti corso
+lessons_category_extra: Servizi extra
+
+lesson_1_tag: Lezioni private
+lesson_1_title: Lezione privata - 1 allievo
+lesson_1_desc: Lezione individuale con attrezzatura completa e radio, pensata per seguire ogni fase dell'apprendimento in modo personalizzato.
 lesson_1_duration: 1 ora
 lesson_1_price: 60 €
-lesson_1_image_alt: Lezione privata di kitesurf in acqua
-lesson_2_tag: Lezioni Coppia
-lesson_2_title: Semi-privata 2 allievi 1 kite
-lesson_2_desc: Prezzo a persona. Perfetto per coppie/amici.
+lesson_1_image_alt: Lezione privata di kitesurf a Cussorgia
+
+lesson_2_tag: Lezioni semi-private
+lesson_2_title: Lezione semi-privata - 2 allievi, 1 kite
+lesson_2_desc: Prezzo a persona. Una soluzione ideale per coppie o amici che vogliono imparare insieme condividendo l'esperienza.
 lesson_2_duration: 1 ora
 lesson_2_price: 35 € a persona
-lesson_2_image_alt: Lezione semi privata di kitesurf
-lesson_3_tag: Lezioni Singole
+lesson_2_image_alt: Lezione semi-privata di kitesurf in Sardegna
+
+lesson_3_tag: Lezioni private
 lesson_3_title: Coaching avanzato - attrezzatura propria
-lesson_3_desc: Up Wind, salti, transizioni, trick.
+lesson_3_desc: Sessioni dedicate a rider che vogliono migliorare tecnica e controllo: bolina, salti, transizioni e trick.
 lesson_3_duration: 1 ora
 lesson_3_price: 40 €
-lesson_3_image_alt: Sessione avanzata di kitesurf
-lesson_4_tag: Pacchetti Corso
-lesson_4_title: Pacchetto intro - battesimo del mare
-lesson_4_desc: Minimo 2 persone. Teoria, pilotaggio a terra e bodydrag.
+lesson_3_image_alt: Coaching avanzato di kitesurf a Cussorgia
+
+lesson_4_tag: Pacchetti corso
+lesson_4_title: Pacchetto intro - primo approccio al kitesurf
+lesson_4_desc: Minimo 2 persone. Introduzione alla disciplina, teoria, pilotaggio a terra e bodydrag per iniziare a conoscere il kite in modo progressivo e sicuro.
 lesson_4_duration: 2 ore
 lesson_4_price: 120 €
-lesson_4_image_alt: Introduzione al kitesurf con istruttore
-lesson_5_tag: Pacchetti Corso
-lesson_5_title: Corso base rider
-lesson_5_desc: Discovery, prime partenze e bolina.
+lesson_4_image_alt: Prima lezione di kitesurf per principianti in Sardegna
+
+lesson_5_tag: Pacchetti corso
+lesson_5_title: Corso base kitesurf - progressione e prime partenze
+lesson_5_desc: Un percorso di 6 ore dedicato a chi vuole imparare le basi del kitesurf, dalle prime fasi di controllo fino alle prime partenze e alla bolina.
 lesson_5_duration: 6 ore
 lesson_5_price: 330 €
-lesson_5_image_alt: Corso base kitesurf in progressione
-lesson_6_tag: Pacchetti Corso
-lesson_6_title: Corso completo independent
-lesson_6_desc: Massima autonomia, bolina e self-rescue.
+lesson_5_image_alt: Corso base di kitesurf per principianti a Cussorgia
+
+lesson_6_tag: Pacchetti corso
+lesson_6_title: Corso completo - verso l'autonomia
+lesson_6_desc: Un percorso di 12 ore per sviluppare maggiore autonomia nella gestione del kite e della tavola, lavorando su partenze, bolina e self-rescue.
 lesson_6_duration: 12 ore
 lesson_6_price: 600 €
 lesson_6_image_alt: Corso completo di kitesurf in Sardegna
-lesson_7_tag: Servizi Extra
+
+lesson_7_tag: Servizi extra
 lesson_7_title: Quota associativa / assicurazione
-lesson_7_desc: Tesseramento annuale RC obbligatorio per partecipare alle lezioni.
+lesson_7_desc: Tesseramento annuale con copertura RC obbligatoria per partecipare alle lezioni.
 lesson_7_price: 20 €
-lesson_7_image_alt: Dettaglio quota associativa kitesurf
-lesson_8_tag: Servizi Extra
-lesson_8_title: Noleggio attrezzatura giornaliero - solo esperti
-lesson_8_desc: Supervisione inclusa nel raggio dello spot.
+lesson_7_image_alt: Quota associativa per lezioni di kitesurf
+
+lesson_8_tag: Servizi extra
+lesson_8_title: Noleggio attrezzatura giornaliero - solo rider esperti
+lesson_8_desc: Noleggio per rider autonomi con supervisione inclusa nell'area dello spot.
 lesson_8_price: 80 € al giorno
-lesson_8_image_alt: Noleggio attrezzatura kitesurf sullo spot
+lesson_8_image_alt: Noleggio attrezzatura da kitesurf a Cussorgia
+
 price_per_hour_short: /ora
 price_total_short: totale
 price_per_person_note: Prezzo a persona.
-spot_title: Cussorgia - Il nostro home spot
-spot_heading: Per noi Cussorgia e molto piu di uno spot kite.
-spot_text: E il luogo che abbiamo scelto per vivere, lavorare e costruire Kite Away Sardinia.
-spot_intro_detail: Situata nel sud-ovest della Sardegna, tra Sant'Antioco e Calasetta, Cussorgia offre un lato piu tranquillo e meno affollato dell'isola.
-spot_highlights_label: Vantaggi principali dello spot
-spot_highlight_1_title: Area kite dedicata
-spot_highlight_1_text: Zona interamente dedicata al kitesurf, senza altre scuole operative intorno a noi.
-spot_highlight_2_title: Acqua bassa e spazio
-spot_highlight_2_text: Acqua bassa e ampi spazi aperti rendono l'apprendimento piu progressivo e controllato.
+
+spot_title: Cussorgia - il nostro home spot
+spot_heading: Cussorgia: uno spot di kitesurf ideale per imparare in Sardegna.
+spot_text: Cussorgia è il luogo che abbiamo scelto per vivere, lavorare e costruire Kite Away Sardinia. Qui abbiamo trovato le condizioni e l'atmosfera che cercavamo per insegnare kitesurf in modo tranquillo, attento e personalizzato.
+spot_intro_detail: Cussorgia si trova nel sud-ovest della Sardegna, tra Sant'Antioco e Calasetta. È una zona più tranquilla e meno affollata, con ampi spazi e condizioni particolarmente interessanti per chi vuole imparare e migliorare nel kitesurf.
+
+spot_highlights_label: Perché scegliere Cussorgia
+spot_highlight_1_title: Area dedicata al kitesurf
+spot_highlight_1_text: La nostra area è dedicata al kitesurf e offre agli allievi spazio per esercitarsi con meno traffico e meno interferenze durante le lezioni.
+spot_highlight_2_title: Acqua bassa e ampi spazi
+spot_highlight_2_text: L'acqua bassa e gli ampi spazi aperti permettono di affrontare l'apprendimento in modo più progressivo, controllato e sicuro.
 spot_highlight_3_title: Punta Trettu a una bordata
-spot_highlight_3_text: Un vantaggio interessante per rider esperti che vogliono esplorare altri spot.
-spot_highlight_4_title: 10-20 min dalle spiagge migliori
-spot_highlight_4_text: Calasetta a circa 10 minuti, spiagge e calette di Sant'Antioco a circa 20 minuti.
-spot_private_title: Un luogo dedicato all'apprendimento
-spot_private_text: La nostra area kite e totalmente dedicata al kitesurf. Senza altre scuole intorno, gli allievi hanno piu spazio, meno traffico e un ambiente piu calmo per progredire.
-spot_wind_title: Condizioni del vento
-spot_wind_text: Cussorgia beneficia dei venti termici sardi e puo offrire ottime condizioni per apprendimento e progressione, sempre con un approccio realistico e orientato alla sicurezza.
+spot_highlight_3_text: La vicinanza a Punta Trettu è un vantaggio per i rider più esperti che vogliono esplorare altri spot della zona durante il soggiorno.
+spot_highlight_4_title: A pochi minuti da Calasetta e Sant'Antioco
+spot_highlight_4_text: Calasetta si raggiunge in circa 10 minuti in auto, mentre le spiagge e le calette di Sant'Antioco sono a circa 20 minuti.
+
+spot_private_title: Un ambiente ideale per imparare
+spot_private_text: La nostra area kite è dedicata al kitesurf e pensata per l'apprendimento. Meno affollamento significa più spazio per esercitarsi, seguire le indicazioni dell'istruttore e costruire progressivamente sicurezza e autonomia.
+
+spot_wind_title: Vento e condizioni per il kitesurf
+spot_wind_text: Cussorgia beneficia delle condizioni di vento tipiche della costa sud-occidentale della Sardegna e può offrire buone opportunità per lezioni e sessioni di kitesurf. L'orario delle lezioni viene concordato in base alle previsioni e alle condizioni reali, sempre dando priorità alla sicurezza e al livello dell'allievo.
+
 spot_punta_title: Punta Trettu
-spot_punta_text: Punta Trettu e a una sola bordata, opzione ideale per rider esperti che vogliono esplorare la zona.
+spot_punta_text: Punta Trettu si trova nelle vicinanze ed è raggiungibile direttamente in kite dagli spot adatti alle condizioni del momento. Per i rider esperti è un'opzione interessante per esplorare una delle zone più conosciute per il kitesurf nel Sulcis.
+
 spot_location_title: Tra Sant'Antioco e Calasetta
-spot_location_text_1: La nostra posizione permette di raggiungere Calasetta e alcune delle sue spiagge piu belle in circa 10 minuti in auto.
-spot_location_text_2: Le spiagge e le calette di Sant'Antioco sono a circa 20 minuti, perfette per unire kitesurf ed esplorazione della costa del Sulcis.
-spot_facilities_title: Servizi pensati per la giornata completa
-spot_facilities_text: "Dall'arrivo al post-session, tutto e organizzato per rendere la giornata fluida: ti cambi con comodita, prepari il kite, fai lezione, asciughi l'attrezzatura e poi ti godi la Sardegna."
+spot_location_text_1: La posizione di Cussorgia permette di raggiungere Calasetta e alcune delle sue spiagge più belle in circa 10 minuti in auto.
+spot_location_text_2: Le spiagge e le calette di Sant'Antioco sono a circa 20 minuti, così puoi unire una giornata di kitesurf alla scoperta della costa del Sulcis.
+
+spot_facilities_title: Tutto il necessario per una giornata di kitesurf
+spot_facilities_text: Dall'arrivo al post-session, abbiamo organizzato lo spazio per rendere la giornata semplice e piacevole: puoi cambiarti, preparare il kite, seguire la lezione, asciugare l'attrezzatura e poi goderti il resto della giornata in Sardegna.
+
 spot_feature_1: Spogliatoio comodo
-spot_feature_2: Area dedicata per asciugatura mute e attrezzatura
-spot_feature_3: Spazio per preparare e gestire l'attrezzatura kite
+spot_feature_2: Area dedicata per asciugare mute e attrezzatura
+spot_feature_3: Spazio per preparare e gestire l'attrezzatura
 spot_feature_4: Doccia con acqua dolce
 spot_feature_5: Area relax ombreggiata con tavoli e posti a sedere
 spot_feature_6: Prese elettriche per ricaricare i dispositivi e asciugare i capelli
-spot_highlight_1_image_alt: Placeholder immagine area kite dedicata
-spot_highlight_2_image_alt: Placeholder immagine acqua bassa e spazio
-spot_highlight_3_image_alt: Placeholder immagine collegamento a Punta Trettu
-spot_highlight_4_image_alt: Placeholder immagine spiagge vicine e tempi di percorrenza
-spot_facilities_image_alt: Placeholder immagine servizi giornata completa nello spot
-spot_learning_image_alt: Placeholder immagine area apprendimento a Cussorgia
-spot_wind_placeholder: "Punta Trettu offre venti costanti e ben incanalati, grazie alla particolare conformazione dello spot. Il Mistral è il vento dominante, affiancato da Scirocco, Levante e Ponente. La combinazione di vento regolare e acqua piatta crea condizioni ideali per imparare e migliorare."
-spot_experience_lead: La parte migliore di Cussorgia e che la giornata non deve finire quando finisce la sessione.
-spot_experience_text: Dopo la sessione kite puoi raggiungere facilmente spiagge, calette, borghi, ristoranti e punti panoramici intorno a Sant'Antioco e Calasetta.
-spot_closing: Kite al mattino. Esplora l'isola nel pomeriggio. Torna per il tramonto.
-spot_image_alt_1: Placeholder mappa area scuola a Cussorgia
-spot_image_alt_2: Placeholder mappa ampia da Cussorgia a Punta Trettu
-spot_image_alt_3: Placeholder vista generica spot Cussorgia
-spot_image_caption_1: Placeholder - mappa scuola
-spot_image_caption_2: Placeholder - mappa spot esteso fino a Punta Trettu
-spot_image_caption_3: Placeholder - panoramica Cussorgia
+
+spot_highlight_1_image_alt: Area dedicata al kitesurf a Cussorgia
+spot_highlight_2_image_alt: Acqua bassa e ampi spazi nello spot di Cussorgia
+spot_highlight_3_image_alt: Collegamento tra Cussorgia e Punta Trettu per il kitesurf
+spot_highlight_4_image_alt: Spiagge di Calasetta e Sant'Antioco vicino a Cussorgia
+spot_facilities_image_alt: Servizi e area attrezzata per una giornata di kitesurf
+spot_learning_image_alt: Area di apprendimento per il kitesurf a Cussorgia
+
+spot_wind_placeholder: "Le condizioni del vento nella zona dipendono dalla direzione e dall'intensità delle condizioni meteo del momento. Mistral, Scirocco, Levante e Ponente possono influenzare diversi spot del Sulcis in modo differente. Per questo organizziamo le lezioni in base alle previsioni e alle condizioni effettive, scegliendo il momento più adatto al livello e all'attività prevista."
+
+spot_experience_lead: La giornata non deve finire quando finisce la sessione.
+spot_experience_text: Dopo una sessione di kitesurf puoi raggiungere facilmente spiagge, calette, borghi, ristoranti e punti panoramici tra Sant'Antioco e Calasetta, e continuare a scoprire il sud-ovest della Sardegna.
+spot_closing: Kite al mattino. Esplora il Sulcis nel pomeriggio. Torna per il tramonto.
+
+spot_image_alt_1: Mappa della scuola di kitesurf a Cussorgia
+spot_image_alt_2: Mappa della zona di kitesurf tra Cussorgia e Punta Trettu
+spot_image_alt_3: Vista panoramica dello spot di kitesurf a Cussorgia
+spot_image_caption_1: Dove si trova la scuola di kitesurf a Cussorgia
+spot_image_caption_2: La zona di kitesurf tra Cussorgia e Punta Trettu
+spot_image_caption_3: Panoramica dello spot di Cussorgia
+
 about_title: Chi siamo
 about_hero_eyebrow: CHI SIAMO
 about_hero_heading: Siamo Max & Hannah
-about_hero_text_1: Kite Away Sardinia nasce dalla nostra passione per il kitesurf e dal desiderio di trasformarlo in un'esperienza completa, non solo in una lezione.
-about_hero_text_2: Siamo partner nella vita e nel lavoro, e abbiamo scelto il sud-ovest della Sardegna per costruire qualcosa di nostro.
-about_hero_image_alt: Immagine segnaposto di Max e Hannah insieme
+about_hero_text_1: Kite Away Sardinia nasce dalla nostra passione per il kitesurf e dal desiderio di creare un'esperienza completa, non limitata alla singola lezione.
+about_hero_text_2: Siamo partner nella vita e nel lavoro e abbiamo scelto il sud-ovest della Sardegna, e in particolare Cussorgia, per costruire qualcosa di nostro intorno al kitesurf, alla natura e all'ospitalità.
+about_hero_image_alt: Max e Hannah di Kite Away Sardinia a Cussorgia
 about_people_group_label: Profili di Max e Hannah
 about_max_name: MAX
 about_max_role: ISTRUTTORE DI KITESURF
-about_max_text: Max si occupa della parte tecnica e sportiva della scuola.
-about_max_image_alt: Ritratto segnaposto di Max
+about_max_text: Max segue la parte tecnica e sportiva della scuola e accompagna gli allievi durante il percorso, dai primi approcci al miglioramento della tecnica e dell'autonomia.
+about_max_image_alt: Max, istruttore di kitesurf di Kite Away Sardinia
 about_hannah_name: HANNAH
-about_hannah_role: ESPERIENZA OSPITI & ORGANIZZAZIONE
-about_hannah_text: Hannah segue l'organizzazione e l'esperienza dei nostri ospiti.
-about_hannah_image_alt: Ritratto segnaposto di Hannah
-about_story_eyebrow: PERCHE ABBIAMO CREATO KITE AWAY
+about_hannah_role: OSPITALITÀ & ORGANIZZAZIONE
+about_hannah_text: Hannah segue l'organizzazione e l'esperienza degli ospiti, aiutandoti a pianificare le lezioni e a vivere al meglio il soggiorno nella zona di Sant'Antioco e Calasetta.
+about_hannah_image_alt: Hannah di Kite Away Sardinia
+
+about_story_eyebrow: PERCHÉ ABBIAMO CREATO KITE AWAY
 about_story_heading: "Una passione condivisa,\nun luogo da chiamare casa."
-about_story_text_1: Siamo partner nella vita e nel lavoro, e abbiamo scelto di costruire Kite Away Sardinia insieme.
-about_story_text_2: E piu di una scuola - e un progetto nato dal nostro amore per il kitesurf, la natura e questa isola incredibile.
-about_story_text_3: Cussorgia non e solo dove lavoriamo. E il luogo che abbiamo scelto per vivere e costruire il nostro progetto.
-about_story_image_alt: Immagine segnaposto per la storia personale di Kite Away
-about_goal_eyebrow: IL NOSTRO OBIETTIVO E SEMPLICE
+about_story_text_1: Siamo partner nella vita e nel lavoro e abbiamo scelto di costruire Kite Away Sardinia insieme.
+about_story_text_2: È più di una scuola di kitesurf: è un progetto nato dal nostro amore per questo sport, per la natura e per il sud-ovest della Sardegna.
+about_story_text_3: Cussorgia non è solo il luogo in cui lavoriamo. È il posto che abbiamo scelto per vivere e costruire il nostro progetto.
+about_story_image_alt: Cussorgia, il luogo scelto da Kite Away Sardinia
+
+about_goal_eyebrow: IL NOSTRO OBIETTIVO È SEMPLICE
 about_goal_heading: "Farti innamorare\ndel kitesurf -\ne farti venire voglia di tornare."
-about_goal_text_1: Non promettiamo di rendere facile uno sport che facile non e.
+about_goal_text_1: Non promettiamo di rendere facile uno sport che facile non è.
 about_goal_text_2: Promettiamo di insegnarlo con attenzione, competenza e passione, in uno dei luoghi che abbiamo scelto di chiamare casa.
 about_goal_signature_1: Kite Away Sardinia
 about_goal_signature_2: Cussorgia, Sardegna
-about_goal_image_alt: Immagine segnaposto atmosferica per la chiusura della sezione About
+about_goal_image_alt: Sessione di kitesurf al tramonto a Cussorgia
+
 included_title: Cosa è incluso
-included_text: Tavola, kite, trapezio, casco, impact vest, sistemi di sicurezza, briefing dello spot e pianificazione della lezione in base al vento.
+included_text: Per le lezioni forniamo l'attrezzatura necessaria, inclusi tavola, kite, trapezio, casco, impact vest e sistemi di sicurezza. Sono inclusi anche il briefing dello spot e la pianificazione della lezione in base alle condizioni del vento e al livello dell'allievo.
+
 gallery_title: Gallery
-gallery_heading: Il feeling visivo della giornata.
-gallery_alt_1: Sessione kitesurf in Sardegna
-gallery_alt_2: Kite su una spiaggia
-gallery_alt_3: Rider sull'acqua
-gallery_alt_4: Costa sarda
+gallery_heading: Una giornata di kitesurf nel sud della Sardegna.
+gallery_alt_1: Sessione di kitesurf a Cussorgia in Sardegna
+gallery_alt_2: Kite sulla spiaggia a Cussorgia
+gallery_alt_3: Rider in kitesurf sulla laguna di Cussorgia
+gallery_alt_4: Costa del sud-ovest della Sardegna vicino a Sant'Antioco
+
 faq_title: FAQ
-faq_heading: Da sapere prima di entrare in acqua.
-faq_1_q: Posso imparare anche se non ho mai fatto kite?
-faq_1_a: Certo! Il kitesurf è uno sport adatto a tutti e non è richiesta alcuna esperienza precedente. L'unico requisito è saper nuotare; grazie all'acqua bassa della laguna, per iniziare è sufficiente sentirsi a proprio agio in acqua e saper galleggiare.
-faq_2_q: Perché Cussorgia è ideale per imparare?
-faq_2_a: "Cussorgia offre condizioni particolarmente favorevoli a chi vuole imparare: acqua piatta, fondale basso e molto spazio per esercitarsi. Inoltre, il nostro lato della laguna è generalmente poco affollato, permettendoti di imparare con maggiore tranquillità e sicurezza."
-faq_3_q: Com'è l'acqua? Si può stare in piedi?
-faq_3_a: Sì. In circa l'80% della laguna l'acqua è abbastanza bassa da permettere di toccare il fondo. È proprio questa caratteristica, insieme all'acqua piatta, a rendere Cussorgia uno spot particolarmente adatto a chi è alle prime armi.
-faq_4_q: Come funziona il vento e quando si fanno le lezioni?
-faq_4_a: "La particolare conformazione della laguna ci permette di sfruttare diverse direzioni di vento e di svolgere le lezioni anche con vento più leggero, in base al tipo di attività e al livello dell'allievo. Per questo non seguiamo orari rigidi: concordiamo l'orario della lezione in base alle previsioni e alle condizioni effettive."
-faq_5_q: Cosa succede se non c'è abbastanza vento?
-faq_5_a: "Nessun problema: se le condizioni non sono sufficienti per svolgere la lezione in sicurezza e con un buon risultato, la rimandiamo al momento più adatto. Nel frattempo puoi approfittarne per scoprire la zona: siamo a pochi minuti da Calasetta e dalle sue spiagge, ideali per rilassarsi e godersi il panorama."
-faq_6_q: Quanto tempo serve per imparare?
-faq_6_a: "Ogni persona ha i propri tempi di apprendimento. In genere, con circa 6 ore di lezione si possono raggiungere le prime planate, ma il percorso può essere molto diverso da persona a persona: alcuni imparano rapidamente a partire e hanno bisogno di più tempo per imparare a bolinare, altri fanno il percorso opposto. Per questo preferiamo seguire i progressi individuali anziché promettere un risultato uguale per tutti. Per arrivare a una buona autonomia, il pacchetto da 12 ore è quello che consigliamo maggiormente."
-faq_7_q: Cosa è incluso nelle lezioni e cosa devo portare?
-faq_7_a: "Pensiamo noi a tutto il necessario per la lezione: attrezzatura completa, muta e scarpette sono inclusi. Ti consigliamo di portare semplicemente un poncho o un asciugamano e, se vuoi, qualcosa da bere."
+faq_heading: Tutto quello che devi sapere prima di una lezione di kitesurf.
+faq_1_q: Posso imparare a fare kitesurf anche se sono principiante?
+faq_1_a: "Certo. Non è richiesta esperienza precedente: le lezioni sono pensate anche per chi parte da zero. L'unico requisito è saper nuotare; grazie all'acqua bassa della laguna, puoi iniziare in un ambiente che permette di concentrarsi sulla tecnica e sulla sicurezza."
+faq_2_q: Perché Cussorgia è un buon posto per imparare kitesurf?
+faq_2_a: "Cussorgia offre diverse caratteristiche interessanti per chi vuole imparare: acqua piatta, fondale basso, ampi spazi e una zona generalmente meno affollata. Queste condizioni permettono di lavorare in modo progressivo sul controllo del kite e della tavola."
+faq_3_q: Com'è l'acqua a Cussorgia? Si può stare in piedi?
+faq_3_a: "Sì. In circa l'80% della laguna l'acqua è abbastanza bassa da permettere di toccare il fondo. La combinazione di acqua bassa e acqua piatta rende Cussorgia particolarmente adatta alle prime lezioni di kitesurf."
+faq_4_q: Come funziona il vento e quando si fanno le lezioni di kitesurf?
+faq_4_a: "La conformazione della laguna permette di lavorare con diverse condizioni di vento, in base alla direzione, all'intensità e al tipo di attività. Non seguiamo quindi orari rigidi: concordiamo l'orario della lezione in base alle previsioni e alle condizioni effettive dello spot."
+faq_5_q: Cosa succede se il vento non è sufficiente per la lezione?
+faq_5_a: "Se le condizioni non sono sufficienti per svolgere la lezione in sicurezza e con un buon risultato, preferiamo rimandarla al momento più adatto. Nel frattempo puoi scoprire la zona: Cussorgia si trova a pochi minuti da Calasetta e dalle spiagge di Sant'Antioco."
+faq_6_q: Quanto tempo serve per imparare il kitesurf?
+faq_6_a: "Ogni persona ha i propri tempi di apprendimento. In genere, con circa 6 ore di lezione si possono raggiungere le prime planate, ma il percorso varia da persona a persona. Alcuni imparano rapidamente a partire e hanno bisogno di più tempo per la bolina; altri seguono una progressione diversa. Per questo seguiamo i progressi individuali invece di promettere lo stesso risultato a tutti. Per arrivare a una buona autonomia, il percorso da 12 ore è quello che consigliamo più spesso."
+faq_7_q: Cosa è incluso nelle lezioni di kitesurf e cosa devo portare?
+faq_7_a: "Per la lezione forniamo l'attrezzatura necessaria, la muta e le scarpette. Ti consigliamo di portare semplicemente un poncho o un asciugamano e, se vuoi, qualcosa da bere."
 faq_8_q: Quando posso considerarmi autonomo e noleggiare l'attrezzatura?
-faq_8_a: Quando avrai acquisito una buona autonomia nella gestione del kite e della tavola, saprai bolinare con sicurezza e sarai in grado di gestire autonomamente le principali situazioni che possono presentarsi in acqua. Sarà l'istruttore, valutando il tuo livello, a indicarti quando sarai pronto per il noleggio.
-faq_9_q: Dove posso alloggiare e come raggiungo la scuola?
-faq_9_a: Puoi soggiornare comodamente a Sant'Antioco o a Calasetta, entrambe ottime basi per raggiungere la scuola e godersi la zona anche al di fuori delle ore di kite. Al momento non abbiamo ancora strutture convenzionate, ma stiamo lavorando per poter offrire presto anche questa possibilità.
+faq_8_a: "Quando avrai acquisito una buona autonomia nella gestione del kite e della tavola, saprai bolinare con sicurezza e sarai in grado di gestire le principali situazioni che possono presentarsi in acqua. Sarà l'istruttore a valutare il tuo livello e a indicarti quando sarai pronto per il noleggio."
+faq_9_q: Dove posso alloggiare vicino alla scuola di kitesurf?
+faq_9_a: "Puoi soggiornare comodamente a Sant'Antioco o a Calasetta, entrambe ottime basi per raggiungere Cussorgia e goderti la zona anche al di fuori delle ore di kitesurf. Al momento non abbiamo strutture convenzionate, ma stiamo lavorando per poter offrire presto anche questa possibilità."
+
 reach_title: Come raggiungerci
-reach_intro: Ci trovi a Cussorgia, nel sud-ovest della Sardegna, in una posizione comoda da raggiungere sia in auto che in aereo.
+reach_intro: Ci trovi a Cussorgia, nel sud-ovest della Sardegna, tra Sant'Antioco e Calasetta. La scuola è raggiungibile comodamente in auto dall'aeroporto di Cagliari Elmas.
 reach_by_car_title: In macchina
-reach_by_car_text: Da Cagliari segui la SS130 verso Iglesias, poi prosegui in direzione Carbonia, Sant'Antioco e Calasetta. Le indicazioni finali ti portano alla laguna di Cussorgia, dove si trova il nostro spot.
+reach_by_car_text: Da Cagliari segui la SS130 verso Iglesias, poi prosegui in direzione Carbonia, Sant'Antioco e Calasetta. Le indicazioni finali ti portano verso Cussorgia e alla nostra area kite.
 reach_by_air_title: In aereo
-reach_by_air_text: "L'aeroporto di riferimento e Cagliari Elmas (CAG), collegato con i principali scali italiani ed europei. Dall'aeroporto puoi noleggiare un'auto: il tragitto fino a Cussorgia richiede circa 1 ora e 15 minuti, in base al traffico."
-contact_title: Pronto a pianificare la tua sessione?
-contact_text: Scrivici date, livello e numero di persone. Ti suggeriremo il formato migliore e la finestra di vento più adatta.
+reach_by_air_text: "L'aeroporto di riferimento è Cagliari Elmas (CAG), collegato con i principali scali italiani ed europei. Dall'aeroporto puoi noleggiare un'auto: il tragitto fino a Cussorgia richiede circa 1 ora e 15 minuti, in base al traffico."
+
+contact_title: Pronto a pianificare la tua sessione di kitesurf?
+contact_text: Scrivici indicando date, livello ed eventuale numero di persone. Ti aiuteremo a scegliere il formato di lezione più adatto e a individuare la finestra di vento migliore.
 contact_email: Scrivici via email
-footer_about: Lezioni di kitesurf premium in Sardegna.
+footer_about: Scuola di kitesurf a Cussorgia, nel sud-ovest della Sardegna.
+```
