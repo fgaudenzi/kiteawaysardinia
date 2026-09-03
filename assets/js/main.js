@@ -6,6 +6,35 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('[data-nav-toggle]');
   const menu = document.querySelector('[data-nav-menu]');
   const languageSwitcherLinks = Array.from(document.querySelectorAll('.language-switcher a'));
+  const spotStory = document.querySelector('#spot .spot-story--media-right');
+  const spotStoryContent = spotStory?.querySelector('.spot-story__content');
+  const windguruEmbed = spotStory?.querySelector('[data-windguru-embed]');
+
+  const syncWindguruHeight = () => {
+    if (!spotStory || !spotStoryContent || !windguruEmbed) {
+      return;
+    }
+
+    const isDesktop = window.matchMedia('(min-width: 861px)').matches;
+    const windguruIframe = windguruEmbed.querySelector('iframe');
+
+    if (!isDesktop) {
+      windguruEmbed.style.height = '';
+      if (windguruIframe) {
+        windguruIframe.style.height = '';
+      }
+      return;
+    }
+
+    const targetHeight = Math.ceil(spotStoryContent.getBoundingClientRect().height);
+    if (targetHeight > 0) {
+      const heightPx = `${targetHeight}px`;
+      windguruEmbed.style.height = heightPx;
+      if (windguruIframe) {
+        windguruIframe.style.height = heightPx;
+      }
+    }
+  };
 
   const getLanguageFromPath = (pathName, basePath) => {
     const pathWithoutBase = pathName.startsWith(basePath) ? pathName.slice(basePath.length) : pathName;
@@ -91,6 +120,22 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   window.addEventListener('scroll', updateHeader, { passive: true });
+  window.addEventListener('resize', syncWindguruHeight);
+
+  if (spotStoryContent && windguruEmbed && 'ResizeObserver' in window) {
+    const windguruHeightObserver = new ResizeObserver(syncWindguruHeight);
+    windguruHeightObserver.observe(spotStoryContent);
+    windguruHeightObserver.observe(windguruEmbed);
+  }
+
+  if (spotStoryContent && windguruEmbed) {
+    const syncSchedule = [0, 200, 500, 1000, 1800, 2600];
+    syncSchedule.forEach((delay) => {
+      window.setTimeout(syncWindguruHeight, delay);
+    });
+  }
+
   updateHeader();
   setupLanguagePreference();
+  syncWindguruHeight();
 });
