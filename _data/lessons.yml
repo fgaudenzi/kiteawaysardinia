@@ -6,7 +6,7 @@
   image_alt_key: lesson_4_image_alt
   duration_key: lesson_4_duration
   price_key: lesson_4_price
-  image: /assets/images/lezione2.jpg
+  image: /assets/images/lezione2.jpeg
 
 - id: private-1-student
   category: single
@@ -16,7 +16,7 @@
   image_alt_key: lesson_1_image_alt
   duration_key: lesson_1_duration
   price_key: lesson_1_price
-  image: /assets/images/6hours.jpg
+  image: /assets/images/6hours.jpeg
 
 
 - id: semi-private-2-students
@@ -37,7 +37,7 @@
   image_alt_key: lesson_3_image_alt
   duration_key: lesson_3_duration
   price_key: lesson_3_price
-  image: /assets/images/lezione.jpg
+  image: /assets/images/lezione.jpeg
 
 - id: base-rider-course
   category: package
@@ -47,7 +47,7 @@
   image_alt_key: lesson_5_image_alt
   duration_key: lesson_5_duration
   price_key: lesson_5_price
-  image: /assets/images/6hours-course.png
+  image: /assets/images/6hours-course.jpeg
 
 - id: full-independent-course
   category: package
@@ -57,7 +57,7 @@
   image_alt_key: lesson_6_image_alt
   duration_key: lesson_6_duration
   price_key: lesson_6_price
-  image: /assets/images/full-course.png
+  image: /assets/images/full-course.jpeg
 
 - id: equipment-rental-experts
   category: extra
