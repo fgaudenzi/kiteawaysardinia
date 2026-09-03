@@ -1,6 +1,12 @@
 <section class="section section--faq" id="faq" aria-labelledby="faq-title">
   <div class="container faq-layout">
-    <div class="section__heading section__heading--left"><p class="eyebrow">{% t faq_title %}</p><h2 id="faq-title">{% t faq_heading %}</h2></div>
+    <div class="section__heading section__heading--left">
+      <p class="eyebrow">{% t faq_title %}</p>
+      <h2 id="faq-title">{% t faq_heading %}</h2>
+      <figure class="faq-visual" aria-label="FAQ image">
+        <img src="{{ '/assets/images/faq.png' | relative_url }}" alt="Kite session in Sardinia" width="900" height="620" loading="lazy">
+      </figure>
+    </div>
     <div class="faq-list">
       {% for faq in site.data.faq %}
       <details{% if forloop.first %} open{% endif %}><summary>{% t faq.question %}</summary><p>{% t faq.answer %}</p></details>
