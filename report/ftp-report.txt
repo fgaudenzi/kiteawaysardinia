@@ -1,0 +1,20 @@
+== http://www.kiteawaysardinia.it/ ==
+HTTP/1.1 200 OK
+Content-Type: text/html
+<!DOCTYPE html> <html lang="en"> <head>   <meta charset="UTF-8">   <meta name="viewport" content="width=device-width, initial-scale=1.0">   <meta name="description" content="Kitesurf school in Cussorg
+== https://www.kiteawaysardinia.it/ ==
+HTTP/2 200 
+content-type: text/html
+<!DOCTYPE html> <html lang="en"> <head>   <meta charset="UTF-8">   <meta name="viewport" content="width=device-width, initial-scale=1.0">   <meta name="description" content="Kitesurf school in Cussorg
+== https://kiteawaysardinia.it/it/ ==
+HTTP/2 200 
+content-type: text/html
+<!DOCTYPE html> <html lang="it"> <head>   <meta charset="UTF-8">   <meta name="viewport" content="width=device-width, initial-scale=1.0">   <meta name="description" content="Scuola di kitesurf a Cusso
+== https://kiteawaysardinia.it/privacy/ ==
+HTTP/2 200 
+content-type: text/html
+<!DOCTYPE html> <html lang="en"> <head>   <meta charset="UTF-8">   <meta name="viewport" content="width=device-width, initial-scale=1.0">   <meta name="description" content="Kitesurf school in Cussorg
+== https://kiteawaysardinia.it/assets/css/main.css ==
+HTTP/2 200 
+content-type: text/css
+:root {   --primary: #005D73;   --secondary: #0FA3B1;   --accent-orange: #F97316;   --accent-yellow: #FBBF24;   --background: #FFFFFF;   --alt-background: #FAFAFA;   --text: #102A43;   --muted: #55708
