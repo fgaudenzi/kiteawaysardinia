@@ -486,7 +486,14 @@ details p { margin-bottom: 0; }
   .spot-panels-row { grid-template-columns: 1fr; }
   .windguru-embed { min-height: 260px; }
   .windguru-embed iframe { min-height: 260px; }
-  @media (max-width: 1120px) and (min-width: 861px) {
+  .stats-grid { transform: translateY(-1.5rem); }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .reach-map iframe { min-height: 340px; }
+  .footer__brand { flex-direction: column; align-items: flex-start; gap: .45rem; }
+  .footer__inner { flex-direction: column; }
+}
+
+@media (max-width: 1120px) and (min-width: 861px) {
   .spot-highlights { grid-template-columns: repeat(2, 1fr); }
 }
 
