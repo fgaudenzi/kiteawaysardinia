@@ -63,3 +63,44 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # Pubblica lo stesso sito anche su Netsons (https://kiteawaysardinia.it) via FTP.
+  # Build separata: sul dominio il sito sta alla radice, quindi baseurl vuoto.
+  # Se i secret FTP non sono configurati, questo job fallisce senza toccare GitHub Pages.
+  deploy-ftp:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+          bundler-cache: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Copy local fonts into assets
+        run: |
+          npm install --no-audit --no-fund
+          npm run vendor
+
+      - name: Build site for kiteawaysardinia.it
+        run: bundle exec jekyll build --baseurl "" --url "https://kiteawaysardinia.it" --destination ./_site_ftp
+
+      - name: Upload via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./_site_ftp/
+          server-dir: ${{ secrets.FTP_DIR }}
