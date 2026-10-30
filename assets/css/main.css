@@ -227,31 +227,6 @@ a { color: inherit; }
   height: 100%;
 }
 
-.spot-story--webcam {
-  grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr);
-  gap: .9rem;
-}
-
-.spot-webcam__media {
-  border-radius: .6rem;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  background: rgba(0, 0, 0, .2);
-}
-
-.spot-webcam-video {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 300px;
-  object-fit: cover;
-}
-
-.spot-webcam__panel {
-  display: grid;
-  align-content: center;
-}
-
 .windguru-embed {
   width: 100%;
   height: auto;
@@ -511,7 +486,6 @@ details p { margin-bottom: 0; }
   .spot-panels-row { grid-template-columns: 1fr; }
   .windguru-embed { min-height: 260px; }
   .windguru-embed iframe { min-height: 260px; }
-  .spot-webcam-video { max-height: 240px; }
   .stats-grid { transform: translateY(-1.5rem); }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .reach-map iframe { min-height: 340px; }
@@ -582,9 +556,16 @@ details p { margin-bottom: 0; }
 }
 .embed-consent p { margin: 0; color: var(--muted); font-size: .95rem; }
 .embed-consent a { color: var(--primary); text-decoration: underline; }
-.spot-webcam__media .embed-consent { background: rgba(0, 0, 0, .35); }
-.spot-webcam__media .embed-consent p, .spot-webcam__media .embed-consent a { color: rgba(255, 255, 255, .92); }
 
 /* Dati legali nel footer */
 .footer__legal { margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid rgba(255, 255, 255, .25); font-size: .85rem; opacity: .9; }
 .footer__legal a { color: #fff; text-decoration: underline; }
+
+/* Modal cookie */
+.cookie-modal { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 1rem; background: rgba(16, 42, 67, .6); }
+.cookie-modal[hidden] { display: none; }
+.cookie-modal__card { max-width: 460px; padding: 1.6rem; border-radius: .8rem; background: #fff; color: var(--text); box-shadow: var(--shadow); }
+.cookie-modal__card h2 { margin: 0 0 .6rem; font-family: Sora, sans-serif; font-size: 1.25rem; color: var(--primary); }
+.cookie-modal__card p { margin: 0 0 1.2rem; color: var(--muted); font-size: .95rem; }
+.cookie-modal__card a { color: var(--primary); text-decoration: underline; }
+.cookie-modal__actions { display: flex; gap: .75rem; justify-content: flex-end; flex-wrap: wrap; }

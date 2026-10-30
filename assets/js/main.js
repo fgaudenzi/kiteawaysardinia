@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('[data-nav-menu]');
   const languageSwitcherLinks = Array.from(document.querySelectorAll('.language-switcher a'));
 
-  // Contenuti di terze parti (Google Maps, Windguru, webcam): vengono caricati solo
+  // Contenuti di terze parti (Google Maps, Windguru): vengono caricati solo
   // dopo il clic esplicito dell'utente, quindi nessun dato lascia il sito prima.
-  const hlsLocalSrc = new URL('vendor/hls.min.js', (document.querySelector('script[src*="assets/js/main.js"]') || {}).src || window.location.href).href;
 
   const loadScript = (src, onload) => {
     const script = document.createElement('script');
@@ -44,59 +43,64 @@ document.addEventListener('DOMContentLoaded', () => {
     loadScript(`https://www.windguru.cz/js/widget.php?${args.join('&')}`);
   };
 
-  const loadWebcam = (box) => {
-    const streamUrl = box.dataset.embedSrc;
-    const video = document.createElement('video');
-    video.id = 'punta-trettu-webcam';
-    video.className = 'spot-webcam-video';
-    video.muted = true;
-    video.controls = true;
-    video.autoplay = true;
-    video.playsInline = true;
-    box.replaceWith(video);
+  const embedLoaders = { map: loadMap, windguru: loadWindguru };
 
-    if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = streamUrl;
-      return;
-    }
-
-    const attachHls = () => {
-      if (!window.Hls || !window.Hls.isSupported()) {
-        return;
-      }
-      const hls = new window.Hls();
-      hls.loadSource(streamUrl);
-      hls.attachMedia(video);
-      hls.on(window.Hls.Events.MANIFEST_PARSED, () => {
-        video.play().catch(() => {});
-      });
-      hls.on(window.Hls.Events.ERROR, (_, data) => {
-        if (data.fatal) {
-          console.error('Webcam stream error:', data.type);
-        }
-      });
-    };
-
-    if (window.Hls) {
-      attachHls();
-    } else {
-      // hls.js ospitato in locale (assets/js/vendor), non da un CDN
-      loadScript(hlsLocalSrc, attachHls);
-    }
+  const consentKey = 'kiteaway_consent';
+  const readConsent = () => {
+    try { return localStorage.getItem(consentKey); } catch (e) { return null; }
+  };
+  const writeConsent = (value) => {
+    try {
+      if (value === null) { localStorage.removeItem(consentKey); } else { localStorage.setItem(consentKey, value); }
+    } catch (e) { /* storage non disponibile */ }
   };
 
-  const embedLoaders = { map: loadMap, windguru: loadWindguru, webcam: loadWebcam };
+  const loadEmbed = (box) => {
+    const loader = embedLoaders[box.dataset.embedType];
+    if (loader && box.isConnected) {
+      loader(box);
+    }
+  };
+  const loadAllEmbeds = () => document.querySelectorAll('[data-embed-consent]').forEach(loadEmbed);
 
   const initEmbedConsent = () => {
+    const modal = document.querySelector('[data-cookie-modal]');
+    const showModal = () => {
+      if (!modal) { return; }
+      modal.hidden = false;
+      modal.querySelector('[data-consent-accept]')?.focus();
+    };
+    const hideModal = () => { if (modal) { modal.hidden = true; } };
+
+    // Bottone sul singolo riquadro: carica solo quel contenuto
     document.querySelectorAll('[data-embed-consent]').forEach((box) => {
-      const button = box.querySelector('[data-embed-load]');
-      button?.addEventListener('click', () => {
-        const loader = embedLoaders[box.dataset.embedType];
-        if (loader) {
-          loader(box);
-        }
+      box.querySelector('[data-embed-load]')?.addEventListener('click', () => loadEmbed(box));
+    });
+
+    modal?.querySelector('[data-consent-accept]')?.addEventListener('click', () => {
+      writeConsent('granted');
+      hideModal();
+      loadAllEmbeds();
+    });
+    modal?.querySelector('[data-consent-reject]')?.addEventListener('click', () => {
+      const wasGranted = readConsent() === 'granted';
+      writeConsent('denied');
+      hideModal();
+      if (wasGranted) { window.location.reload(); }
+    });
+    document.querySelectorAll('[data-open-consent]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        showModal();
       });
     });
+
+    const consent = readConsent();
+    if (consent === 'granted') {
+      loadAllEmbeds();
+    } else if (consent === null) {
+      showModal();
+    }
   };
 
   const getLanguageFromPath = (pathName, basePath) => {
