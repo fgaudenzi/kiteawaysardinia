@@ -198,7 +198,7 @@ consent_notice: "This content is provided by an external service, which will rec
 consent_load: "Load content"
 footer_privacy: "Privacy & cookies"
 consent_modal_title: "Cookies and external content"
-consent_modal_text: "This site uses third-party services (Google Maps, Windguru, webcam) that may set cookies and receive your IP address. If you accept, all of them are enabled. You can change your mind at any time."
+consent_modal_text: "This site uses third-party services (Google Maps, Windguru) that may set cookies and receive your IP address. If you accept, all of them are enabled. You can change your mind at any time."
 consent_accept: "Accept"
 consent_reject: "Reject"
 footer_cookie_settings: "Cookie settings"

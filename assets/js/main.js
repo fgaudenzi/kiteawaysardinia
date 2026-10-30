@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('[data-nav-menu]');
   const languageSwitcherLinks = Array.from(document.querySelectorAll('.language-switcher a'));
 
-  // Contenuti di terze parti (Google Maps, Windguru, webcam): vengono caricati solo
+  // Contenuti di terze parti (Google Maps, Windguru): vengono caricati solo
   // dopo il clic esplicito dell'utente, quindi nessun dato lascia il sito prima.
-  const hlsLocalSrc = new URL('vendor/hls.min.js', (document.querySelector('script[src*="assets/js/main.js"]') || {}).src || window.location.href).href;
 
   const loadScript = (src, onload) => {
     const script = document.createElement('script');
@@ -44,48 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadScript(`https://www.windguru.cz/js/widget.php?${args.join('&')}`);
   };
 
-  const loadWebcam = (box) => {
-    const streamUrl = box.dataset.embedSrc;
-    const video = document.createElement('video');
-    video.id = 'punta-trettu-webcam';
-    video.className = 'spot-webcam-video';
-    video.muted = true;
-    video.controls = true;
-    video.autoplay = true;
-    video.playsInline = true;
-    box.replaceWith(video);
-
-    if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = streamUrl;
-      return;
-    }
-
-    const attachHls = () => {
-      if (!window.Hls || !window.Hls.isSupported()) {
-        return;
-      }
-      const hls = new window.Hls();
-      hls.loadSource(streamUrl);
-      hls.attachMedia(video);
-      hls.on(window.Hls.Events.MANIFEST_PARSED, () => {
-        video.play().catch(() => {});
-      });
-      hls.on(window.Hls.Events.ERROR, (_, data) => {
-        if (data.fatal) {
-          console.error('Webcam stream error:', data.type);
-        }
-      });
-    };
-
-    if (window.Hls) {
-      attachHls();
-    } else {
-      // hls.js ospitato in locale (assets/js/vendor), non da un CDN
-      loadScript(hlsLocalSrc, attachHls);
-    }
-  };
-
-  const embedLoaders = { map: loadMap, windguru: loadWindguru, webcam: loadWebcam };
+  const embedLoaders = { map: loadMap, windguru: loadWindguru };
 
   const consentKey = 'kiteaway_consent';
   const readConsent = () => {

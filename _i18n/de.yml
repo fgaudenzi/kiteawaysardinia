@@ -200,7 +200,7 @@ consent_notice: "Dieser Inhalt wird von einem externen Dienst bereitgestellt, de
 consent_load: "Inhalt laden"
 footer_privacy: "Datenschutz & Cookies"
 consent_modal_title: "Cookies und externe Inhalte"
-consent_modal_text: "Diese Website nutzt Dienste Dritter (Google Maps, Windguru, Webcam), die Cookies setzen können und Ihre IP-Adresse erhalten. Bei Zustimmung werden alle aktiviert. Sie können Ihre Entscheidung jederzeit ändern."
+consent_modal_text: "Diese Website nutzt Dienste Dritter (Google Maps, Windguru), die Cookies setzen können und Ihre IP-Adresse erhalten. Bei Zustimmung werden alle aktiviert. Sie können Ihre Entscheidung jederzeit ändern."
 consent_accept: "Akzeptieren"
 consent_reject: "Ablehnen"
 footer_cookie_settings: "Cookie-Einstellungen"

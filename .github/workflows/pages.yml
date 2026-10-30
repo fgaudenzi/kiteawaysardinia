@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Copy local fonts and hls.js into assets
+      - name: Copy local fonts into assets
         run: |
           npm install --no-audit --no-fund
           npm run vendor
