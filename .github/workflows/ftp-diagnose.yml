@@ -1,0 +1,43 @@
+name: FTP diagnose (una tantum)
+
+on:
+  push:
+    branches:
+      - ftp-diagnose
+
+permissions:
+  contents: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Raccogli informazioni
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          mkdir -p report
+          base="ftp://${FTP_SERVER}/"
+          u="${FTP_USERNAME}:${FTP_PASSWORD}"
+          {
+            echo "== DNS =="; getent hosts kiteawaysardinia.it www.kiteawaysardinia.it || true
+            echo "FTP host resolves to:"; getent hosts "${FTP_SERVER}" || true
+            echo "== HTTP kiteawaysardinia.it =="; curl -sSIL -m 20 http://kiteawaysardinia.it/ | grep -iE '^(HTTP|location|server)' || true
+            echo "== HTTPS kiteawaysardinia.it =="; curl -sSIL -m 20 https://kiteawaysardinia.it/ | grep -iE '^(HTTP|location|server)' || true
+            echo "== body =="; curl -sSL -m 20 https://kiteawaysardinia.it/ | head -c 500 || true
+            echo; echo "== public_html =="; curl -sS --ssl-reqd -k -u "$u" "${base}public_html/" -l -a || true
+            echo "== .htaccess =="; curl -sS --ssl-reqd -k -u "$u" "${base}public_html/.htaccess" || true
+            echo "== default.html =="; curl -sS --ssl-reqd -k -u "$u" "${base}public_html/default.html" | head -c 500 || true
+            echo "== radice =="; curl -sS --ssl-reqd -k -u "$u" "$base" -l || true
+          } > report/ftp-report.txt 2>&1
+      - name: Salva il report su un ramo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git checkout -B ftp-report
+          git add -f report/ftp-report.txt
+          git commit -m "FTP report"
+          git push -f origin ftp-report
