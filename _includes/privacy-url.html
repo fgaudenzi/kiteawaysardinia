@@ -1,0 +1,1 @@
+{%- if site.lang == site.default_lang or site.lang == nil -%}{{ '/privacy/' | relative_url }}{%- else -%}{{ '/' | append: site.lang | append: '/privacy/' | relative_url }}{%- endif -%}

@@ -568,3 +568,23 @@ details p { margin-bottom: 0; }
     margin: .4rem .9rem .7rem;
   }
 }
+
+/* Contenuti di terze parti caricati solo dopo il clic (placeholder) */
+.embed-consent {
+  display: grid;
+  gap: .8rem;
+  align-content: center;
+  justify-items: start;
+  min-height: 240px;
+  padding: 1.4rem;
+  color: var(--text);
+  background: var(--alt-background);
+}
+.embed-consent p { margin: 0; color: var(--muted); font-size: .95rem; }
+.embed-consent a { color: var(--primary); text-decoration: underline; }
+.spot-webcam__media .embed-consent { background: rgba(0, 0, 0, .35); }
+.spot-webcam__media .embed-consent p, .spot-webcam__media .embed-consent a { color: rgba(255, 255, 255, .92); }
+
+/* Dati legali nel footer */
+.footer__legal { margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid rgba(255, 255, 255, .25); font-size: .85rem; opacity: .9; }
+.footer__legal a { color: #fff; text-decoration: underline; }

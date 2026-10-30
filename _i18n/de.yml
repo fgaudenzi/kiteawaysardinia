@@ -195,3 +195,7 @@ contact_title: Bereit, deine Session zu planen?
 contact_text: Schreib uns deine Daten, dein Level und die Gruppengröße. Wir schlagen das beste Format und Windfenster vor.
 contact_email: E-Mail senden
 footer_about: Kitesurfkurse in Cussorgia nahe Punta Trettu, Sant'Antioco und Calasetta.
+
+consent_notice: "Dieser Inhalt wird von einem externen Dienst bereitgestellt, der nach dem Laden Ihre IP-Adresse erhält:"
+consent_load: "Inhalt laden"
+footer_privacy: "Datenschutz & Cookies"

@@ -1,0 +1,116 @@
+---
+layout: page
+title: "{% t footer_privacy %}"
+permalink: /privacy/
+ref: privacy
+---
+<!-- BOZZA: testo informativo di partenza, da far verificare da un professionista prima della pubblicazione. -->
+{% assign L = site.data.legal %}
+{% if site.lang == 'it' %}
+<p><em>Ultimo aggiornamento: 30 ottobre 2026</em></p>
+
+<h2>Titolare del trattamento</h2>
+<p>{{ L.name }}, {{ L.address }} &ndash; {{ L.tax_code }} &ndash; {{ L.registry }} &ndash; {{ L.legal_rep }}. PEC: {{ L.pec }}. Contatto: <a href="mailto:{{ L.email }}">{{ L.email }}</a>.</p>
+
+<h2>Quali dati trattiamo e perché</h2>
+<ul>
+  <li><strong>Richieste e prenotazioni</strong> (WhatsApp, email): nome, recapito e informazioni che ci invii, per rispondere e gestire lezioni e noleggi. Base giuridica: esecuzione di misure precontrattuali e contratto (art. 6.1.b GDPR). Conserviamo i dati per il tempo necessario e, per i dati contabili, per i termini di legge. I messaggi WhatsApp sono gestiti anche da WhatsApp/Meta secondo la loro informativa.</li>
+  <li><strong>Dati di navigazione</strong>: il sito è ospitato su GitHub Pages (GitHub, Inc., USA), che può registrare l&rsquo;indirizzo IP e i dati tecnici delle richieste per sicurezza e funzionamento. Noi non utilizziamo strumenti di analisi o profilazione.</li>
+</ul>
+
+<h2>Cookie e archiviazione locale</h2>
+<p>Il sito non utilizza cookie di profilazione né strumenti statistici. Salva solo nel tuo browser, tramite <em>localStorage</em>, la lingua scelta (<code>kiteaway_lang</code>), una preferenza funzionale richiesta da te che non lascia il tuo dispositivo.</p>
+
+<h2>Contenuti di terze parti (solo dopo il tuo clic)</h2>
+<p>Mappa, previsioni del vento e webcam sono forniti da servizi esterni e <strong>non vengono caricati finché non premi &ldquo;Carica il contenuto&rdquo;</strong>. Con il clic acconsenti (art. 6.1.a GDPR) alla trasmissione del tuo indirizzo IP e dei dati del browser al fornitore, che può impostare propri cookie secondo la sua informativa:</p>
+<ul>
+  <li>Mappa: Google Maps (Google) &ndash; <a href="https://policies.google.com/privacy" rel="noopener">informativa</a></li>
+  <li>Previsioni: Windguru (windguru.cz) &ndash; <a href="https://www.windguru.cz/" rel="noopener">sito del fornitore</a></li>
+  <li>Webcam: WhatsUpCams (whatsupcams.com) &ndash; <a href="https://www.whatsupcams.com/" rel="noopener">sito del fornitore</a></li>
+</ul>
+<p>Alcuni fornitori possono trattare dati negli Stati Uniti, sulla base di decisioni di adeguatezza o clausole contrattuali standard. Se non carichi questi contenuti, nessun dato viene inviato ai fornitori.</p>
+
+<h2>I tuoi diritti</h2>
+<p>Puoi chiedere accesso, rettifica, cancellazione, limitazione, portabilit&agrave; e opposizione (artt. 15-22 GDPR) scrivendo a <a href="mailto:{{ L.email }}">{{ L.email }}</a>. Hai inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" rel="noopener">garanteprivacy.it</a>).</p>
+
+{% elsif site.lang == 'fr' %}
+<p><em>Dernière mise à jour : 30 octobre 2026</em></p>
+
+<h2>Responsable du traitement</h2>
+<p>{{ L.name }}, {{ L.address }} &ndash; {{ L.tax_code }} &ndash; {{ L.registry }} &ndash; {{ L.legal_rep }}. PEC: {{ L.pec }}. Contact : <a href="mailto:{{ L.email }}">{{ L.email }}</a>.</p>
+
+<h2>Données traitées et finalités</h2>
+<ul>
+  <li><strong>Demandes et réservations</strong> (WhatsApp, e-mail) : nom, coordonnées et informations que vous nous envoyez, pour répondre et gérer cours et locations. Base juridique : mesures précontractuelles et contrat (art. 6.1.b RGPD). Conservation pendant la durée nécessaire et, pour les données comptables, selon les délais légaux. Les messages WhatsApp sont aussi traités par WhatsApp/Meta selon leur politique.</li>
+  <li><strong>Données de navigation</strong> : le site est hébergé sur GitHub Pages (GitHub, Inc., États-Unis), qui peut enregistrer l&rsquo;adresse IP et les données techniques des requêtes pour la sécurité et le fonctionnement. Nous n&rsquo;utilisons aucun outil d&rsquo;analyse ni de profilage.</li>
+</ul>
+
+<h2>Cookies et stockage local</h2>
+<p>Le site n&rsquo;utilise ni cookies de profilage ni outils statistiques. Il enregistre uniquement dans votre navigateur (<em>localStorage</em>) la langue choisie (<code>kiteaway_lang</code>), une préférence fonctionnelle demandée par vous qui ne quitte pas votre appareil.</p>
+
+<h2>Contenus tiers (uniquement après votre clic)</h2>
+<p>La carte, les prévisions de vent et la webcam proviennent de services externes et <strong>ne sont pas chargés tant que vous n&rsquo;avez pas cliqué sur &laquo; Charger le contenu &raquo;</strong>. Par ce clic, vous consentez (art. 6.1.a RGPD) à la transmission de votre adresse IP et des données du navigateur au fournisseur, qui peut déposer ses propres cookies selon sa politique :</p>
+<ul>
+  <li>Carte : Google Maps (Google) &ndash; <a href="https://policies.google.com/privacy" rel="noopener">politique de confidentialité</a></li>
+  <li>Prévisions : Windguru (windguru.cz) &ndash; <a href="https://www.windguru.cz/" rel="noopener">site du fournisseur</a></li>
+  <li>Webcam : WhatsUpCams (whatsupcams.com) &ndash; <a href="https://www.whatsupcams.com/" rel="noopener">site du fournisseur</a></li>
+</ul>
+<p>Certains fournisseurs peuvent traiter des données aux États-Unis, sur la base de décisions d&rsquo;adéquation ou de clauses contractuelles types. Si vous ne chargez pas ces contenus, aucune donnée n&rsquo;est envoyée aux fournisseurs.</p>
+
+<h2>Vos droits</h2>
+<p>Vous pouvez demander l&rsquo;accès, la rectification, l&rsquo;effacement, la limitation, la portabilité et vous opposer au traitement (art. 15 à 22 RGPD) en écrivant à <a href="mailto:{{ L.email }}">{{ L.email }}</a>. Vous pouvez aussi déposer une réclamation auprès de l&rsquo;autorité de protection des données (en Italie : <a href="https://www.garanteprivacy.it" rel="noopener">garanteprivacy.it</a>).</p>
+
+{% elsif site.lang == 'de' %}
+<p><em>Zuletzt aktualisiert: 30. Oktober 2026</em></p>
+
+<h2>Verantwortlicher</h2>
+<p>{{ L.name }}, {{ L.address }} &ndash; {{ L.tax_code }} &ndash; {{ L.registry }} &ndash; {{ L.legal_rep }}. PEC: {{ L.pec }}. Kontakt: <a href="mailto:{{ L.email }}">{{ L.email }}</a>.</p>
+
+<h2>Welche Daten wir verarbeiten und warum</h2>
+<ul>
+  <li><strong>Anfragen und Buchungen</strong> (WhatsApp, E-Mail): Name, Kontaktdaten und Angaben, die Sie uns senden, um zu antworten und Kurse bzw. Verleih abzuwickeln. Rechtsgrundlage: vorvertragliche Maßnahmen und Vertrag (Art. 6 Abs. 1 lit. b DSGVO). Speicherung so lange wie nötig, Buchhaltungsdaten gemäß gesetzlichen Fristen. WhatsApp-Nachrichten werden zudem von WhatsApp/Meta nach deren Datenschutzerklärung verarbeitet.</li>
+  <li><strong>Nutzungsdaten</strong>: Die Website wird über GitHub Pages (GitHub, Inc., USA) gehostet, das IP-Adresse und technische Anfragedaten zu Sicherheits- und Betriebszwecken protokollieren kann. Wir setzen keine Analyse- oder Profiling-Tools ein.</li>
+</ul>
+
+<h2>Cookies und lokaler Speicher</h2>
+<p>Die Website verwendet keine Profiling-Cookies und keine Statistik-Tools. Im Browser wird nur die gewählte Sprache (<code>kiteaway_lang</code>) per <em>localStorage</em> gespeichert &ndash; eine von Ihnen gewünschte Funktionseinstellung, die Ihr Gerät nicht verlässt.</p>
+
+<h2>Inhalte von Dritten (erst nach Ihrem Klick)</h2>
+<p>Karte, Windvorhersage und Webcam stammen von externen Diensten und <strong>werden erst geladen, wenn Sie auf &bdquo;Inhalt laden&ldquo; klicken</strong>. Mit dem Klick willigen Sie ein (Art. 6 Abs. 1 lit. a DSGVO), dass Ihre IP-Adresse und Browserdaten an den Anbieter übermittelt werden, der nach eigener Datenschutzerklärung eigene Cookies setzen kann:</p>
+<ul>
+  <li>Karte: Google Maps (Google) &ndash; <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung</a></li>
+  <li>Vorhersage: Windguru (windguru.cz) &ndash; <a href="https://www.windguru.cz/" rel="noopener">Website des Anbieters</a></li>
+  <li>Webcam: WhatsUpCams (whatsupcams.com) &ndash; <a href="https://www.whatsupcams.com/" rel="noopener">Website des Anbieters</a></li>
+</ul>
+<p>Einige Anbieter können Daten in den USA verarbeiten, gestützt auf Angemessenheitsbeschlüsse oder Standardvertragsklauseln. Wenn Sie diese Inhalte nicht laden, werden keine Daten an die Anbieter gesendet.</p>
+
+<h2>Ihre Rechte</h2>
+<p>Sie können Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch verlangen (Art. 15&ndash;22 DSGVO), indem Sie an <a href="mailto:{{ L.email }}">{{ L.email }}</a> schreiben. Zudem können Sie sich bei einer Datenschutzaufsichtsbehörde beschweren (in Italien: <a href="https://www.garanteprivacy.it" rel="noopener">garanteprivacy.it</a>).</p>
+
+{% else %}
+<p><em>Last updated: 30 October 2026</em></p>
+
+<h2>Data controller</h2>
+<p>{{ L.name }}, {{ L.address }} &ndash; {{ L.tax_code }} &ndash; {{ L.registry }} &ndash; {{ L.legal_rep }}. PEC: {{ L.pec }}. Contact: <a href="mailto:{{ L.email }}">{{ L.email }}</a>.</p>
+
+<h2>What data we process and why</h2>
+<ul>
+  <li><strong>Enquiries and bookings</strong> (WhatsApp, email): name, contact details and the information you send us, to reply and manage lessons and rentals. Legal basis: pre-contractual steps and contract (Art. 6(1)(b) GDPR). Kept as long as necessary and, for accounting data, for the legal retention periods. WhatsApp messages are also processed by WhatsApp/Meta under their own policy.</li>
+  <li><strong>Browsing data</strong>: the site is hosted on GitHub Pages (GitHub, Inc., USA), which may log your IP address and technical request data for security and operation. We use no analytics or profiling tools.</li>
+</ul>
+
+<h2>Cookies and local storage</h2>
+<p>This site uses no profiling cookies or statistics tools. It only stores your chosen language (<code>kiteaway_lang</code>) in your browser via <em>localStorage</em>, a functional preference requested by you that never leaves your device.</p>
+
+<h2>Third-party content (only after you click)</h2>
+<p>The map, wind forecast and webcam come from external services and <strong>are not loaded until you press &ldquo;Load content&rdquo;</strong>. By clicking you consent (Art. 6(1)(a) GDPR) to your IP address and browser data being sent to the provider, which may set its own cookies under its own policy:</p>
+<ul>
+  <li>Map: Google Maps (Google) &ndash; <a href="https://policies.google.com/privacy" rel="noopener">privacy policy</a></li>
+  <li>Forecast: Windguru (windguru.cz) &ndash; <a href="https://www.windguru.cz/" rel="noopener">provider website</a></li>
+  <li>Webcam: WhatsUpCams (whatsupcams.com) &ndash; <a href="https://www.whatsupcams.com/" rel="noopener">provider website</a></li>
+</ul>
+<p>Some providers may process data in the United States, based on adequacy decisions or standard contractual clauses. If you do not load this content, no data is sent to these providers.</p>
+
+<h2>Your rights</h2>
+<p>You can request access, rectification, erasure, restriction, portability and object to processing (Arts. 15&ndash;22 GDPR) by writing to <a href="mailto:{{ L.email }}">{{ L.email }}</a>. You may also lodge a complaint with a data protection authority (in Italy: <a href="https://www.garanteprivacy.it" rel="noopener">garanteprivacy.it</a>).</p>
+{% endif %}

@@ -6,20 +6,57 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('[data-nav-toggle]');
   const menu = document.querySelector('[data-nav-menu]');
   const languageSwitcherLinks = Array.from(document.querySelectorAll('.language-switcher a'));
-  const webcamVideo = document.getElementById('punta-trettu-webcam');
 
-  const initSpotWebcam = () => {
-    if (!webcamVideo) {
-      return;
+  // Contenuti di terze parti (Google Maps, Windguru, webcam): vengono caricati solo
+  // dopo il clic esplicito dell'utente, quindi nessun dato lascia il sito prima.
+  const hlsLocalSrc = new URL('vendor/hls.min.js', (document.querySelector('script[src*="assets/js/main.js"]') || {}).src || window.location.href).href;
+
+  const loadScript = (src, onload) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.async = true;
+    if (onload) {
+      script.onload = onload;
     }
+    document.head.appendChild(script);
+    return script;
+  };
 
-    const streamUrl = webcamVideo.dataset.hlsSrc;
-    if (!streamUrl) {
-      return;
-    }
+  const loadMap = (box) => {
+    const iframe = document.createElement('iframe');
+    iframe.src = box.dataset.embedSrc;
+    iframe.title = box.dataset.embedTitle || 'Map';
+    iframe.width = '600';
+    iframe.height = '450';
+    iframe.style.border = '0';
+    iframe.allowFullscreen = true;
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    box.replaceWith(iframe);
+  };
 
-    if (webcamVideo.canPlayType('application/vnd.apple.mpegurl')) {
-      webcamVideo.src = streamUrl;
+  const loadWindguru = (box) => {
+    const uid = 'wg_fwdg_436366_21_1787992405146';
+    const args = ['s=436366', 'm=21', `uid=${uid}`, 'wj=knots', 'tj=c', 'waj=m', 'tij=cm', 'odh=9', 'doh=20',
+      'fhours=240', 'hrsm=1', 'vt=forecasts', 'lng=en', 'p=WINDSPD,GUST,MWINDSPD,SMER,TMPE,CDC,APCP1s,RATING'];
+    const anchor = document.createElement('script');
+    anchor.id = uid;
+    box.replaceWith(anchor);
+    loadScript(`https://www.windguru.cz/js/widget.php?${args.join('&')}`);
+  };
+
+  const loadWebcam = (box) => {
+    const streamUrl = box.dataset.embedSrc;
+    const video = document.createElement('video');
+    video.id = 'punta-trettu-webcam';
+    video.className = 'spot-webcam-video';
+    video.muted = true;
+    video.controls = true;
+    video.autoplay = true;
+    video.playsInline = true;
+    box.replaceWith(video);
+
+    if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = streamUrl;
       return;
     }
 
@@ -27,15 +64,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!window.Hls || !window.Hls.isSupported()) {
         return;
       }
-
       const hls = new window.Hls();
       hls.loadSource(streamUrl);
-      hls.attachMedia(webcamVideo);
-
+      hls.attachMedia(video);
       hls.on(window.Hls.Events.MANIFEST_PARSED, () => {
-        webcamVideo.play().catch(() => {});
+        video.play().catch(() => {});
       });
-
       hls.on(window.Hls.Events.ERROR, (_, data) => {
         if (data.fatal) {
           console.error('Webcam stream error:', data.type);
@@ -45,14 +79,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (window.Hls) {
       attachHls();
-      return;
+    } else {
+      // hls.js ospitato in locale (assets/js/vendor), non da un CDN
+      loadScript(hlsLocalSrc, attachHls);
     }
+  };
 
-    const hlsScript = document.createElement('script');
-    hlsScript.src = 'https://cdn.jsdelivr.net/npm/hls.js@1';
-    hlsScript.async = true;
-    hlsScript.onload = attachHls;
-    document.head.appendChild(hlsScript);
+  const embedLoaders = { map: loadMap, windguru: loadWindguru, webcam: loadWebcam };
+
+  const initEmbedConsent = () => {
+    document.querySelectorAll('[data-embed-consent]').forEach((box) => {
+      const button = box.querySelector('[data-embed-load]');
+      button?.addEventListener('click', () => {
+        const loader = embedLoaders[box.dataset.embedType];
+        if (loader) {
+          loader(box);
+        }
+      });
+    });
   };
 
   const getLanguageFromPath = (pathName, basePath) => {
@@ -141,5 +185,5 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateHeader, { passive: true });
   updateHeader();
   setupLanguagePreference();
-  initSpotWebcam();
+  initEmbedConsent();
 });
