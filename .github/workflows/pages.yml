@@ -93,7 +93,7 @@ jobs:
           npm run vendor
 
       - name: Build site for kiteawaysardinia.it
-        run: bundle exec jekyll build --baseurl "" --url "https://kiteawaysardinia.it" --destination ./_site_ftp
+        run: bundle exec jekyll build --config _config.yml,_config_ftp.yml --destination ./_site_ftp
 
       - name: Upload via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5

@@ -1,0 +1,3 @@
+# Override per il dominio kiteawaysardinia.it (sito alla radice, senza prefisso)
+url: "https://kiteawaysardinia.it"
+baseurl: ""
