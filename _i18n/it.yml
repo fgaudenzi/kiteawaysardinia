@@ -230,3 +230,8 @@ footer_about: Scuola di kitesurf a Cussorgia vicino Punta Trettu, Sant'Antioco e
 consent_notice: "Questo contenuto è fornito da un servizio esterno, che riceverà il tuo indirizzo IP una volta caricato:"
 consent_load: "Carica il contenuto"
 footer_privacy: "Privacy e cookie"
+consent_modal_title: "Cookie e contenuti esterni"
+consent_modal_text: "Questo sito usa servizi di terze parti (Google Maps, Windguru, webcam) che possono impostare cookie e ricevono il tuo indirizzo IP. Se accetti, vengono attivati tutti. Puoi cambiare idea in qualsiasi momento."
+consent_accept: "Accetta"
+consent_reject: "Rifiuta"
+footer_cookie_settings: "Impostazioni cookie"

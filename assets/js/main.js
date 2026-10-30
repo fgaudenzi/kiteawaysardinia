@@ -87,16 +87,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const embedLoaders = { map: loadMap, windguru: loadWindguru, webcam: loadWebcam };
 
+  const consentKey = 'kiteaway_consent';
+  const readConsent = () => {
+    try { return localStorage.getItem(consentKey); } catch (e) { return null; }
+  };
+  const writeConsent = (value) => {
+    try {
+      if (value === null) { localStorage.removeItem(consentKey); } else { localStorage.setItem(consentKey, value); }
+    } catch (e) { /* storage non disponibile */ }
+  };
+
+  const loadEmbed = (box) => {
+    const loader = embedLoaders[box.dataset.embedType];
+    if (loader && box.isConnected) {
+      loader(box);
+    }
+  };
+  const loadAllEmbeds = () => document.querySelectorAll('[data-embed-consent]').forEach(loadEmbed);
+
   const initEmbedConsent = () => {
+    const modal = document.querySelector('[data-cookie-modal]');
+    const showModal = () => {
+      if (!modal) { return; }
+      modal.hidden = false;
+      modal.querySelector('[data-consent-accept]')?.focus();
+    };
+    const hideModal = () => { if (modal) { modal.hidden = true; } };
+
+    // Bottone sul singolo riquadro: carica solo quel contenuto
     document.querySelectorAll('[data-embed-consent]').forEach((box) => {
-      const button = box.querySelector('[data-embed-load]');
-      button?.addEventListener('click', () => {
-        const loader = embedLoaders[box.dataset.embedType];
-        if (loader) {
-          loader(box);
-        }
+      box.querySelector('[data-embed-load]')?.addEventListener('click', () => loadEmbed(box));
+    });
+
+    modal?.querySelector('[data-consent-accept]')?.addEventListener('click', () => {
+      writeConsent('granted');
+      hideModal();
+      loadAllEmbeds();
+    });
+    modal?.querySelector('[data-consent-reject]')?.addEventListener('click', () => {
+      const wasGranted = readConsent() === 'granted';
+      writeConsent('denied');
+      hideModal();
+      if (wasGranted) { window.location.reload(); }
+    });
+    document.querySelectorAll('[data-open-consent]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        showModal();
       });
     });
+
+    const consent = readConsent();
+    if (consent === 'granted') {
+      loadAllEmbeds();
+    } else if (consent === null) {
+      showModal();
+    }
   };
 
   const getLanguageFromPath = (pathName, basePath) => {
