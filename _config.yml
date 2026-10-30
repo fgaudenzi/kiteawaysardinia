@@ -28,6 +28,7 @@ sass:
   sourcemap: never
 
 exclude:
+  - scripts
   - .agents
   - .bundle
   - .git

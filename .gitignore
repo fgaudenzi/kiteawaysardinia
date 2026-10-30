@@ -23,3 +23,7 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# Asset di terze parti copiati da npm (scripts/vendor-assets.sh)
+assets/fonts/
+assets/js/vendor/

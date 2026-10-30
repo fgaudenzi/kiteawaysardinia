@@ -49,18 +49,10 @@
     <div class="spot-story spot-story--windguru-layout">
       <figure class="feature-image spot-story__media spot-story__media--windguru">
         <div class="windguru-embed" data-windguru-embed>
-          <script id="wg_fwdg_436366_21_1787992405146">
-(function (window, document) {
-  var loader = function () {
-    var arg = ["s=436366" ,"m=21","uid=wg_fwdg_436366_21_1787992405146" ,"wj=knots" ,"tj=c" ,"waj=m" ,"tij=cm" ,"odh=9" ,"doh=20" ,"fhours=240" ,"hrsm=1" ,"vt=forecasts" ,"lng=en" ,"p=WINDSPD,GUST,MWINDSPD,SMER,TMPE,CDC,APCP1s,RATING"];
-    var script = document.createElement("script");
-    var tag = document.getElementsByTagName("script")[0];
-    script.src = "https://www.windguru.cz/js/widget.php?"+(arg.join("&"));
-    tag.parentNode.insertBefore(script, tag);
-  };
-  window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
-})(window, document);
-</script>
+          <div class="embed-consent" data-embed-consent data-embed-type="windguru">
+            <p>{% t consent_notice %} <strong>Windguru</strong>. <a href="{% include privacy-url.html %}">{% t footer_privacy %}</a></p>
+            <button type="button" class="button button--primary" data-embed-load>{% t consent_load %}</button>
+          </div>
         </div>
       </figure>
       <article class="spot-story__content spot-panels-row">
@@ -77,16 +69,10 @@
 
     <div class="spot-story spot-story--webcam">
       <figure class="feature-image spot-story__media spot-webcam__media">
-        <video
-          id="punta-trettu-webcam"
-          class="spot-webcam-video"
-          data-hls-src="https://cdn-007.whatsupcams.com/hls/it_sangiovannisuergiu01.m3u8"
-          autoplay
-          muted
-          playsinline
-          controls
-          preload="metadata"
-        ></video>
+        <div class="embed-consent" data-embed-consent data-embed-type="webcam" data-embed-src="https://cdn-007.whatsupcams.com/hls/it_sangiovannisuergiu01.m3u8">
+          <p>{% t consent_notice %} <strong>WhatsUpCams</strong>. <a href="{% include privacy-url.html %}">{% t footer_privacy %}</a></p>
+          <button type="button" class="button button--primary" data-embed-load>{% t consent_load %}</button>
+        </div>
       </figure>
       <article class="spot-panel spot-webcam__panel">
         <h3>Live webcam Punta Trettu</h3>
