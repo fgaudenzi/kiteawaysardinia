@@ -1,8 +1,8 @@
-# Dati identificativi dell'associazione/impresa (D.Lgs. 70/2003, art. 7; GDPR art. 13).
-# DA COMPILARE prima di pubblicare: sostituire ogni "[DA COMPILARE]".
-name: "Kite Away Sardinia A.S.D."
-address: "[DA COMPILARE: sede legale]"
-tax_code: "[DA COMPILARE: codice fiscale / P.IVA]"
-registry: "[DA COMPILARE: n. iscrizione Registro CONI / RASD]"
-email: "hello@kiteawaysardinia.com"
-pec: ""
+# Dati identificativi dell'associazione (D.Lgs. 70/2003, art. 7; GDPR art. 13).
+name: "A.S.D. Kite Away Sardinia"
+address: "Via Calasetta 73, 09011 Calasetta (SU)"
+tax_code: "C.F. 90049140925 - P.IVA 04230830921"
+registry: "Affiliazione MSP Italia n. SU100340"
+legal_rep: "Massimiliano Temporin (Presidente e legale rappresentante)"
+email: "kiteawaysardinia@gmail.com"
+pec: "kiteawaysardinia@mypec.eu"
