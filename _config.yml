@@ -28,6 +28,8 @@ sass:
   sourcemap: never
 
 exclude:
+  - _config_ftp.yml
+  - _site_ftp
   - scripts
   - .agents
   - .bundle
