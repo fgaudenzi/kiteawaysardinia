@@ -1,6 +1,10 @@
+{% comment %}Dalla privacy, gli anchor devono puntare alla homepage della stessa lingua.{% endcomment %}
+{% capture home_link %}{% if site.lang == site.default_lang %}{{ '/' | relative_url }}{% else %}{{ '/' | append: site.lang | append: '/' | relative_url }}{% endif %}{% endcapture %}
+{% assign nav_prefix = '' %}
+{% if page.ref == 'privacy' %}{% assign nav_prefix = home_link %}{% endif %}
 <header class="site-header" data-header>
   <nav class="nav" aria-label="{% t nav_label %}">
-    <a class="brand" href="#home" aria-label="Kite Away Sardinia">
+    <a class="brand" href="{{ nav_prefix }}#home" aria-label="Kite Away Sardinia">
       <img class="brand__logo" src="{{ '/assets/images/logo.png' | relative_url }}" alt="Kite Away Sardinia logo" width="160" height="56" loading="eager">
       <span class="brand__text">Kite Away</span>
     </a>
@@ -10,17 +14,17 @@
     </button>
 
     <div class="nav__menu" data-nav-menu>
-      <a href="#lessons">{% t nav_lessons %}</a>
-      <a href="#spot">{% t nav_spot %}</a>
-      <a href="#about">{% t nav_about %}</a>
-      <a href="#faq">{% t nav_faq %}</a>
-      <a href="#reach">{% t nav_reach %}</a>
-      <a href="#contact">{% t nav_contact %}</a>
+      <a href="{{ nav_prefix }}#lessons">{% t nav_lessons %}</a>
+      <a href="{{ nav_prefix }}#spot">{% t nav_spot %}</a>
+      <a href="{{ nav_prefix }}#about">{% t nav_about %}</a>
+      <a href="{{ nav_prefix }}#faq">{% t nav_faq %}</a>
+      <a href="{{ nav_prefix }}#reach">{% t nav_reach %}</a>
+      <a href="{{ nav_prefix }}#contact">{% t nav_contact %}</a>
       <div class="language-switcher" aria-label="{% t language_switcher %}">
-        <a href="{{ '/' | relative_url }}"{% if site.lang == site.default_lang or site.lang == nil %} aria-current="page"{% endif %}>EN</a>
-        <a href="{{ '/it/' | relative_url }}"{% if site.lang == 'it' %} aria-current="page"{% endif %}>IT</a>
-        <a href="{{ '/fr/' | relative_url }}"{% if site.lang == 'fr' %} aria-current="page"{% endif %}>FR</a>
-        <a href="{{ '/de/' | relative_url }}"{% if site.lang == 'de' %} aria-current="page"{% endif %}>DE</a>
+        <a href="{% if page.ref == 'privacy' %}{{ '/privacy/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}"{% if site.lang == site.default_lang or site.lang == nil %} aria-current="page"{% endif %}>EN</a>
+        <a href="{% if page.ref == 'privacy' %}{{ '/it/privacy/' | relative_url }}{% else %}{{ '/it/' | relative_url }}{% endif %}"{% if site.lang == 'it' %} aria-current="page"{% endif %}>IT</a>
+        <a href="{% if page.ref == 'privacy' %}{{ '/fr/privacy/' | relative_url }}{% else %}{{ '/fr/' | relative_url }}{% endif %}"{% if site.lang == 'fr' %} aria-current="page"{% endif %}>FR</a>
+        <a href="{% if page.ref == 'privacy' %}{{ '/de/privacy/' | relative_url }}{% else %}{{ '/de/' | relative_url }}{% endif %}"{% if site.lang == 'de' %} aria-current="page"{% endif %}>DE</a>
       </div>
       <a class="nav__cta" href="https://wa.me/393494255516">{% t book_now %}</a>
     </div>

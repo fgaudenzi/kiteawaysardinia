@@ -1,0 +1,63 @@
+name: Build and Deploy to Netsons
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: netsons-production
+  cancel-in-progress: false
+
+jobs:
+  deploy-netsons:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+          bundler-cache: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Copy local fonts into assets
+        run: |
+          npm install --no-audit --no-fund
+          npm run vendor
+
+      - name: Build production site for kiteawaysardinia.it
+        run: bundle exec jekyll build --destination ./_site
+
+      - name: Validate production SEO output
+        run: ruby scripts/check-seo.rb _site
+
+      - name: Deploy to Netsons via FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./_site/
+          server-dir: public_html/
+
+      - name: HTTP smoke test of Netsons production
+        run: |
+          set -euo pipefail
+          for path in / /it/ /fr/ /de/ /privacy/ /robots.txt /sitemap.xml; do
+            url="https://kiteawaysardinia.it${path}"
+            echo "GET ${url}"
+            curl --fail --silent --show-error --location --retry 5 --retry-delay 4 --retry-connrefused --max-time 30 "${url}" --output /dev/null
+          done
+          echo "Public endpoints respond successfully"

@@ -1,8 +1,8 @@
 title: Kite Away Sardinia
 description: Premium kitesurf lessons in Sardinia
 
-url: "https://fgaudenzi.github.io"
-baseurl: "/kiteawaysardinia"
+url: "https://kiteawaysardinia.it"
+baseurl: ""
 
 source: .
 destination: ./_site
@@ -30,8 +30,6 @@ sass:
   sourcemap: never
 
 exclude:
-  - _config_ftp.yml
-  - _site_ftp
   - scripts
   - .agents
   - .bundle

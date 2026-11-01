@@ -3,15 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{% t meta_description %}">
-  <meta name="theme-color" content="#005D73">
+  {% comment %}Canonical per lingua: Netsons è l'unico dominio di produzione.{% endcomment %}
+  {% assign seo_lang_prefix = '' %}
+  {% unless site.lang == site.default_lang %}
+    {% assign seo_lang_prefix = '/' | append: site.lang %}
+  {% endunless %}
+  {% assign seo_page_suffix = '/' %}
+  {% if page.ref == 'privacy' %}
+    {% assign seo_page_suffix = '/privacy/' %}
+  {% endif %}
+  {% assign seo_canonical = site.url | append: seo_lang_prefix | append: seo_page_suffix %}
+  {% capture seo_description %}{% t meta_description %}{% endcapture %}
+  {% if page.ref == 'privacy' %}
+  <title>{% t footer_privacy %} | Kite Away Sardinia</title>
+  <meta name="description" content="{% t footer_privacy %} - {{ site.data.legal.name | escape }}.">
+  {% else %}
   <title>{% t site_title %}</title>
+  <meta name="description" content="{{ seo_description | strip | escape }}">
+  {% endif %}
+  <link rel="canonical" href="{{ seo_canonical }}">
+  {% for alt_lang in site.languages %}
+    {% assign seo_alt_prefix = '' %}
+    {% unless alt_lang == site.default_lang %}{% assign seo_alt_prefix = '/' | append: alt_lang %}{% endunless %}
+  <link rel="alternate" hreflang="{{ alt_lang }}" href="{{ site.url }}{{ seo_alt_prefix }}{{ seo_page_suffix }}">
+  {% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ seo_page_suffix }}">
+  <meta name="theme-color" content="#005D73">
   <link rel="icon" type="image/png" href="{{ '/assets/images/logo.png' | relative_url }}">
   <link rel="apple-touch-icon" href="{{ '/assets/images/logo.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-</head>
-<body>
+  {% if page.ref == 'home' %}
+    {% assign seo_logo = site.url | append: '/assets/images/logo.png' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "SportsOrganization"],
+    "@id": "{{ site.url }}/#organization",
+    "name": "Kite Away Sardinia",
+    "legalName": {{ site.data.legal.name | jsonify }},
+    "url": {{ site.url | append: '/' | jsonify }},
+    "logo": {{ seo_logo | jsonify }},
+    "description": {{ seo_description | strip | jsonify }},
+    "sport": "Kitesurfing",
+    "email": {{ site.data.legal.email | jsonify }},
+    "telephone": "+393494255516",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Calasetta",
+      "addressRegion": "Sardegna",
+      "addressCountry": "IT"
+    },
+    "areaServed": [
+      {"@type": "Place", "name": "Cussorgia, Calasetta, Sardegna"},
+      {"@type": "Place", "name": "Sant'Antioco, Sardegna"}
+    ]
+  }
+  </script>
+  {% endif %}
+</head><body>
   <a class="skip-link" href="#main">{% t skip_to_content %}</a>
   {% include site-header.html %}
   <main id="main">

@@ -2,7 +2,7 @@
 
 Single-page multilingual Jekyll website for Kite Away Sardinia.
 
-The site is built with Jekyll layouts and includes, but each language is still a single page: navigation items such as Lessons, Spot, About, FAQ, and Contact link to anchors on the current page instead of opening separate section pages.
+The site is deployed exclusively to Netsons (production domain: https://kiteawaysardinia.it) via GitHub Actions and FTPS. GitHub Pages is no longer deployed. The site is built with Jekyll layouts and includes, but each language is still a single page: navigation items such as Lessons, Spot, About, FAQ, and Contact link to anchors on the current page instead of opening separate section pages.
 
 ## Architecture
 
@@ -89,7 +89,7 @@ Build the multilingual static site:
 bundle exec jekyll build
 ```
 
-The generated site is written to `_site/`.
+The generated site is written to `_site/`. The production config uses `url: https://kiteawaysardinia.it` and an empty `baseurl`.
 
 ## Run Locally
 
@@ -126,3 +126,18 @@ http://127.0.0.1:8000/
 - Change layout shell in `_layouts/default.html`.
 - Change colors, spacing, and responsive rules in `assets/css/main.css`.
 - Update the WhatsApp number in `_includes/site-header.html` and `_includes/section-contact.html`.
+
+
+## Production deployment and SEO
+
+A push to `main` runs `.github/workflows/deploy-netsons.yml`: Jekyll build, SEO checks, FTPS upload to Netsons, public HTTP smoke test. Required secrets: `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`.
+
+Run `ruby scripts/check-seo.rb _site` after a local build. It checks:
+- `robots.txt` and `OAI-SearchBot` permission
+- `sitemap.xml` with all four localized homepages and privacy URLs
+- Canonical URLs and alternate language links in the HTML
+- Local business / sports organization JSON-LD
+
+GitHub Pages publishing must also be disabled once in **GitHub repository Settings → Pages**; removing the workflow stops new Pages deployments but does not disable an existing Pages website.
+
+In Google Search Console, add the domain property and submit `https://kiteawaysardinia.it/sitemap.xml`. Validate indexing for /, /it/, /fr/, /de/ in URL Inspection. The automated build cannot guarantee Google indexing.
