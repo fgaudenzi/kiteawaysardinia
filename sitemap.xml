@@ -1,0 +1,21 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{% assign site_root = site.url | append: site.baseurl -%}
+{% assign routes = "/|/privacy/" | split: "|" -%}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{% for route in routes -%}
+{% for lang in site.languages -%}
+  <url>
+    <loc>{{ site_root }}{% unless lang == site.default_lang %}/{{ lang }}{% endunless %}{{ route }}</loc>
+{% for alt_lang in site.languages -%}
+    <xhtml:link rel="alternate" hreflang="{{ alt_lang }}" href="{{ site_root }}{% unless alt_lang == site.default_lang %}/{{ alt_lang }}{% endunless %}{{ route }}" />
+{% endfor -%}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site_root }}{{ route }}" />
+  </url>
+{% endfor -%}
+{% endfor -%}
+</urlset>

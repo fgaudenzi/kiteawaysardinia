@@ -16,9 +16,11 @@ kramdown:
 
 languages: ["en", "it", "fr", "de"]
 default_lang: "en"
-exclude_from_localization:
-  - assets
-  - image.png
+# Crawler discovery files are published only at the root (not per language).
+# Other assets remain localized: existing templates reference language-relative paths.
+exclude_from_localizations:
+  - robots.txt
+  - sitemap.xml
 
 plugins:
   - jekyll-multiple-languages-plugin
